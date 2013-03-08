@@ -12,6 +12,11 @@ A site to serve as my proffessional landing page on the internet.
 	4. finish content
 	5. SMS feature
 	
-##Later Versions
+##Features for Later Versions: 
 
 	1. Tutorials 
+	2. Hideable job duties and descriptions of the work
+	
+##Bugs:
+	
+	1. Dashes between Contact buttons 
