@@ -76,6 +76,11 @@ section
 }
 
 /* Experience *****************************************************************/
+.expheader
+{
+	text-align: center; 
+}
+
 .pos_title,
 .more_info
 {
@@ -83,14 +88,6 @@ section
 }
 
 /*General Content*/
-.buttontext
-{
-	text-decoration: none;
-	text-align: center;
-	letter-spacing: 3px;
-	font-size: 20px;
-}
-
 h2,
 h3,
 h4,
@@ -112,11 +109,6 @@ h2
 	letter-spacing: 10px;
 	text-align: left;
 		
-}
-
-.expheader
-{
-	text-align: center; 
 }
 
 h3,
@@ -149,6 +141,18 @@ p
 	text-align:justify;
 	text-justify:inter-word;
 	line-height:150%;
+}
+
+a
+{
+	color: #2A75A9; 
+	text-decoration: none; 
+	text-shadow: 1px 1px 1px #644436; 
+}
+
+a:hover 
+{
+	color: #DFC184; 
 }
 
 li
@@ -201,6 +205,16 @@ li
 	white-space: nowrap; 
 }
 
+/* Button *****************************************************************/
+.buttontext
+{
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 3px;
+	font-size: 20px;
+}
+
+
 button
 {
 	margin: 5px;
@@ -224,6 +238,7 @@ button
 	text-shadow: 1px 1px 1px #7EB5D6; 
 }
 
+/* Footer ******************************************************************/
 footer
 {
 	position: relative; 
