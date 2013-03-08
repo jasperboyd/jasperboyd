@@ -113,7 +113,9 @@ h2
 
 h3,
 h4,
-h5
+h5,
+a, 
+p
 {
 	letter-spacing: 2px; 
 }
@@ -137,7 +139,6 @@ p
 {
 	font-size: 22px;
 	color: #644436;
-	letter-spacing: 2px;
 	text-align:justify;
 	text-justify:inter-word;
 	line-height:150%;
