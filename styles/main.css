@@ -112,11 +112,16 @@ h2
 		
 }
 
+h3,
+h4,
+h5
+{
+	letter-spacing: 2px; 
+}
+
 h3
 {
 	font-size: 30px;	
-	line-height: 30px; 
-	letter-spacing: 5px;
 }
 
 h4
@@ -126,12 +131,12 @@ h4
 
 h5
 {
-	font-size: 20px;
+	font-size: 24px;
 }
 
 p
 {
-	font-size: 24px;
+	font-size: 22px;
 	color: #644436;
 	letter-spacing: 2px;
 	text-align:justify;
