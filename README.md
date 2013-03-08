@@ -13,6 +13,7 @@ A site to serve as my proffessional landing page on the internet.
 	5. SMS feature
 	6. Cleanup CSS/HTML
 	7. Add other font-weights
+	8. Expanding Album art for Recording section
 	
 ##Features for Later Versions: 
 
