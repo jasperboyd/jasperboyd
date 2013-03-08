@@ -62,9 +62,10 @@ article
 
 section
 {
-	margin:auto;
+	margin: 20px;
 }
 
+/* Recordings *****************************************************************/
 .album 
 {
 	margin: 5px;
@@ -74,6 +75,7 @@ section
 	border-radius: 5px;
 }
 
+/* Experience *****************************************************************/
 .pos_title,
 .more_info
 {
@@ -112,6 +114,11 @@ h2
 		
 }
 
+.expheader
+{
+	text-align: center; 
+}
+
 h3,
 h4,
 h5
@@ -121,7 +128,7 @@ h5
 
 h3
 {
-	font-size: 30px;	
+	font-size: 30px;
 }
 
 h4
