@@ -94,7 +94,8 @@ h3,
 h4,
 h5,
 p,
-a
+a,
+li
 { 
 	font-family: 'Open Sans Condensed', sans-serif; 
 	color: #644436;
@@ -136,6 +137,14 @@ p
 	text-align:justify;
 	text-justify:inter-word;
 	line-height:150%;
+}
+
+li
+{
+	font-size: 20px; 
+	letter-spacing: 2px; 
+	line-height:150%;
+	margin-left: 20px; 
 }
 
 

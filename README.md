@@ -11,3 +11,7 @@ A site to serve as my proffessional landing page on the internet.
 	3. browser debugging
 	4. finish content
 	5. SMS feature
+	
+##Later Versions
+
+	1. Tutorials 
