@@ -22,4 +22,4 @@ A site to serve as my proffessional landing page on the internet.
 	
 ##Bugs:
 	
-	1. Dashes between Contact buttons 
+	 
