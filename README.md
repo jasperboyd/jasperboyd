@@ -16,6 +16,9 @@ A site to serve as my proffessional landing page on the internet.
 	8. Expanding Album art for Recording section
 	9. Add PDF version of resume
 	10. Add JQuery to links on welcome page
+		- nav balls should lightup when hovering over link
+		- link should cause the same effect as clicking on 
+		the nav ball. 
 	
 ##Features for Later Versions: 
 
