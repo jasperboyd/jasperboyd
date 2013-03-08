@@ -6,6 +6,7 @@ A site to serve as my proffessional landing page on the internet.
 
 ##Todo:
 
+	- Finish about section content
 	- SEO 
 	- jquery Optimization 
 	- browser debugging
