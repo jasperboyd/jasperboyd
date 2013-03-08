@@ -1,7 +1,7 @@
 jasperboyd
 ==========
 
-##Info:
+##Summary:
 A site to serve as my proffessional landing page on the internet. 
 
 ##Todo:
@@ -14,6 +14,8 @@ A site to serve as my proffessional landing page on the internet.
 	6. Cleanup CSS/HTML
 	7. Add other font-weights
 	8. Expanding Album art for Recording section
+	9. Add PDF version of resume
+	10. Add JQuery to links on welcome page
 	
 ##Features for Later Versions: 
 
@@ -21,5 +23,5 @@ A site to serve as my proffessional landing page on the internet.
 	2. Hideable job duties and descriptions of the work
 	
 ##Bugs:
-	
+	1. Nav Buttons not working properly 
 	 
