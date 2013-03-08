@@ -11,6 +11,7 @@ A site to serve as my proffessional landing page on the internet.
 	3. browser debugging
 	4. finish content
 	5. SMS feature
+	6. Cleanup CSS/HTML
 	
 ##Features for Later Versions: 
 
