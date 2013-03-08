@@ -12,6 +12,7 @@ A site to serve as my proffessional landing page on the internet.
 	4. finish content
 	5. SMS feature
 	6. Cleanup CSS/HTML
+	7. Add other font-weights
 	
 ##Features for Later Versions: 
 
