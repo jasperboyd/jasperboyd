@@ -1,0 +1,219 @@
+/*http://www.colorcombos.com/color-schemes/424/ColorCombo424.html*/
+
+/* HTML5 Support *********************************************************/
+article, section, aside, hgroup, nav, header, footer, figure, figcaption {
+  	display: block;
+}
+/* Background ************************************************************/
+body
+{
+	background-color: #2A75A9;
+}
+
+article,
+nav
+{
+	width: autopx;
+	margin: 0px 25px 0px 25px;
+}
+/* Boot ******************************************************************/
+#boot_title
+{
+	color: #8F6048;
+	font-family: 'Wire One', sans-serif;
+	font-size: 100px;
+	line-height: 150%;
+	text-shadow: 1px 1px 1px #2A75A9;
+	letter-spacing: 50px;
+	text-align: center;
+}
+
+/* Title *****************************************************************/
+header
+{
+	width: auto;
+	margin: 25px 25px 0px 25px;
+	border-top: 1px solid #644436;
+	border-left: 1px solid #644436;
+	border-right: 1px solid #644436;
+	background-color: #8F6048; 
+	-moz-border-radius: 20px 20px 0 0; 
+	-webkit-border-radius: 20px 20px 0 0; 
+}
+
+#title{
+	color: #DFC184;
+	font-family: 'Wire One', sans-serif;
+	font-size: 30px;
+	text-shadow: 3px 3px 3px #644436;
+	letter-spacing: 10px;
+	text-align: center;
+}
+
+/* Content *****************************************************************/
+article
+{ 
+	padding: 10px;
+	border: 1px solid #644436;
+	background-color: #7EB5D6; 
+	-moz-border-radius: 0 0 20px 20px; 
+	-webkit-border-radius: 0 0 20px 20px; 
+}
+
+section
+{
+	margin:auto;
+}
+
+.album 
+{
+	margin: 5px;
+	width: 200px; 
+	height: 200px;
+	border: 1px solid #644436;
+	border-radius: 5px;
+}
+
+.pos_title,
+.more_info
+{
+	margin-left: 20px;
+}
+
+/*General Content*/
+.buttontext
+{
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 3px;
+	font-size: 20px;
+}
+
+h2,
+h3,
+h4,
+h5,
+p,
+a
+{ 
+	font-family: 'Open Sans Condensed', sans-serif; 
+	color: #644436;
+}
+
+h2
+{
+	color:#7EB5D6;
+	text-shadow: 3px 3px 3px #644436;
+	font-size: 50px;
+	line-height: 50px;
+	letter-spacing: 10px;
+	text-align: left;
+		
+}
+
+h3
+{
+	font-size: 30px;	
+	line-height: 30px; 
+	letter-spacing: 5px;
+}
+
+h4
+{
+	font-size: 25px; 
+}
+
+h5
+{
+	font-size: 20px;
+}
+
+p
+{
+	font-size: 24px;
+	color: #644436;
+	letter-spacing: 2px;
+	text-align:justify;
+	text-justify:inter-word;
+	line-height:150%;
+}
+
+
+#indicator
+{  
+	margin: 0px auto 0px auto; 
+    width: auto;  
+    height: 30px; 
+    text-align: center;  
+    font-size: 20px;  
+    letter-spacing: 25px;  
+    white-space: nowrap;  
+    line-height: 12px;  
+    overflow: hidden;  
+}  
+  
+.ball { 
+	margin: 5px;
+    width: 15px;  
+    height: 15px;  
+    border: solid 1px #644436;  
+    display: inline-block;  
+    vertical-align: middle; 
+    border-radius: 8px;
+	background-color: #7EB5D6; 
+} 
+
+.ballhover { 
+	border: solid 1px #DFC184;
+} 
+
+.selected {
+	background-color: #DFC184;
+	border: solid 1px #7EB5D6;
+}
+
+#contactbox
+{
+	margin: 0px auto 0px auto; 
+	width: auto;
+	text-align: center;
+	white-space: nowrap; 
+}
+
+button
+{
+	margin: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #7EB5D6;
+	border: 1px solid #644436;
+	border-radius: 15px;
+	width: auto; 
+	height: auto;
+	padding: 10px;
+}
+
+.buttonhover { 
+	border: solid 1px #DFC184;
+	background-color: #644436;
+} 
+
+.buttonhover h3 { 
+	color: #DFC184;
+	text-shadow: 1px 1px 1px #7EB5D6; 
+}
+
+footer
+{
+	position: relative; 
+	bottom: 0px;
+}
+
+#f
+{
+	color: #7EB5D6;
+	font-family: 'Wire One', sans-serif;
+	font-size: 15px;
+	letter-spacing: 5px;
+	text-align:center;
+}
