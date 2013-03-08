@@ -23,5 +23,5 @@ A site to serve as my proffessional landing page on the internet.
 	2. Hideable job duties and descriptions of the work
 	
 ##Bugs:
-	1. Nav Buttons not working properly 
+	
 	 
