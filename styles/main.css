@@ -33,10 +33,10 @@ header
 {
 	width: auto;
 	margin: 25px 25px 0px 25px;
-	border-top: 1px solid #644436;
-	border-left: 1px solid #644436;
-	border-right: 1px solid #644436;
-	background-color: #8F6048; 
+	border-top: 2px solid #644436;
+	border-left: 2px solid #644436;
+	border-right: 2px solid #644436;
+	background-color: #644436; 
 	-moz-border-radius: 20px 20px 0 0; 
 	-webkit-border-radius: 20px 20px 0 0; 
 }
@@ -45,7 +45,7 @@ header
 	color: #DFC184;
 	font-family: 'Wire One', sans-serif;
 	font-size: 30px;
-	text-shadow: 3px 3px 3px #644436;
+	text-shadow: 2px 2px 2px #8F6048;
 	letter-spacing: 10px;
 	text-align: center;
 }
@@ -54,7 +54,7 @@ header
 article
 { 
 	padding: 10px;
-	border: 1px solid #644436;
+	border: 2px solid #644436;
 	background-color: #7EB5D6; 
 	-moz-border-radius: 0 0 20px 20px; 
 	-webkit-border-radius: 0 0 20px 20px; 
