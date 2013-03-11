@@ -57,7 +57,7 @@ $(document).ready(function(){
 				var renderWelcome = function(){
 					var i_w = $welcome_c.innerWidth();
 					i_w /= 2; 
-					i_w -= 20; 
+					i_w -= 40; 
 					$welcome_t.css('width', i_w);
 					$welcome_p.css('width', i_w);
 				}

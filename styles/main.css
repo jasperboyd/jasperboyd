@@ -67,23 +67,21 @@ section
 /* Welcome ********************************************************************/
 #welcome
 {
-	height: 750px;
+
+	height: 1000px;
 }
 
-#welcometext
-{ 
-	float: left;
-} 
-
-#welcometext2
+#welcomeheader
 {
-	clear: both;
+	position: relative;
 }
 
 #welcomepic
 {
-	margin-top: 165px;
-	float: left; 
+	position: absolute; 
+	right: 70px;
+	top: 290px;
+	border-radius: 30px;
 }
 
 /* Recordings *****************************************************************/
@@ -91,6 +89,7 @@ section
 {
 	margin: 0;
 	border: 3px solid #644436;
+	border-radius: 10px;
 }
 
 .album:hover
@@ -165,7 +164,7 @@ p
 	color: #644436;
 	text-align:justify;
 	text-justify:inter-word;
-	line-height:150%;
+	line-height:200%;
 }
 
 a
