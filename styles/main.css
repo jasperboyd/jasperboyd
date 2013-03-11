@@ -213,9 +213,9 @@ li
     white-space: nowrap;  
     line-height: 12px;  
     overflow: hidden;  
-    border-top: 1px solid #7EB5D6;
-    border-left:  1px solid #7EB5D6;
-    border-right:  1px solid #7EB5D6;
+    border-top: 1px solid #8F6048;
+    border-left:  1px solid #8F6048;
+    border-right:  1px solid #8F6048;
     -moz-border-radius: 20px 20px 0 0; 
 	-webkit-border-radius:20px 20px 0 0; 
 }  
@@ -224,7 +224,7 @@ li
 	margin: 10px;
     width: 15px;  
     height: 15px;  
-    border: solid 1px #644436;  
+    border: solid 1px #8F6048;  
     display: inline-block;  
     vertical-align: middle; 
     border-radius: 8px;

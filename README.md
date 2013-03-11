@@ -35,6 +35,7 @@ __Version:__ 0.0
 ##Bugs:
 	
 	- Bug with the navigation circles
+		-Only with irregular input
 ---
 
 	 
