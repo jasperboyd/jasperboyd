@@ -13,7 +13,7 @@ body
 article,
 nav
 {
-	width: autopx;
+	width: auto;
 	margin: 0px 25px 0px 25px;
 }
 /* Boot ******************************************************************/
@@ -53,7 +53,7 @@ header
 /* Content *****************************************************************/
 article
 { 
-	padding: 10px;
+	padding: 40px;
 	border: 1px solid #644436;
 	background-color: #7EB5D6; 
 	-moz-border-radius: 0 0 20px 20px; 
@@ -62,25 +62,19 @@ article
 
 section
 {
-	margin: 20px;
+	/*padding: 20px;*/
 }
 /* Welcome ********************************************************************/
-#welcome
-{
 
-	height: 900px;
-}
 
 #welcomeheader
 {
-	position: relative;
+	float: left; 
 }
 
 #welcomepic
 {
-	position: absolute; 
-	right: 70px;
-	top: 290px;
+	float: right; 
 	border-radius: 30px;
 	border: 1px solid #644436;
 }
@@ -88,27 +82,46 @@ section
 /* Recordings *****************************************************************/
 .album 
 {
-	margin: 0;
-	border: 3px solid #644436;
+	margin: 5px;
+	border: 1px solid #644436;
 	border-radius: 10px;
 }
 
 .album:hover
 {
-	margin: 0;
-	border: 3px solid #DFC184;
+	border: 1px solid #DFC184;
 }
 
+#albumgrid
+{
+	margin-left: 45px;
+}
 /* Experience *****************************************************************/
+.school
+{
+	font-size: 20px; 
+}
+
 .expheader
 {
 	/*text-align: center;*/
 }
 
+.expsection
+{
+	padding: 20px;
+}
+
 .pos_title,
 .more_info
 {
-	margin-left: 20px;
+	font-size: 18px; 
+	margin-left: 40px;
+}
+
+.organization
+{
+	font-size: 20px; 
 }
 
 /*General Content*/
@@ -131,7 +144,7 @@ h2
 	font-size: 50px;
 	line-height: 50px;
 	letter-spacing: 10px;
-	text-align: left;
+	text-align: center;
 		
 }
 
@@ -183,10 +196,10 @@ a:hover
 
 li
 {
-	font-size: 20px; 
+	font-size: 16px; 
 	letter-spacing: 2px; 
-	line-height:150%;
-	margin-left: 20px; 
+	line-height: 175%;
+	margin-left: 40px; 
 }
 
 

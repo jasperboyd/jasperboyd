@@ -10,8 +10,6 @@ __Version:__ 0.0
 
 ##Todo:
 		
-	- Welcome
-		- Add Profile Picture 
 	- Projects
 		- Add Github button link
 	- Experience
@@ -39,6 +37,7 @@ __Version:__ 0.0
 	
 ##Bugs:
 	
+	- Bug with the navigation circles
 ---
 
 	 

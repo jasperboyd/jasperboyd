@@ -27,6 +27,7 @@ $(document).ready(function(){
 				var $ind = $('#indicator'); 
 				var $balls = $('.ball'); 
 				var $welcome = $('#welcome');
+				var $welcome_h = $('#welcomeheader'); 
 				var $welcome_c = $('#welcomecontent'); 
 				var $welcome_t = $('#welcometext'); 
 				var $welcome_p = $('#welcomepic'); 
@@ -58,16 +59,17 @@ $(document).ready(function(){
 					var i_w = $welcome_c.innerWidth();
 					i_w /= 2; 
 					i_w -= 40; 
-					$welcome_t.css('width', i_w);
-					$welcome_p.css('width', i_w);
+					$welcome_h.css('width', 2*i_w); 
+					$welcome_t.css('width', (3*i_w)/2);
+					$welcome_p.css('width', i_w/2);
 				}
 				
 				var renderAlbumArt = function(){
 					var inner_w = $recordings.innerWidth(); 
 					inner_w /= 3; 
 					album_w = inner_w; 
-					album_w -= 20; //padding
-					album_w -= 18; //border
+					album_w -= 80; //padding
+					album_w -= 8; //border
 					$albums.css('width', album_w);
 					$albums.css('height', album_w); 
 				}
