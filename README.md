@@ -1,6 +1,5 @@
-jasperboyd
+jasperboyd 
 ==========
-
 ######Jasper Boyd
 
 __Summary:__ A site to serve as my proffessional landing page on the internet. 
@@ -37,6 +36,7 @@ __Version:__ 0.0
 	- SMS feature
 	- Add other font-weights
 	- Nav-bar popups
+	- Interactive Resume
 	
 ##Bugs:
 	
