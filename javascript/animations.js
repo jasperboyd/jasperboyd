@@ -4,11 +4,10 @@ $(document).ready(function(){
 				var pages = new Array();
 				
 				pages[0] = '#welcome';
-				pages[1] = '#about';
-				pages[2] = '#projects';
-				pages[3] = '#recordings';
-				pages[4] = '#experience';
-				pages[5] = '#contact';
+				pages[1] = '#projects';
+				pages[2] = '#recordings';
+				pages[3] = '#experience';
+				pages[4] = '#contact';
 				
 				//array of divs used to navigate
 				var balls = new Array(); 
@@ -18,7 +17,6 @@ $(document).ready(function(){
 				balls[2] = '#b3';
 				balls[3] = '#b4';
 				balls[4] = '#b5';
-				balls[5] = '#b6';
 				
 				//cache variables for optimized performance
 				var $body = $('body'); 
@@ -77,7 +75,7 @@ $(document).ready(function(){
 						case 37://left arrow
 							temp = cursor; 
 							if (cursor===0){
-								cursor = 5; 
+								cursor = pages.length-1; 
 							} else {
 								--cursor;
 							}
@@ -105,18 +103,15 @@ $(document).ready(function(){
 								$title.text('Welcome');
 								break;
 							case 'b2':
-								$title.text('About');
-								break;
-							case 'b3':
 								$title.text('Projects');
 								break;
-							case 'b4':
+							case 'b3':
 								$title.text('Recordings');
 								break;
-							case 'b5':
+							case 'b4':
 								$title.text('Experience');
 								break;
-							case 'b6':
+							case 'b5':
 								$title.text('Contact');
 								break;
 						}
@@ -155,9 +150,6 @@ $(document).ready(function(){
 								break;
 							case 'b5':
 								cursor = 4;
-								break;
-							case 'b6':
-								cursor = 5;
 								break;
 					}
 					
