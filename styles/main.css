@@ -146,14 +146,15 @@ p
 
 a
 {
-	color: #2A75A9; 
+	color: #644436; 
 	text-decoration: none; 
-	text-shadow: 1px 1px 1px #644436; 
+	text-shadow: 1px 1px 1px #DFC184; 
 }
 
 a:hover 
 {
 	color: #DFC184; 
+	text-shadow: 1px 1px 1px #644436; 
 }
 
 li

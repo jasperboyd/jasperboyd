@@ -12,10 +12,7 @@ __Version:__ 0.0
 ##Todo:
 		
 	- Welcome
-		- Add Profile Picture
-		- nav balls should lightup when hovering over link
-		- link should cause the same effect as clicking on 
-		the nav ball. 
+		- Add Profile Picture 
 	- Projects
 		- Add Github button link
 	- Recordings
@@ -28,6 +25,7 @@ __Version:__ 0.0
 		- Add Address
 	- SEO 
 	- jquery Optimization 
+		- Place repeated code into functions
 	- Cleanup CSS/HTML
 	- browser debugging
 	
@@ -38,6 +36,7 @@ __Version:__ 0.0
 	- Hideable job duties and descriptions of the work
 	- SMS feature
 	- Add other font-weights
+	- Nav-bar popups
 	
 ##Bugs:
 	

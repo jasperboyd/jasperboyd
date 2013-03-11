@@ -30,9 +30,13 @@ $(document).ready(function(){
 				var $welcome = $('#welcome');
 				var $about = $('#about');
 				var $projects = $('#projects'); 
-				var $recordings = $('#recordings'); 
+				var $pro_link = $('#pro_link'); 
+				var $recordings = $('#recordings');
+				var $rec_link = $('#rec_link');  
 				var $experience = $('#experience'); 
+				var $exp_link = $('#exp_link'); 
 				var $contact = $('#contact');
+				var $con_link = $('#con_link');
 				var $address = $('#addressbox'); 
 				var $footer = $('#f');  
 				
@@ -70,6 +74,7 @@ $(document).ready(function(){
 				
 				$(balls[cursor]).toggleClass('selected');
 				
+				//Keyboard Navigation
 				$(document).keydown(function(key) {
         			switch(parseInt(key.which,10)) {
 						case 37://left arrow
@@ -94,6 +99,8 @@ $(document).ready(function(){
 					$(balls[cursor]).toggleClass('selected');
 				});
 				
+				
+				//Navigation Animations
 				$balls.mouseover(function(){
 					var thisId = $(this).attr('id');
 					$(this).addClass('ballhover');
@@ -153,15 +160,117 @@ $(document).ready(function(){
 								break;
 					}
 					
-					$(balls[cursor]).toggleClass('selected');
+					$(balls[cursor]).delay(fade).toggleClass('selected');
 					$(pages[cursor]).delay(fade).slideDown(fade); 
 				});
 				
+				//Button Animations
 				$button.mouseover(function(){
 					$(this).addClass('buttonhover');
 				});
 				
 				$button.mouseleave(function(){ 
 					$(this).removeClass('buttonhover');
+				}); 
+				
+				//Links
+				$exp_link.mouseover(function(){
+					$title.fadeOut(fade/4, function(){
+						$title.text('Experience');
+						$title.fadeIn(fade/4); 
+					}); 
+					$(balls[3]).toggleClass('ballhover');
+				}); 
+				
+				$exp_link.mouseleave(function(){
+					$title.fadeOut(fade/4, function(){
+						$title.text('Jasper Boyd');
+						$title.fadeIn(fade/4); 
+					}); 
+					$(balls[3]).toggleClass('ballhover');
+				}); 
+				
+				$exp_link.click(function(){
+					temp = cursor; 
+					cursor = 3; 
+					$(balls[temp]).toggleClass('selected');
+					$(pages[temp]).slideUp(fade); 
+					$(balls[cursor]).delay(fade).toggleClass('selected');
+					$(pages[cursor]).delay(fade).slideDown(fade); 
+				}); 
+				
+				$pro_link.mouseover(function(){
+					$title.fadeOut(fade/4, function(){
+						$title.text('Projects');
+						$title.fadeIn(fade/4); 
+					}); 
+					$(balls[1]).toggleClass('ballhover');
+				}); 
+				
+				$pro_link.mouseleave(function(){
+					$title.fadeOut(fade/4, function(){
+						$title.text('Jasper Boyd');
+						$title.fadeIn(fade/4); 
+					}); 
+					$(balls[1]).toggleClass('ballhover');
+				}); 
+				
+				$pro_link.click(function(){
+					temp = cursor; 
+					cursor = 1; 
+					$(balls[temp]).toggleClass('selected');
+					$(pages[temp]).slideUp(fade); 
+					$(balls[cursor]).delay(fade).toggleClass('selected');
+					$(pages[cursor]).delay(fade).slideDown(fade); 
+				}); 
+				
+				$rec_link.mouseover(function(){
+					$title.fadeOut(fade/4, function(){
+						$title.text('Recordings');
+						$title.fadeIn(fade/4); 
+					}); 
+					$(balls[2]).toggleClass('ballhover');
+				}); 
+				
+				$rec_link.mouseleave(function(){
+					$title.fadeOut(fade/4, function(){
+						$title.text('Jasper Boyd');
+						$title.fadeIn(fade/4); 
+					}); 
+					$(balls[2]).toggleClass('ballhover');
+				}); 
+				
+				$rec_link.click(function(){
+					temp = cursor; 
+					cursor = 2; 
+					$(balls[temp]).toggleClass('selected');
+					$(pages[temp]).slideUp(fade); 
+					$(balls[cursor]).delay(fade).toggleClass('selected');
+					$(pages[cursor]).delay(fade).slideDown(fade); 
+				}); 
+				
+				$con_link.mouseover(function(){
+					$title.fadeOut(fade/4, function(){
+						$title.text('Recordings');
+						$title.fadeIn(fade/4); 
+					}); 
+					$(balls[4]).toggleClass('ballhover');
+				}); 
+				
+				$con_link.mouseleave(function(){
+					$title.fadeOut(fade/4, function(){
+						$title.text('Jasper Boyd');
+						$title.fadeIn(fade/4); 
+					}); 
+					$(balls[4]).toggleClass('ballhover');
+				}); 
+				
+				$con_link.click(function(){
+					temp = cursor; 
+					cursor = 4; 
+					$(balls[temp]).toggleClass('selected');
+					$(pages[temp]).slideUp(fade); 
+					$(balls[cursor]).delay(fade).toggleClass('selected');
+					$(pages[cursor]).delay(fade).slideDown(fade); 
 				}); 
 			});
