@@ -14,8 +14,6 @@ __Version:__ 0.0
 		- Add Profile Picture 
 	- Projects
 		- Add Github button link
-	- Recordings
-		- More info
 	- Experience
 		- Add PDF version of resume
 		- Streamline Style
@@ -36,6 +34,8 @@ __Version:__ 0.0
 	- Add other font-weights
 	- Nav-bar popups
 	- Interactive Resume
+	- Dedicated recording pages
+	- Bandcamp player for albums
 	
 ##Bugs:
 	

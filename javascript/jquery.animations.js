@@ -49,16 +49,21 @@ $(document).ready(function(){
 				var fade = 500;
 				
 				//Boot Animation
-				$boot.fadeTo(fade, .5, function(){
+				var boot = function (){
+					$boot.fadeTo(fade, .5, function(){
 					
-				}).delay(fade).fadeTo(fade, 0, function(){
-					$boot.empty();
-					$body.css('background-color', '#2A75A9'); 
-					$header.delay(100).fadeIn(fade); 
-					$welcome.delay(100).fadeIn(fade);
-					$balls.delay(100).fadeIn(fade); 
-					$footer.delay(100).fadeIn(fade);
-				});
+					}).delay(fade).fadeTo(fade, 0, function(){
+						$boot.empty();
+						$body.css('background-color', '#2A75A9'); 
+						$header.delay(100).fadeIn(fade); 
+						$welcome.delay(100).fadeIn(fade);
+						$balls.delay(100).fadeIn(fade); 
+						$footer.delay(100).fadeIn(fade);
+					});
+				}
+				
+				boot();
+				
 				
 				var cursor = 0; 
 				var temp = cursor; 
