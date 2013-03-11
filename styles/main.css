@@ -64,6 +64,27 @@ section
 {
 	margin: 20px;
 }
+/* Welcome ********************************************************************/
+#welcome
+{
+	height: 750px;
+}
+
+#welcometext
+{ 
+	float: left;
+} 
+
+#welcometext2
+{
+	clear: both;
+}
+
+#welcomepic
+{
+	margin-top: 165px;
+	float: left; 
+}
 
 /* Recordings *****************************************************************/
 .album 

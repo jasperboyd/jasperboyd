@@ -27,6 +27,9 @@ $(document).ready(function(){
 				var $ind = $('#indicator'); 
 				var $balls = $('.ball'); 
 				var $welcome = $('#welcome');
+				var $welcome_c = $('#welcomecontent'); 
+				var $welcome_t = $('#welcometext'); 
+				var $welcome_p = $('#welcomepic'); 
 				var $about = $('#about');
 				var $projects = $('#projects'); 
 				var $pro_link = $('#pro_link'); 
@@ -48,27 +51,16 @@ $(document).ready(function(){
 				
 				var fade = 500;
 				
-				//Boot Animation
-				var boot = function (){
-					$boot.fadeTo(fade, .5, function(){
-					
-					}).delay(fade).fadeTo(fade, 0, function(){
-						$boot.empty();
-						$body.css('background-color', '#2A75A9'); 
-						$header.delay(100).fadeIn(fade); 
-						$welcome.delay(100).fadeIn(fade);
-						$balls.delay(100).fadeIn(fade); 
-						$footer.delay(100).fadeIn(fade);
-					});
-				}
-				
-				boot();
-				
-				
 				var cursor = 0; 
-				var temp = cursor; 
+				var temp = 0; //init to -1
 				
-				$(balls[cursor]).toggleClass('selected');
+				var renderWelcome = function(){
+					var i_w = $welcome_c.innerWidth();
+					i_w /= 2; 
+					i_w -= 20; 
+					$welcome_t.css('width', i_w);
+					$welcome_p.css('width', i_w);
+				}
 				
 				var renderAlbumArt = function(){
 					var inner_w = $recordings.innerWidth(); 
@@ -81,19 +73,38 @@ $(document).ready(function(){
 				}
 				
 				//Changes the page hiding and showing the content
-				var render = function(t, c){
-					$(pages[t]).slideUp(fade/2);
-					$(balls[t]).toggleClass('selected');
-					
-					switch(c){
-						case 2: 
-							renderAlbumArt();
-							break; 
-					
-					}
-					$(pages[c]).delay(fade/2).slideDown(fade/2);
-					$(balls[c]).toggleClass('selected');
-					
+				function render(t, c){					
+					$(pages[t]).slideUp(fade/2, function(){
+						switch(c){
+							case 2: 
+								renderAlbumArt();
+								break; 	
+						}	
+						$(balls[t]).toggleClass('selected');
+						$(pages[c]).delay(fade/2).slideDown(fade/2, function(){
+							renderWelcome();
+						});
+						
+						$(balls[c]).toggleClass('selected');
+						
+					});	
+				}
+				
+				//Boot Animation
+				var boot = function (){
+					$boot.fadeTo(fade, .5, function(){
+						$boot.fadeTo(fade, 0, function(){
+							$boot.empty();
+							$body.css('background-color', '#2A75A9');
+							$header.fadeIn(fade);
+							$balls.fadeIn(fade);
+							$footer.fadeIn(fade, function(){ 
+								render(temp, cursor); 
+								$welcome.delay(100).fadeIn(fade);
+								$(balls[0]).toggleClass('selected');
+							});
+						});
+					});	 
 				}
 				
 				//Keyboard Navigation
@@ -279,6 +290,15 @@ $(document).ready(function(){
 				
 				//Resize Function for Album Art
 				$(window).resize(function(){ 
-					renderAlbumArt();
+					switch(cursor){
+						case 0:	
+							renderWelcome(); 
+							break; 
+						case 2:
+							renderAlbumArt();
+							break;
+					}
 				});
+				
+				boot();
 			});
