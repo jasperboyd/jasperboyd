@@ -12,16 +12,18 @@ __Version:__ 0.0
 ##Todo:
 		
 	- Welcome
+		- Add Profile Picture
 		- nav balls should lightup when hovering over link
 		- link should cause the same effect as clicking on 
 		the nav ball. 
 	- Projects
-		- Add Fork on Github
+		- Add Github button link
 	- Recordings
 		- More info
 		- Expanding Album art for Recording section
 	- Experience
 		- Add PDF version of resume
+		- Streamline Style
 	- Contact
 		- Add Address
 	- SEO 
