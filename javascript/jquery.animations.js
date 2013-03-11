@@ -1,5 +1,4 @@
-$(document).ready(function(){
-				
+$(document).ready(function(){		
 				//pages array for navigation
 				var pages = new Array();
 				
@@ -41,23 +40,14 @@ $(document).ready(function(){
 				var $footer = $('#f');  
 				
 				//init to blank page
-				$boot.css('display', 'none'); 
-				$header.css('display', 'none'); 
-				$about.css('display', 'none');  
-				$welcome.css('display', 'none'); 
-				$projects.css('display', 'none'); 
-				$recordings.css('display', 'none'); 
-				$experience.css('display', 'none');
-				$contact.css('display', 'none');
-				$balls.css('display', 'none');   
-				$footer.css('display', 'none');
-				$address.css('display', 'none'); 
+				$('.init_blank').css('display', 'none'); 
 				
 				//prime color
 				$body.css('background-color', '#DFC184'); 
 				
 				var fade = 500;
 				
+				//Boot Animation
 				$boot.fadeTo(fade, .5, function(){
 					
 				}).delay(fade).fadeTo(fade, 0, function(){
@@ -73,6 +63,13 @@ $(document).ready(function(){
 				var temp = cursor; 
 				
 				$(balls[cursor]).toggleClass('selected');
+				
+				var render = function(t, c){
+					$(pages[t]).slideUp(fade/2);
+					$(balls[t]).toggleClass('selected');
+					$(pages[c]).delay(fade/2).slideDown(fade/2);
+					$(balls[c]).toggleClass('selected');
+				}
 				
 				//Keyboard Navigation
 				$(document).keydown(function(key) {
@@ -93,10 +90,7 @@ $(document).ready(function(){
 							//blank for now
 							break;
 					}
-					$(pages[temp]).slideUp(fade); 
-					$(balls[temp]).toggleClass('selected');
-					$(pages[cursor]).delay(fade).slideDown(fade);  
-					$(balls[cursor]).toggleClass('selected');
+					render(temp, cursor); 
 				});
 				
 				
@@ -140,8 +134,6 @@ $(document).ready(function(){
 				$balls.click(function(){
 					var thisId = $(this).attr('id');
 					temp = cursor; 
-					$(balls[temp]).toggleClass('selected');
-					$(pages[temp]).slideUp(fade); 
 					switch(thisId){
 							case 'b1':
 								cursor = 0;
@@ -159,9 +151,7 @@ $(document).ready(function(){
 								cursor = 4;
 								break;
 					}
-					
-					$(balls[cursor]).delay(fade).toggleClass('selected');
-					$(pages[cursor]).delay(fade).slideDown(fade); 
+					render(temp, cursor); 
 				});
 				
 				//Button Animations
@@ -193,10 +183,7 @@ $(document).ready(function(){
 				$exp_link.click(function(){
 					temp = cursor; 
 					cursor = 3; 
-					$(balls[temp]).toggleClass('selected');
-					$(pages[temp]).slideUp(fade); 
-					$(balls[cursor]).delay(fade).toggleClass('selected');
-					$(pages[cursor]).delay(fade).slideDown(fade); 
+					render(temp, cursor); 
 				}); 
 				
 				$pro_link.mouseover(function(){
@@ -218,10 +205,7 @@ $(document).ready(function(){
 				$pro_link.click(function(){
 					temp = cursor; 
 					cursor = 1; 
-					$(balls[temp]).toggleClass('selected');
-					$(pages[temp]).slideUp(fade); 
-					$(balls[cursor]).delay(fade).toggleClass('selected');
-					$(pages[cursor]).delay(fade).slideDown(fade); 
+					render(temp, cursor); 
 				}); 
 				
 				$rec_link.mouseover(function(){
@@ -243,10 +227,7 @@ $(document).ready(function(){
 				$rec_link.click(function(){
 					temp = cursor; 
 					cursor = 2; 
-					$(balls[temp]).toggleClass('selected');
-					$(pages[temp]).slideUp(fade); 
-					$(balls[cursor]).delay(fade).toggleClass('selected');
-					$(pages[cursor]).delay(fade).slideDown(fade); 
+					render(temp, cursor); 
 				}); 
 				
 				$con_link.mouseover(function(){
@@ -268,9 +249,6 @@ $(document).ready(function(){
 				$con_link.click(function(){
 					temp = cursor; 
 					cursor = 4; 
-					$(balls[temp]).toggleClass('selected');
-					$(pages[temp]).slideUp(fade); 
-					$(balls[cursor]).delay(fade).toggleClass('selected');
-					$(pages[cursor]).delay(fade).slideDown(fade); 
+					render(temp, cursor); 
 				}); 
 			});

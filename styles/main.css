@@ -69,11 +69,36 @@ section
 .album 
 {
 	margin: 5px;
-	width: 200px; 
-	height: 200px;
-	border: 1px solid #644436;
+	padding: 5px; 
+	width: 450px; 
+	height: 450px;
+	border: 5px solid #644436;
 	border-radius: 5px;
 }
+
+/*
+#album_art
+{
+	float: left; 
+	width: 500px; 
+	height: 500px; 
+	border: 5px solid #644436;
+}
+
+#album_details
+{
+	float: left;
+	width: 100px; 
+	height: 500px; 
+	border: 5px solid #644436;
+}
+
+#other_albums
+{
+	clear: both;
+	border: 5px solid #644436;
+}
+*/
 
 /* Experience *****************************************************************/
 .expheader

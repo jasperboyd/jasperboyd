@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html>
+<html lang="en">
 	<!--HTML5--> 
 	<script>
     	document.createElement('article');
@@ -18,18 +18,19 @@
 		<link type="text/css" rel="stylesheet" href="styles/main.css"> 
 		<link href='http://fonts.googleapis.com/css?family=Wire+One|Open+Sans:400,300|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script type="text/javascript" src="javascript/animations.js"></script> 
+		<script type="text/javascript" src="plugins/jquery.backstrech.js"></script>
+		<script type="text/javascript" src="javascript/jquery.animations.js"></script> 
 	</head> 
 	 
 	<body>
-		<header>
+		<header class='init_blank'>
 			<h1 id="title"> Jasper Boyd </h1>
 				<div id="indicator">
-				<div id="b1" class="ball"></div>
-				<div id="b2" class="ball"></div>
-				<div id="b3" class="ball"></div>
-				<div id="b4" class="ball"></div>
-				<div id="b5" class="ball"></div>
+					<div id="b1" class="ball"></div>
+					<div id="b2" class="ball"></div>
+					<div id="b3" class="ball"></div>
+					<div id="b4" class="ball"></div>
+					<div id="b5" class="ball"></div>
 			</div>
 		</header>
 		
@@ -37,25 +38,22 @@
 			<h1 id="boot_title">Jasper Boyd</h1>
 		</div> 
 	
-		<article id='welcome'>					 
+		<article id='welcome' class='init_blank'>					 
 			<section> 
 				<h2>Welcome</h2>
 				<p>
 					To my personal landing page. I have many interests therefore the
 					content on this page is quite varied. If you are considering me 
 					for employment detailed work experience can be found in the
-					<!--This needs to be linked with jquery--> 
 					<a id="exp_link">Experience</a> 
 					section. Futhermore current programming projects
 					can be found in the 
-					<!--This needs to be linked with jquery--> 
 					<a id="pro_link">Projects</a> section, or if you prefer on 
 					<a href="http://www.github.com/jasperboyd" target="_blank">Github</a>.
 				</p> 
 				<p>
 					Alternatively, if you're interested in my current musical endeavors 
 					that information can be found in the 
-					<!--This needs to be linked with jquery--> 
 					<a id="rec_link">Recordings</a> section. 
 				</p>  
 				<p> 
@@ -65,13 +63,13 @@
 			</section>
 		</article>
 		
-		<article id='about'>
+		<article id='about' class='init_blank'>
 			<section>
 				<!--For future Versions-->
 			</section> 
 		</article>
 		
-		<article id='projects'>
+		<article id='projects' class='init_blank'>
 			<section>
 				<h2>The Weather Sound</h2> 
 				<p>
@@ -110,9 +108,20 @@
 			</section> 
 		</article>
 		
-		<article id='recordings'>
+		<article id='recordings' class='init_blank'>
 			<section>
-				<h2>Recordings</h2>
+				<section id="album_art">
+				
+				</section>
+				
+				<section id="album_details">
+				
+				</section>
+				
+				<section id="other_albums"> 
+				
+				</section> 
+				
 				<img class="album" src="img/thegreat.jpg" alt="The Great Emulsifier Album Cover"> 
 				<img class="album" src="img/paradigm.jpg" alt="Paradigm Album Cover">
 				<img class="album" src="img/submission.jpg" alt="In Submission Album Cover">
@@ -122,7 +131,7 @@
 			</section>
 		</article>
 		
-		<article id='experience'>
+		<article id='experience' class='init_blank'>
 			<section> 
 				<h2 class='expheader'>Education</h2>
 				
@@ -174,7 +183,7 @@
 			</section>
 		</article>
 		
-		<article id='contact'>
+		<article id='contact' class='init_blank'>
 			<section id='contactbox'>
 				<button id="addressbutton">
 					<h3 class="buttontext">Address</h3>
@@ -209,7 +218,7 @@
 				 
 			</section>
 			
-			<section id="addressbox">
+			<section id="addressbox" class='init_blank'>
 					<h4 class="address"> Campus Box 0210 </h4>
 					<h4 class="address"> 950 Main St. </h4> 
 					<h4 class="address"> Worcester, MA 01610 </h4>
@@ -217,7 +226,7 @@
 				
 		</article>
 		
-		<footer> 
+		<footer class='init_blank'> 
 			<h6 id="f"> All Rights Reserved 2013 </h6> 
 		</footer>
 	</body>
