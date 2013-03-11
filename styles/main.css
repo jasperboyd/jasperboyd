@@ -33,9 +33,9 @@ header
 {
 	width: auto;
 	margin: 25px 25px 0px 25px;
-	border-top: 2px solid #644436;
-	border-left: 2px solid #644436;
-	border-right: 2px solid #644436;
+	border-top: 1px solid #644436;
+	border-left: 1px solid #644436;
+	border-right: 1px solid #644436;
 	background-color: #644436; 
 	-moz-border-radius: 20px 20px 0 0; 
 	-webkit-border-radius: 20px 20px 0 0; 
@@ -54,7 +54,7 @@ header
 article
 { 
 	padding: 10px;
-	border: 2px solid #644436;
+	border: 1px solid #644436;
 	background-color: #7EB5D6; 
 	-moz-border-radius: 0 0 20px 20px; 
 	-webkit-border-radius: 0 0 20px 20px; 
@@ -68,7 +68,7 @@ section
 #welcome
 {
 
-	height: 1000px;
+	height: 900px;
 }
 
 #welcomeheader
@@ -82,6 +82,7 @@ section
 	right: 70px;
 	top: 290px;
 	border-radius: 30px;
+	border: 1px solid #644436;
 }
 
 /* Recordings *****************************************************************/
