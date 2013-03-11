@@ -97,7 +97,7 @@ $(document).ready(function(){
 					$boot.fadeTo(fade, .5, function(){
 						$boot.fadeTo(fade, 0, function(){
 							$boot.empty();
-							$body.css('background-color', '#2A75A9');
+							$body.css('background-color', '#274257');
 							$header.fadeIn(fade);
 							$balls.fadeIn(fade);
 							$footer.fadeIn(fade, function(){ 

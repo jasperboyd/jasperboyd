@@ -7,7 +7,7 @@ article, section, aside, hgroup, nav, header, footer, figure, figcaption {
 /* Background ************************************************************/
 body
 {
-	background-color: #2A75A9;
+	background-color: #274257;
 }
 
 article,
@@ -36,7 +36,7 @@ header
 	border-top: 1px solid #644436;
 	border-left: 1px solid #644436;
 	border-right: 1px solid #644436;
-	background-color: #644436; 
+	background-color: #644436;
 	-moz-border-radius: 20px 20px 0 0; 
 	-webkit-border-radius: 20px 20px 0 0; 
 }
@@ -53,9 +53,9 @@ header
 /* Content *****************************************************************/
 article
 { 
-	padding: 40px;
-	border: 1px solid #644436;
-	background-color: #7EB5D6; 
+	padding: 0px 40px 40px 40px;
+	border: 1px solid #8F6048;
+	background-color: #2A75A9; 
 	-moz-border-radius: 0 0 20px 20px; 
 	-webkit-border-radius: 0 0 20px 20px; 
 }
@@ -74,6 +74,7 @@ section
 
 #welcomepic
 {
+	margin-top: 10px;
 	float: right; 
 	border-radius: 30px;
 	border: 1px solid #644436;
@@ -94,7 +95,8 @@ section
 
 #albumgrid
 {
-	margin-left: 45px;
+	margin-top: 20px;
+	margin-left: 65px;
 }
 /* Experience *****************************************************************/
 .school
@@ -134,17 +136,16 @@ a,
 li
 { 
 	font-family: 'Open Sans Condensed', sans-serif; 
-	color: #644436;
+	color: #7EB5D6;
 }
 
 h2
 {
 	color:#7EB5D6;
-	text-shadow: 3px 3px 3px #644436;
-	font-size: 50px;
-	line-height: 50px;
+	text-shadow: 2px 2px 2px #644436;
+	font-size: 40px;
 	letter-spacing: 10px;
-	text-align: center;
+	text-align: left;
 		
 }
 
@@ -175,7 +176,7 @@ h5
 p
 {
 	font-size: 22px;
-	color: #644436;
+	color: #7EB5D6;
 	text-align:justify;
 	text-justify:inter-word;
 	line-height:200%;
@@ -183,7 +184,7 @@ p
 
 a
 {
-	color: #644436; 
+	color: #7EB5D6; 
 	text-decoration: none; 
 	text-shadow: 1px 1px 1px #DFC184; 
 }
