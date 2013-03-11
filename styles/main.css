@@ -31,12 +31,9 @@ nav
 /* Title *****************************************************************/
 header
 {
-	width: auto;
-	margin: 25px 25px 0px 25px;
-	border-top: 1px solid #2A75A9;
-	border-left: 1px solid #2A75A9;
-	border-right: 1px solid #2A75A9;
-	background-color: #644436;
+	width: 500px;
+	margin: 25px auto 0px auto;
+	background-color: #274257;
 	-moz-border-radius: 20px 20px 0 0; 
 	-webkit-border-radius: 20px 20px 0 0; 
 }
@@ -56,8 +53,7 @@ article
 	padding: 0px 40px 40px 40px;
 	border: 1px solid #7EB5D6;
 	background-color: #2A75A9; 
-	-moz-border-radius: 0 0 20px 20px; 
-	-webkit-border-radius: 0 0 20px 20px; 
+	border-radius: 50px;
 }
 
 .more_padding
@@ -208,18 +204,24 @@ li
 #indicator
 {  
 	margin: 0px auto 0px auto; 
-    width: auto;  
-    height: 30px; 
+	background-color: #644436;
+    width: 350px;  
+    height: 35px; 
     text-align: center;  
     font-size: 20px;  
     letter-spacing: 25px;  
     white-space: nowrap;  
     line-height: 12px;  
     overflow: hidden;  
+    border-top: 1px solid #7EB5D6;
+    border-left:  1px solid #7EB5D6;
+    border-right:  1px solid #7EB5D6;
+    -moz-border-radius: 20px 20px 0 0; 
+	-webkit-border-radius:20px 20px 0 0; 
 }  
   
 .ball { 
-	margin: 5px;
+	margin: 10px;
     width: 15px;  
     height: 15px;  
     border: solid 1px #644436;  
