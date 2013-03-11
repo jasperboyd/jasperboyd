@@ -33,9 +33,9 @@ header
 {
 	width: auto;
 	margin: 25px 25px 0px 25px;
-	border-top: 1px solid #644436;
-	border-left: 1px solid #644436;
-	border-right: 1px solid #644436;
+	border-top: 1px solid #2A75A9;
+	border-left: 1px solid #2A75A9;
+	border-right: 1px solid #2A75A9;
 	background-color: #644436;
 	-moz-border-radius: 20px 20px 0 0; 
 	-webkit-border-radius: 20px 20px 0 0; 
@@ -54,15 +54,15 @@ header
 article
 { 
 	padding: 0px 40px 40px 40px;
-	border: 1px solid #8F6048;
+	border: 1px solid #7EB5D6;
 	background-color: #2A75A9; 
 	-moz-border-radius: 0 0 20px 20px; 
 	-webkit-border-radius: 0 0 20px 20px; 
 }
 
-section
+.more_padding
 {
-	/*padding: 20px;*/
+	padding: 20px;
 }
 /* Welcome ********************************************************************/
 
@@ -109,11 +109,6 @@ section
 	/*text-align: center;*/
 }
 
-.expsection
-{
-	padding: 20px;
-}
-
 .pos_title,
 .more_info
 {
@@ -124,6 +119,12 @@ section
 .organization
 {
 	font-size: 20px; 
+}
+
+#pdf_resume
+{
+	float: right;
+	margin-top: 35px; 
 }
 
 /*General Content*/
@@ -197,7 +198,7 @@ a:hover
 
 li
 {
-	font-size: 16px; 
+	font-size: 14px; 
 	letter-spacing: 2px; 
 	line-height: 175%;
 	margin-left: 40px; 
@@ -225,7 +226,7 @@ li
     display: inline-block;  
     vertical-align: middle; 
     border-radius: 8px;
-	background-color: #7EB5D6; 
+	background-color: #274257; 
 } 
 
 .ballhover { 
@@ -250,6 +251,7 @@ li
 {
 	text-decoration: none;
 	text-align: center;
+	text-shadow: 2px 2px 2px #274257;
 	letter-spacing: 3px;
 	font-size: 20px;
 }
@@ -257,11 +259,11 @@ li
 
 button
 {
-	margin: 5px;
+	margin: 40px 5px 0 5px;
 	display: inline-block;
 	vertical-align: middle;
-	background-color: #7EB5D6;
-	border: 1px solid #644436;
+	border: solid 1px #274257;
+	background-color: #644436;
 	border-radius: 15px;
 	width: auto; 
 	height: auto;

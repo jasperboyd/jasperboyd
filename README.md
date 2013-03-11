@@ -12,9 +12,6 @@ __Version:__ 0.0
 		
 	- Projects
 		- Add Github button link
-	- Experience
-		- Add PDF version of resume
-		- Streamline Style
 	- Contact
 		- Add Address
 	- SEO 
