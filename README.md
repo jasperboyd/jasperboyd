@@ -16,7 +16,6 @@ __Version:__ 0.0
 		- Add Github button link
 	- Recordings
 		- More info
-		- Expanding Album art for Recording section
 	- Experience
 		- Add PDF version of resume
 		- Streamline Style

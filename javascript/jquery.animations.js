@@ -31,6 +31,7 @@ $(document).ready(function(){
 				var $projects = $('#projects'); 
 				var $pro_link = $('#pro_link'); 
 				var $recordings = $('#recordings');
+				var $albums = $('.album');
 				var $rec_link = $('#rec_link');  
 				var $experience = $('#experience'); 
 				var $exp_link = $('#exp_link'); 
@@ -64,11 +65,30 @@ $(document).ready(function(){
 				
 				$(balls[cursor]).toggleClass('selected');
 				
+				var renderAlbumArt = function(){
+					var inner_w = $recordings.innerWidth(); 
+					inner_w /= 3; 
+					album_w = inner_w; 
+					album_w -= 20; //padding
+					album_w -= 18; //border
+					$albums.css('width', album_w);
+					$albums.css('height', album_w); 
+				}
+				
+				//Changes the page hiding and showing the content
 				var render = function(t, c){
 					$(pages[t]).slideUp(fade/2);
 					$(balls[t]).toggleClass('selected');
+					
+					switch(c){
+						case 2: 
+							renderAlbumArt();
+							break; 
+					
+					}
 					$(pages[c]).delay(fade/2).slideDown(fade/2);
 					$(balls[c]).toggleClass('selected');
+					
 				}
 				
 				//Keyboard Navigation
@@ -251,4 +271,9 @@ $(document).ready(function(){
 					cursor = 4; 
 					render(temp, cursor); 
 				}); 
+				
+				//Resize Function for Album Art
+				$(window).resize(function(){ 
+					renderAlbumArt();
+				});
 			});
