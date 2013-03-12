@@ -10,8 +10,6 @@ __Version:__ 0.0
 
 ##Todo:
 		
-	- Contact
-		- Add Address
 	- SEO 
 	- jquery Optimization 
 		- Place repeated code into functions
@@ -31,6 +29,8 @@ __Version:__ 0.0
 	- Interactive Resume
 	- Dedicated recording pages
 	- Bandcamp player for albums
+	- Store
+	
 	
 ##Bugs:
 	

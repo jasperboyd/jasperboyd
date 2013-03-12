@@ -18,32 +18,59 @@ $(document).ready(function(){
 				balls[4] = '#b5';
 				
 				//cache variables for optimized performance
+				//organize variables by page
+				
+				//General
 				var $body = $('body'); 
+				var $footer = $('#f'); 
+				
+				//Boot
 				var $boot = $('#boot');
 				var $button = $('button');
-				var $email = $('#emailbutton');
+				
+				
+				//Title
 				var $header = $('header');
 				var $title = $('#title');
+				
+				//Nav
 				var $ind = $('#indicator'); 
 				var $balls = $('.ball'); 
+				
+				//Welcome
 				var $welcome = $('#welcome');
 				var $welcome_h = $('#welcomeheader'); 
 				var $welcome_c = $('#welcomecontent'); 
 				var $welcome_t = $('#welcometext'); 
 				var $welcome_p = $('#welcomepic'); 
-				var $about = $('#about');
+				
+				//About
+				//var $about = $('#about');
+				
+				//Project
 				var $projects = $('#projects'); 
 				var $pro_link = $('#pro_link'); 
+				
+				//Recording
 				var $recordings = $('#recordings');
 				var $albums = $('.album');
-				var $rec_link = $('#rec_link');  
+				var $album_g = $('#albumgrid'); 
+				var $rec_link = $('#rec_link'); 
+				var $rec_text = $('#rec_text');  
+				var $in_sub = $('#in_sub'); 
+				var $in_sub_l = $('#in_sub_link'); 
+				
+				//Experience
 				var $experience = $('#experience'); 
 				var $exp_link = $('#exp_link'); 
+				
+				//Contact
 				var $contact = $('#contact');
-				var $con_link = $('#con_link');
+				var $con_link = $('.con_link');
 				var $address = $('#addressbox'); 
-				var $address_b = $('#addressbutton'); 
-				var $footer = $('#f');  
+				var $address_b = $('#addressbutton');
+				var $email = $('#emailbutton'); 
+				 
 				
 				//init to blank page
 				$('.init_blank').css('display', 'none'); 
@@ -67,12 +94,13 @@ $(document).ready(function(){
 				
 				var renderAlbumArt = function(){
 					var inner_w = $recordings.innerWidth(); 
-					inner_w /= 3; 
-					album_w = inner_w; 
+					album_w = inner_w/3; 
 					album_w -= 80; //padding
 					album_w -= 8; //border
 					$albums.css('width', album_w);
-					$albums.css('height', album_w); 
+					$albums.css('height', album_w);
+					inner_w -= 180; //offset
+					$album_g.css('width', inner_w); 
 				}
 				
 				//Changes the page hiding and showing the content
@@ -289,6 +317,14 @@ $(document).ready(function(){
 					render(temp, cursor); 
 				}); 
 				
+				$in_sub_l.mouseover(function(){ 
+					$in_sub.css('border', '1px solid #DFC184')
+				});
+				
+				$in_sub_l.mouseleave(function(){ 
+					$in_sub.css('border', '0px solid #DFC184')
+				});
+
 				//Resize Function for Album Art
 				$(window).resize(function(){ 
 					switch(cursor){

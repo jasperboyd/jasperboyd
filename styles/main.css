@@ -131,7 +131,7 @@ article
 /* Recordings *****************************************************************/
 .album 
 {
-	margin: 5px;
+	margin: 10px;
 	border: 1px solid #644436;
 	border-radius: 10px;
 }
@@ -143,8 +143,7 @@ article
 
 #albumgrid
 {
-	margin-top: 20px;
-	margin-left: 65px;
+	margin: 10px auto 10px auto; 
 }
 /* Experience *****************************************************************/
 .school
