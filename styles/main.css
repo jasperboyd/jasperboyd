@@ -388,6 +388,12 @@ button
 { 
 	text-align: center;
 }
+
+.address
+{
+	color: #DFC184; 
+	text-shadow: 2px 2px 2px #644436;
+}
 /*General Content*/
 h2,
 h3,

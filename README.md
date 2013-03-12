@@ -10,7 +10,7 @@ __Version:__ 1.0
 
 ##Todo:
 	- Refine CSS 
-	- Create File Structure
+	- Create Hierarchial Structure
 	- Remove javascript dependency
 	- test other browsers 
 	- Cleanup tumblr code
@@ -31,6 +31,7 @@ __Version:__ 1.0
 	
 	
 ##Bugs:
+	- PDF won't load
 	
 
 ---
