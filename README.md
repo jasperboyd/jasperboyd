@@ -10,13 +10,9 @@ __Version:__ 0.0
 
 ##Todo:
 		
-	- SEO 
-	- jquery Optimization 
-		- Place repeated code into functions
-	- Cleanup CSS/HTML
-	- browser debugging
 	- proper footer
 	- restart button 
+		-jquery
 	
 ##Features for Later Versions: 
 

@@ -1,3 +1,5 @@
+//Author:   Jasper Boyd
+//Date: 	03/12/2013
 $(document).ready(function(){		
 				//pages array for navigation
 				var pages = new Array();
@@ -21,6 +23,7 @@ $(document).ready(function(){
 				//organize variables by page
 				
 				//General
+				var $restart_b = $('#restart_b'); 
 				var $body = $('body'); 
 				var $footer = $('#f'); 
 				
@@ -127,11 +130,12 @@ $(document).ready(function(){
 						$boot.fadeTo(fade, 0, function(){
 							$boot.empty();
 							$body.css('background-color', '#274257');
+							$restart_b.fadeIn(fade);
 							$header.fadeIn(fade);
 							$balls.fadeIn(fade);
 							$footer.fadeIn(fade, function(){ 
 								render(temp, cursor); 
-								$welcome.delay(100).fadeIn(fade);
+								$welcome.delay(1000).fadeIn(fade);
 								$(balls[0]).toggleClass('selected');
 							});
 						});
@@ -226,9 +230,15 @@ $(document).ready(function(){
 				
 				$button.mouseleave(function(){ 
 					$(this).removeClass('buttonhover');
-				}); 
+				});
+				
+				$restart_b.click(function(){
+					location.reload();
+				});  
 				
 				//Links
+				
+				//Experience
 				$exp_link.mouseover(function(){
 					$title.fadeOut(fade/4, function(){
 						$title.text('Experience');
@@ -251,6 +261,7 @@ $(document).ready(function(){
 					render(temp, cursor); 
 				}); 
 				
+				//Projects
 				$pro_link.mouseover(function(){
 					$title.fadeOut(fade/4, function(){
 						$title.text('Projects');
@@ -273,6 +284,7 @@ $(document).ready(function(){
 					render(temp, cursor); 
 				}); 
 				
+				//Recordings
 				$rec_link.mouseover(function(){
 					$title.fadeOut(fade/4, function(){
 						$title.text('Recordings');
@@ -295,6 +307,7 @@ $(document).ready(function(){
 					render(temp, cursor); 
 				}); 
 				
+				//Contact
 				$con_link.mouseover(function(){
 					$title.fadeOut(fade/4, function(){
 						$title.text('Recordings');
@@ -317,6 +330,7 @@ $(document).ready(function(){
 					render(temp, cursor); 
 				}); 
 				
+				//In Submission
 				$in_sub_l.mouseover(function(){ 
 					$in_sub.css('border', '1px solid #DFC184')
 				});

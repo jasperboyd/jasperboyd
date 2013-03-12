@@ -1,3 +1,9 @@
+/*
+ * Jasper Boyd 
+ * 03 - 12 - 2013 
+ *
+ */
+
 /*http://www.colorcombos.com/color-schemes/424/ColorCombo424.html*/
 
 /* HTML5 Support *********************************************************/
@@ -28,6 +34,26 @@ nav
 	text-align: center;
 }
 
+#restart_b
+{
+	position: absolute;
+	top: 44px; 
+	right: 200px;
+	border-top: 1px solid #8F6048;
+    border-left:  1px solid #8F6048;
+    border-right:  1px solid #8F6048;
+    border-bottom: 0px;
+     -moz-border-radius: 10px 10px 0 0; 
+	-webkit-border-radius:10px 10px 0 0; 
+	height: 30px;
+	padding: 5px;
+}
+
+#rb_text
+{	
+	font-size: 15px;
+	letter-spacing: 4px;
+}
 /* Title *****************************************************************/
 header
 {
@@ -132,13 +158,18 @@ article
 .album 
 {
 	margin: 10px;
-	border: 1px solid #644436;
+	border: 2px solid #644436;
 	border-radius: 10px;
 }
 
 .album:hover
 {
-	border: 1px solid #DFC184;
+	border: 2px solid #DFC184;
+}
+
+#in_sub:hover
+{
+	border: 2px solid #DFC184;
 }
 
 #albumgrid
@@ -205,7 +236,7 @@ button
 	margin: 40px 5px 0 5px;
 	display: inline-block;
 	vertical-align: middle;
-	border: solid 1px #274257;
+	border: solid 2px #274257;
 	background-color: #644436;
 	border-radius: 15px;
 	width: auto; 
@@ -214,7 +245,7 @@ button
 }
 
 .buttonhover { 
-	border: solid 1px #DFC184;
+	border: solid 2px #DFC184;
 	background-color: #644436;
 } 
 
