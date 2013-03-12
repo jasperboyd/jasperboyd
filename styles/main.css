@@ -47,6 +47,46 @@ header
 	text-align: center;
 }
 
+/* Navigation *************************************************************/
+#indicator
+{  
+	margin: 0px auto 0px auto; 
+	background-color: #644436;
+    width: 350px;  
+    height: 35px; 
+    text-align: center;  
+    font-size: 20px;  
+    letter-spacing: 25px;  
+    white-space: nowrap;  
+    line-height: 12px;  
+    overflow: hidden;  
+    border-top: 1px solid #8F6048;
+    border-left:  1px solid #8F6048;
+    border-right:  1px solid #8F6048;
+    -moz-border-radius: 20px 20px 0 0; 
+	-webkit-border-radius:20px 20px 0 0; 
+}  
+  
+.ball { 
+	margin: 10px;
+    width: 15px;  
+    height: 15px;  
+    border: solid 1px #8F6048;  
+    display: inline-block;  
+    vertical-align: middle; 
+    border-radius: 8px;
+	background-color: #274257; 
+} 
+
+.ballhover { 
+	border: solid 1px #DFC184;
+} 
+
+.selected {
+	background-color: #DFC184;
+	border: solid 1px #7EB5D6;
+}
+
 /* Content *****************************************************************/
 article
 { 
@@ -135,6 +175,55 @@ article
 	margin-top: 35px; 
 }
 
+/* Contact ****************************************************************/
+
+#contactbox
+{
+	margin: 0px auto 0px auto; 
+	width: auto;
+	text-align: center;
+	white-space: nowrap; 
+}
+
+#addressbox 
+{ 
+	text-align: center;
+}
+
+/* Button *****************************************************************/
+.buttontext
+{
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 2px 2px 2px #274257;
+	letter-spacing: 3px;
+	font-size: 20px;
+}
+
+
+button
+{
+	margin: 40px 5px 0 5px;
+	display: inline-block;
+	vertical-align: middle;
+	border: solid 1px #274257;
+	background-color: #644436;
+	border-radius: 15px;
+	width: auto; 
+	height: auto;
+	padding: 10px;
+}
+
+.buttonhover { 
+	border: solid 1px #DFC184;
+	background-color: #644436;
+} 
+
+.buttonhover h3 { 
+	color: #DFC184;
+	text-shadow: 1px 1px 1px #7EB5D6; 
+}
+
 /*General Content*/
 h2,
 h3,
@@ -213,86 +302,8 @@ li
 }
 
 
-#indicator
-{  
-	margin: 0px auto 0px auto; 
-	background-color: #644436;
-    width: 350px;  
-    height: 35px; 
-    text-align: center;  
-    font-size: 20px;  
-    letter-spacing: 25px;  
-    white-space: nowrap;  
-    line-height: 12px;  
-    overflow: hidden;  
-    border-top: 1px solid #8F6048;
-    border-left:  1px solid #8F6048;
-    border-right:  1px solid #8F6048;
-    -moz-border-radius: 20px 20px 0 0; 
-	-webkit-border-radius:20px 20px 0 0; 
-}  
-  
-.ball { 
-	margin: 10px;
-    width: 15px;  
-    height: 15px;  
-    border: solid 1px #8F6048;  
-    display: inline-block;  
-    vertical-align: middle; 
-    border-radius: 8px;
-	background-color: #274257; 
-} 
-
-.ballhover { 
-	border: solid 1px #DFC184;
-} 
-
-.selected {
-	background-color: #DFC184;
-	border: solid 1px #7EB5D6;
-}
-
-#contactbox
-{
-	margin: 0px auto 0px auto; 
-	width: auto;
-	text-align: center;
-	white-space: nowrap; 
-}
-
-/* Button *****************************************************************/
-.buttontext
-{
-	text-decoration: none;
-	text-align: center;
-	text-shadow: 2px 2px 2px #274257;
-	letter-spacing: 3px;
-	font-size: 20px;
-}
 
 
-button
-{
-	margin: 40px 5px 0 5px;
-	display: inline-block;
-	vertical-align: middle;
-	border: solid 1px #274257;
-	background-color: #644436;
-	border-radius: 15px;
-	width: auto; 
-	height: auto;
-	padding: 10px;
-}
-
-.buttonhover { 
-	border: solid 1px #DFC184;
-	background-color: #644436;
-} 
-
-.buttonhover h3 { 
-	color: #DFC184;
-	text-shadow: 1px 1px 1px #7EB5D6; 
-}
 
 /* Footer ******************************************************************/
 footer

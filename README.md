@@ -17,6 +17,8 @@ __Version:__ 0.0
 		- Place repeated code into functions
 	- Cleanup CSS/HTML
 	- browser debugging
+	- proper footer
+	- restart button 
 	
 ##Features for Later Versions: 
 

@@ -42,6 +42,7 @@ $(document).ready(function(){
 				var $contact = $('#contact');
 				var $con_link = $('#con_link');
 				var $address = $('#addressbox'); 
+				var $address_b = $('#addressbutton'); 
 				var $footer = $('#f');  
 				
 				//init to blank page
@@ -300,5 +301,10 @@ $(document).ready(function(){
 					}
 				});
 				
+				$address_b.click(function(){
+					$address.fadeToggle(fade, 'swing');
+				});
+				
+				//begin the program
 				boot();
 			});
