@@ -1,0 +1,40 @@
+@-moz-document url-prefix() {
+    			.buttontext
+				{
+					text-decoration: none;
+					text-align: center;
+					text-shadow: 2px 2px 2px #274257;
+					letter-spacing: 3px;
+					font-size: 15px;
+				}
+
+
+				button
+				{
+					margin: 40px 5px 0 5px;
+					border: solid 2px #644436;
+					background-color: #644436;
+					border-radius: 15px;
+					width: auto; 
+					height: 60px;
+					padding: 0 3px 0 3px;
+		
+				}
+
+				.buttonhover { 
+					border: solid 2px #DFC184;
+					background-color: #644436;
+	
+
+				} 
+
+				.buttonhover h3 { 
+					color: #DFC184;
+					text-shadow: 1px 1px 1px #7EB5D6; 
+				}
+				
+				#rb_text
+				{	
+					font-size: 10px;
+				}
+}

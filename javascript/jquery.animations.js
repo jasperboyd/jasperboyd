@@ -91,9 +91,10 @@ $(document).ready(function(){
 					i_w /= 2; 
 					i_w -= 40; 
 					$welcome_h.css('width', 2*i_w); 
-					var t_w = (3*i_w)/2; 
-					t_w -= 25; 
-					$welcome_t.css('width', t_w);
+					var t_w = i_w*2;
+					t_w /= 3;  
+					t_w -= 40;
+					$welcome_t.css('width', 2*t_w);
 					i_w /= 2; 
 					i_w += 60;
 					$welcome_p.css('width', i_w);

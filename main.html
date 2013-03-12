@@ -19,6 +19,8 @@
 		<meta name="keywords" content="Jasper Boyd, Jasper Boyd Music, Jasper Boyd Developer">
 		<meta name="author" content="Jasper Boyd">
 		<link type="text/css" rel="stylesheet" href="styles/main.css"> 
+		<!--Firefox only Styles-->
+		<link type="text/css" rel="stylesheet" href="styles/ff.css">
 		<link href='http://fonts.googleapis.com/css?family=Wire+One|Open+Sans:400,300|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="plugins/jquery.backstrech.js"></script>
@@ -26,19 +28,20 @@
 	</head> 
 	 
 	<body>
+		<!--Refresh Button--> 
 		<button id="restart_b" class='init_blank'> 
-			<h3 id="rb_text">Restart</h3>
+			<h3 id="rb_text">Refresh</h3>
 		</button> 
-	
+		<!--Header--> 
 		<header class='init_blank'>
 			<h1 id="title"> Jasper Boyd </h1>
-			<div id="indicator">
+			<nav id="indicator">
 				<div id="b1" class="ball"></div>
 				<div id="b2" class="ball"></div>
 				<div id="b3" class="ball"></div>
 				<div id="b4" class="ball"></div>					
 				<div id="b5" class="ball"></div>
-			</div>
+			</nav>
 		</header>
 		
 		<div id='boot' class='init_blank'>
@@ -46,8 +49,7 @@
 		</div> 
 	
 		<article id='welcome' class='init_blank'>					 
-			<section id='welcomecontent'>
-				
+			<section id='welcomecontent'>	
 				<section id="welcomeheader">
 					<h2>Welcome</h2>
 				</section>
@@ -72,17 +74,13 @@
 					that information can be found in the 
 					<a id="rec_link">Recordings</a> section. 
 				</p>  
-				</section> 
-				<section id='welcomefooter'>
 				<p> 
 					If you have any questions feel free to 
 					<a class="con_link">Contact</a> me. 
 				</p>
-				</section>
-				
-				
+				</section> 
+				<section class='clear_both'></section>
 			</section>		
-
 		</article>
 		
 		<article id='about' class='init_blank'>
@@ -197,6 +195,14 @@
 					<h4 class="school"> Brunswick High School - Class of 2011 </h4>
 					<h4 class="school"> Clark University - Class of 2015 </h4> 
 					<h5 class="more_info"> Current GPA: 3.3 </h5>
+					<h5 class="more_info"> Current Courses: </h5> 
+					<ul id="courses">
+						<li class="course">Computer Graphics</li>
+						<li class="course">Operating Systems</li>
+						<li class="course">Analysis of Programming Languages</li>
+						<li class="course">Algorithms</li>
+						<li class="course">Data Structures</li>
+					</ul> 
 				</section> 
 				
 				<h2>Work</h2> 
@@ -204,36 +210,36 @@
 				<section class='expsection'>
 					<h4 class='organization'> Clark University - Visual and Performing Arts Department </h4>
 					<h5 class='pos_title'> Razzo Hall Technician </h5> 
-					<ul id="#razzo"> 
-						<li>Light and Sound Production</li>
-						<li>Recording Engineering</li>
-						<li>Stage Managing</li> 
+					<ul id="razzo"> 
+						<li class='job_duties'>Light and Sound Production</li>
+						<li class='job_duties'>Recording Engineering</li>
+						<li class='job_duties'>Stage Managing</li> 
 					</ul> 
 					<h5 class='pos_title'> Events Office Worker </h5> 
 					<ul id="#eventsoffice"> 
-						<li>Events Promotion</li>
-						<li>Ushering</li> 
+						<li class='job_duties'>Events Promotion</li>
+						<li class='job_duties'>Ushering</li> 
 					</ul> 
 					<h4 class='organization'> Saltwater Celtic Music Festival </h4> 
 					<h5 class='pos_title'> Communications Associate (Intern) </h5> 	
 					<ul id="#saltwater"> 
-						<li>Sold Sponsorship Plans</li>
-						<li>Organized Volunteers</li> 
-						<li>Stage Managed the festival</li> 
+						<li class='job_duties'>Sold Sponsorship Plans</li>
+						<li class='job_duties'>Organized Volunteers</li> 
+						<li class='job_duties'>Stage Managed the festival</li> 
 					</ul> 	
 					<h4 class='organization'> Clarks </h4> 		
 					<h5 class='pos_title'> Sales Associate </h5> 
 					<ul id="#clarks">
-						<li>Sales</li>
-						<li>Customer Service</li> 
+						<li class='job_duties'>Sales</li>
+						<li class='job_duties'>Customer Service</li> 
 					</ul> 
 					<h4 class='organization'> The Music Center </h4> 	
 					<h5 class='pos_title'> Music Instructor </h5> 
 					<ul id="#tmc">
-						<li>Guitar</li>
-						<li>Upright & Electric Bass</li>  
-						<li>Piano</li>
-						<li>Ukelele</li> 
+						<li class='job_duties'>Guitar</li>
+						<li class='job_duties'>Upright & Electric Bass</li>  
+						<li class='job_duties'>Piano</li>
+						<li class='job_duties'>Ukelele</li> 
 					</ul> 
 				</section>  
 				</section>  
