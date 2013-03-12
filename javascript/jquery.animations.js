@@ -119,16 +119,14 @@ $(document).ready(function(){
 							} else {
 								--cursor;
 							}
+							render(temp, cursor); 
 							break;
 						case 39://right arrow
 							temp = cursor; 
 							cursor = ++cursor % pages.length;
-							break;
-						default:
-							//blank for now
+							render(temp, cursor); 
 							break;
 					}
-					render(temp, cursor); 
 				});
 				
 				

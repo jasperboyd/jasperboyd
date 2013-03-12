@@ -76,6 +76,18 @@ article
 	border: 1px solid #644436;
 }
 
+#welcomefooter
+{
+	clear: both;
+}
+
+/* Projects ********************************************************************/
+
+#github_link
+{
+	float: right; 
+}
+
 /* Recordings *****************************************************************/
 .album 
 {

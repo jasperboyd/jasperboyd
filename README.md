@@ -10,8 +10,6 @@ __Version:__ 0.0
 
 ##Todo:
 		
-	- Projects
-		- Add Github button link
 	- Contact
 		- Add Address
 	- SEO 
