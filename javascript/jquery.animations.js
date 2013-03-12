@@ -25,7 +25,7 @@ $(document).ready(function(){
 				//General
 				var $restart_b = $('#restart_b'); 
 				var $body = $('body'); 
-				var $footer = $('#f'); 
+				var $footer = $('footer'); 
 				
 				//Boot
 				var $boot = $('#boot');
@@ -91,8 +91,12 @@ $(document).ready(function(){
 					i_w /= 2; 
 					i_w -= 40; 
 					$welcome_h.css('width', 2*i_w); 
-					$welcome_t.css('width', (3*i_w)/2);
-					$welcome_p.css('width', i_w/2);
+					var t_w = (3*i_w)/2; 
+					t_w -= 25; 
+					$welcome_t.css('width', t_w);
+					i_w /= 2; 
+					i_w += 60;
+					$welcome_p.css('width', i_w);
 				}
 				
 				var renderAlbumArt = function(){

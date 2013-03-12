@@ -11,8 +11,6 @@ __Version:__ 0.0
 ##Todo:
 		
 	- proper footer
-	- restart button 
-		-jquery
 	
 ##Features for Later Versions: 
 
