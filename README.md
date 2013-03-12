@@ -4,13 +4,17 @@ jasperboyd
 
 __Summary:__ A site to serve as my proffessional landing page on the internet. 
 
-__Version:__ 0.0
+__Version:__ 1.0
 
 ---
 
 ##Todo:
-		
-	- proper footer
+	- Refine CSS 
+	- Create File Structure
+	- Remove javascript dependency
+	- test other browsers 
+	- Cleanup tumblr code
+	- Centralized Image hosting
 	
 ##Features for Later Versions: 
 
@@ -28,8 +32,7 @@ __Version:__ 0.0
 	
 ##Bugs:
 	
-	- Bug with the navigation circles
-		-Only with irregular input
+
 ---
 
 	 
