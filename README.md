@@ -2,7 +2,7 @@ jasperboyd
 ==========
 ######Jasper Boyd
 
-__URL:__ [http://www.jasperboyd.com](http://www.jasperboyd.com)
+__URL:__ [http://www.jasperboyd.com](http://jasperboyd.com)
 
 __Summary:__ A site to serve as my proffessional landing page on the internet. 
 
