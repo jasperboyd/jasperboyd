@@ -66,6 +66,25 @@ $(document).ready(function(){
 				//Experience
 				var $experience = $('#experience'); 
 				var $exp_link = $('#exp_link'); 
+				var $courses_expand = $('#current_c');
+				var $courses = $('#courses');  
+				var $razzo_expand = $('#razzo_exp'); 
+				var $razzo = $('#razzo');
+				var $events_expand = $('#office_exp'); 
+				var $events = $('#eventsoffice'); 
+				var $swater_expand = $('#salt_exp'); 
+				var $swater = $('#swater'); 
+				var $clarks_expand = $('#clarks_exp');
+				var $clarks = $('#clarks');
+				var $tmc_expand = $('#tmc_exp');
+				var $tmc = $('#tmc');   
+				
+				var courses_exp = 0; 
+				var razzo_exp = 0; 
+				var events_exp = 0; 
+				var swater_exp = 0; 
+				var clarks_exp = 0; 
+				var tmc_exp = 0;
 				
 				//Contact
 				var $contact = $('#contact');
@@ -343,6 +362,73 @@ $(document).ready(function(){
 				$in_sub_l.mouseleave(function(){ 
 					$in_sub.css('border', '0px solid #DFC184')
 				});
+				
+				//Experience Page
+				$courses_expand.click(function(){
+					$courses.fadeToggle(fade);
+					if (courses_exp === 0){
+						courses_exp = 1; 
+						$courses_expand.text('-');
+					} else { 
+						courses_exp = 0; 
+						$courses_expand.text('+');
+					}
+				}); 
+				
+				$razzo_expand.click(function(){ 
+					$razzo.fadeToggle(fade);
+					if (razzo_exp === 0){
+						razzo_exp = 1; 
+						$razzo_expand.text('-');
+					} else { 
+						razzo_exp = 0; 
+						$razzo_expand.text('+');
+					}
+				}); 
+				
+				$events_expand.click(function(){ 
+					$events.fadeToggle(fade);
+					if (events_exp === 0){
+						events_exp = 1; 
+						$events_expand.text('-');
+					} else { 
+						events_exp = 0; 
+						$events_expand.text('+');
+					}
+				}); 
+				
+				$swater_expand.click(function(){
+					$swater.fadeToggle(fade); 
+					if (swater_exp === 0){
+						swater_exp = 1; 
+						$swater_expand.text('-');
+					} else { 
+						swater_exp = 0; 
+						$swater_expand.text('+');
+					}
+				}); 
+				
+				$clarks_expand.click(function(){
+					$clarks.fadeToggle(fade);
+					if (clarks_exp === 0){
+						clarks_exp = 1; 
+						$clarks_expand.text('-');
+					} else { 
+						clarks_exp = 0; 
+						$clarks_expand.text('+');
+					}
+				});  
+				
+				$tmc_expand.click(function(){ 
+					$tmc.fadeToggle(fade); 
+					if (tmc_exp === 0){
+						tmc_exp = 1; 
+						$tmc_expand.text('-');
+					} else { 
+						tmc_exp = 0; 
+						$tmc_expand.text('+');
+					}
+				}); 
 
 				//Resize Function for Album Art
 				$(window).resize(function(){ 

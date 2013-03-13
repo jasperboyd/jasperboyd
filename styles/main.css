@@ -374,6 +374,17 @@ button
 	margin-right: 60px;
 }
 
+.experience_link 
+{
+	font-size: 20px;
+	text-shadow: 0 0 0 #644436;
+}
+
+.experience_link:hover
+{
+	text-shadow: 3px 3px 3px #644436;
+}
+
 /* Contact ****************************************************************/
 
 #contactbox
