@@ -13,17 +13,15 @@ __Version:__ 1.0
 ##Todo:
 	- Refine CSS 
 	- Create Hierarchial Structure
-	- Remove javascript dependency
 	- test other browsers 
 	- Cleanup tumblr code
 	- Centralized Image hosting
-	- Interactive experience page
+	- Cleanup boot
 	
 ##Features for Later Versions: 
 
 	- About Section
 	- Tutorials 
-	- Hideable job duties and descriptions of the work
 	- SMS feature
 	- Add other font-weights
 	- Nav-bar popups
@@ -31,6 +29,7 @@ __Version:__ 1.0
 	- Dedicated recording pages
 	- Bandcamp player for albums
 	- Store
+	- Remove javascript dependency
 	
 	
 ##Bugs:
