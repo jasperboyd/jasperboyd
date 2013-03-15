@@ -1,18 +1,15 @@
 //Author:   Jasper Boyd
 //Date: 	03/12/2013
-$(document).ready(function(){		
-				//pages array for navigation
+$(document).ready(function () {
+					
+				//navigation
 				var pages = new Array();
-				
 				pages[0] = '#welcome';
 				pages[1] = '#projects';
 				pages[2] = '#recordings';
 				pages[3] = '#experience';
 				pages[4] = '#contact';
-				
-				//array of divs used to navigate
 				var balls = new Array(); 
-				
 				balls[0] = '#b1';
 				balls[1] = '#b2';
 				balls[2] = '#b3';
