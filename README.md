@@ -12,18 +12,23 @@ __Version:__ 1.0
 
 ##Todo:
 	- Refine CSS 
+<<<<<<< HEAD
 	- Create Hierarchial Structure
 	- test other browsers 
 	- Cleanup tumblr code
 	- Centralized Image hosting
+=======
+		- Add a Normalize.css
+	- Centralized Image hosting / PDF Hosting
+>>>>>>> updated todo and features
 	- Cleanup boot
 	
 ##Features for Later Versions: 
 
 	- About Section
+	- Blog (Using tumblr)
 	- Tutorials 
 	- SMS feature
-	- Add other font-weights
 	- Nav-bar popups
 	- Interactive Resume
 	- Dedicated recording pages
