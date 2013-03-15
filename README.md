@@ -11,17 +11,18 @@ __Version:__ 1.0
 ---
 
 ##Todo:
-	- Refine CSS 
-<<<<<<< HEAD
-	- Create Hierarchial Structure
-	- test other browsers 
+	- Recordings
+		- Bandcamp Player
+	- Experience
+		- More responsive 
+		- Better readibility / Styling
+		- Skills section
+	- Optimization
+		- .js
+		- .css
+		- .html
 	- Cleanup tumblr code
-	- Centralized Image hosting
-=======
-		- Add a Normalize.css
 	- Centralized Image hosting / PDF Hosting
->>>>>>> updated todo and features
-	- Cleanup boot
 	
 ##Features for Later Versions: 
 
@@ -38,7 +39,6 @@ __Version:__ 1.0
 	
 	
 ##Bugs:
-	- PDF won't load
 	
 
 ---

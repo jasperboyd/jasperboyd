@@ -129,14 +129,14 @@ $(document).ready(function () {
 				
 				//Changes the page hiding and showing the content
 				function render(t, c){					
-					$(pages[t]).slideUp(fade/2, function(){
+					$(pages[t]).slideUp(fade/3, function(){
 						switch(c){
 							case 2: 
 								renderAlbumArt();
 								break; 	
 						}	
 						$(balls[t]).toggleClass('selected');
-						$(pages[c]).delay(fade/2).slideDown(fade/2, function(){
+						$(pages[c]).delay(fade/3).slideDown(fade/3, function(){
 							renderWelcome();
 						});
 						
@@ -147,20 +147,23 @@ $(document).ready(function () {
 				
 				//Boot Animation
 				var boot = function (){
-					$boot.fadeTo(fade, .5, function(){
-						$boot.fadeTo(fade, 0, function(){
+					$boot.fadeTo(fade, 1, function(){
+						$boot.delay(fade).fadeTo(fade, 0, function(){
 							$boot.empty();
 							$body.css('background-color', '#274257');
-							$restart_b.fadeIn(fade);
-							$header.fadeIn(fade);
-							$balls.fadeIn(fade);
-							$footer.fadeIn(fade, function(){ 
-								render(temp, cursor); 
-								$welcome.delay(1000).fadeIn(fade);
-								$(balls[0]).toggleClass('selected');
+							$restart_b.fadeIn(fade, function(){
+								$header.fadeIn(fade, function(){
+									$(balls[0]).toggleClass('selected');
+									render(temp, cursor);
+									$balls.fadeIn(fade, function(){
+											$footer.fadeIn(fade, function(){  
+												$welcome_p.fadeIn(fade);
+										});
+									});
+								});
 							});
 						});
-					});	 
+					});	
 				}
 				
 				//Keyboard Navigation
