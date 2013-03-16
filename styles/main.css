@@ -288,10 +288,12 @@ button
 		-webkit-box-shadow: 0 0 10px #644436;
 }
 
-#albumgrid
-{
-	margin: 10px auto 10px auto; 
-}
+#albumgrid { margin: 10px auto 10px auto; }
+
+iframe { margin: 30px auto 0 auto; }
+
+.player { margin-top: 10px; }
+
 /* Experience */
 .school,
 .pos_title,

@@ -57,8 +57,38 @@ $(document).ready(function () {
 				var $album_g = $('#albumgrid'); 
 				var $rec_link = $('#rec_link'); 
 				var $rec_text = $('#rec_text');  
-				var $in_sub = $('#in_sub'); 
+				
 				var $in_sub_l = $('#in_sub_link'); 
+				
+				//Album Covers
+				var $tge_cover = $('#tge_cover'); 
+				var $par_cover = $('#par_cover'); 
+				var $isu_cover = $('#isu_cover'); 
+				var $bri_cover = $('#bri_cover'); 
+				var $rdi_cover = $('#rdi_cover'); 
+				var $dos_cover = $('#dos_cover');
+				var covers = new Array(); 
+				covers[0] = $tge_cover; 
+				covers[1] = $par_cover; 
+				covers[2] = $isu_cover; 
+				covers[3] = $bri_cover; 
+				covers[4] = $rdi_cover; 
+				covers[5] = $dos_cover; 
+				
+				//Players
+				var $tge_player = $('#tge_player');
+				var $par_player = $('#par_player'); 
+				var $isu_player = $('#isu_player'); 
+				var $bri_player = $('#bri_player'); 
+				var $rdi_player = $('#rdi_player'); 
+				var $dos_player = $('#dos_player'); 
+				var players = new Array(); 
+				players[0] = $tge_player;
+				players[1] = $par_player;
+				players[2] = $isu_player; 
+				players[3] = $bri_player; 
+				players[4] = $rdi_player; 
+				players[5] = $dos_player; 
 				
 				//Experience
 				var $experience = $('#experience'); 
@@ -90,18 +120,48 @@ $(document).ready(function () {
 				var $address_b = $('#addressbutton');
 				var $email = $('#emailbutton'); 
 				 
-				
-				//init to blank page
 				$('.init_blank').css('display', 'none'); 
 				
-				//prime color
 				$body.css('background-color', '#DFC184'); 
 				
 				var fade = 500;
 				
 				var cursor = 0; 
-				var temp = 0; //init to -1
+				var temp = 0; 
 				
+				var album_cursor = -1; 
+				
+				/*
+				===================================================
+				openAlbumPlayer: 
+				
+				Opens the music player for any album that was just
+				clicked. 
+				===================================================
+				*/
+				var openAlbumPlayer = function(c){ 
+					var t; 
+					if (album_cursor===-1){
+						album_cursor = c;
+						players[album_cursor].fadeToggle(); 
+					} else { 
+						t = album_cursor; 
+						album_cursor = c; 
+						players[t].fadeToggle(function(){
+							players[album_cursor].fadeToggle(); 
+						}); 
+					}
+					
+				}
+				
+				/*
+				===================================================
+				renderWelcome: 
+				
+				Insures proper position of picture and text for 
+				a collapsing browser page. 
+				===================================================
+				*/
 				var renderWelcome = function(){
 					var i_w = $welcome_c.innerWidth();
 					i_w /= 2; 
@@ -116,18 +176,33 @@ $(document).ready(function () {
 					$welcome_p.css('width', i_w);
 				}
 				
+				/*
+				===================================================
+				renderAlbumArt: 
+				
+				Insures proper grid formatting of album art in the
+				recording section. 
+				===================================================
+				*/
 				var renderAlbumArt = function(){
 					var inner_w = $recordings.innerWidth(); 
 					album_w = inner_w/3; 
-					album_w -= 80; //padding
-					album_w -= 8; //border
+					album_w -= 80; 
+					album_w -= 8; 
 					$albums.css('width', album_w);
 					$albums.css('height', album_w);
-					inner_w -= 180; //offset
+					inner_w -= 180; 
 					$album_g.css('width', inner_w); 
 				}
 				
-				//Changes the page hiding and showing the content
+				/*
+				===================================================
+				render: 
+				
+				renders the next page taking current page, and
+				the target page as parameters. 
+				===================================================
+				*/
 				function render(t, c){					
 					$(pages[t]).slideUp(fade/3, function(){
 						switch(c){
@@ -145,7 +220,13 @@ $(document).ready(function () {
 					});	
 				}
 				
-				//Boot Animation
+				/*
+				===================================================
+				boot: 
+				
+				shows a splash screen before loading the site. 
+				===================================================
+				*/
 				var boot = function (){
 					$boot.fadeTo(fade, 1, function(){
 						$boot.delay(fade).fadeTo(fade, 0, function(){
@@ -262,7 +343,7 @@ $(document).ready(function () {
 				
 				//Links
 				
-				//Experience
+					//Experience
 				$exp_link.mouseover(function(){
 					$title.fadeOut(fade/4, function(){
 						$title.text('Experience');
@@ -285,7 +366,7 @@ $(document).ready(function () {
 					render(temp, cursor); 
 				}); 
 				
-				//Projects
+					//Projects
 				$pro_link.mouseover(function(){
 					$title.fadeOut(fade/4, function(){
 						$title.text('Projects');
@@ -308,7 +389,7 @@ $(document).ready(function () {
 					render(temp, cursor); 
 				}); 
 				
-				//Recordings
+					//Recordings
 				$rec_link.mouseover(function(){
 					$title.fadeOut(fade/4, function(){
 						$title.text('Recordings');
@@ -331,7 +412,7 @@ $(document).ready(function () {
 					render(temp, cursor); 
 				}); 
 				
-				//Contact
+					//Contact
 				$con_link.mouseover(function(){
 					$title.fadeOut(fade/4, function(){
 						$title.text('Recordings');
@@ -352,16 +433,44 @@ $(document).ready(function () {
 					temp = cursor; 
 					cursor = 4; 
 					render(temp, cursor); 
-				}); 
-				
-				//In Submission
+				});
+				//Recording Page
+					
+					//In Submission Link
 				$in_sub_l.mouseover(function(){ 
-					$in_sub.css('border', '1px solid #DFC184')
+					$isu_cover.css('border', '1px solid #DFC184')
 				});
 				
 				$in_sub_l.mouseleave(function(){ 
-					$in_sub.css('border', '0px solid #DFC184')
+					$isu_cover.css('border', '0px solid #DFC184')
 				});
+				
+				$albums.click(function(){
+					var thisId = $(this).attr('id');
+					var choice; 
+					switch(thisId){
+							case 'tge_cover':
+								choice = 0;
+								break;
+							case 'par_cover':
+								choice = 1;
+								break;
+							case 'isu_cover':
+								choice = 2;
+								break;
+							case 'bri_cover':
+								choice = 3;
+								break;
+							case 'rdi_cover':
+								choice = 4;
+								break;
+							case 'dos_cover':
+								choice = 5; 
+								break; 
+					}
+					openAlbumPlayer(choice); 
+				}); 
+				 
 				
 				//Experience Page
 				$courses_expand.click(function(){

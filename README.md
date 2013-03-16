@@ -11,16 +11,18 @@ __Version:__ 1.0
 ---
 
 ##Todo:
-	- Recordings
-		- Bandcamp Player
 	- Experience
 		- More responsive 
 		- Better readibility / Styling
 		- Skills section
 	- Optimization
 		- .js
+		    -implement standardized naming convention
 		- .css
 		- .html
+	- Content 
+	    - Copy into folder 
+	    - Add new
 	- Cleanup tumblr code
 	- Centralized Image hosting / PDF Hosting
 	
@@ -39,7 +41,7 @@ __Version:__ 1.0
 	
 	
 ##Bugs:
-	
+	-Navigating while music player is playing
 
 ---
 
