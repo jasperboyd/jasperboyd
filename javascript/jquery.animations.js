@@ -67,6 +67,7 @@ $(document).ready(function () {
 				var $bri_cover = $('#bri_cover'); 
 				var $rdi_cover = $('#rdi_cover'); 
 				var $dos_cover = $('#dos_cover');
+				var $bro_cover = $('#bro_cover'); 
 				var covers = new Array(); 
 				covers[0] = $tge_cover; 
 				covers[1] = $par_cover; 
@@ -74,6 +75,7 @@ $(document).ready(function () {
 				covers[3] = $bri_cover; 
 				covers[4] = $rdi_cover; 
 				covers[5] = $dos_cover; 
+				covers[6] = $bro_cover; 
 				
 				//Players
 				var $tge_player = $('#tge_player');
@@ -82,6 +84,7 @@ $(document).ready(function () {
 				var $bri_player = $('#bri_player'); 
 				var $rdi_player = $('#rdi_player'); 
 				var $dos_player = $('#dos_player'); 
+				var $bro_player = $('#bro_player'); 
 				var players = new Array(); 
 				players[0] = $tge_player;
 				players[1] = $par_player;
@@ -89,6 +92,7 @@ $(document).ready(function () {
 				players[3] = $bri_player; 
 				players[4] = $rdi_player; 
 				players[5] = $dos_player; 
+				players[6] = $bro_player; 
 				
 				//Experience
 				var $experience = $('#experience'); 
@@ -466,6 +470,9 @@ $(document).ready(function () {
 								break;
 							case 'dos_cover':
 								choice = 5; 
+								break; 
+							case 'bro_cover': 
+								choice = 6; 
 								break; 
 					}
 					openAlbumPlayer(choice); 
