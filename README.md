@@ -11,6 +11,7 @@ __Version:__ 1.0
 ---
 
 ##Todo:
+    - Implement seperate pages
 	- Experience
 		- More responsive 
 		- Better readibility / Styling
@@ -41,7 +42,8 @@ __Version:__ 1.0
 	
 	
 ##Bugs:
-	-Navigating while music player is playing
+	- Navigating while music player is playing
+	- Navigating too recordings page 
 
 ---
 
