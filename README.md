@@ -11,6 +11,7 @@ __Version:__ 1.0
 ---
 
 ##Todo:
+    - Smaller Music player at the top of the screen. 
     - Implement seperate pages
 	- Experience
 		- More responsive 
@@ -26,6 +27,7 @@ __Version:__ 1.0
 	    - Add new
 	- Cleanup tumblr code
 	- Centralized Image hosting / PDF Hosting
+	    - Clarks servers 
 	
 ##Features for Later Versions: 
 
@@ -44,6 +46,14 @@ __Version:__ 1.0
 ##Bugs:
 	- Navigating while music player is playing
 	- Navigating too recordings page 
+	- Experience Page padding problem
+
+
+##Design Ideas: 
+
+    - Split into two sub-domains
+        - Title Screen to choose between the two
+    - Seperate pages to improve everything
 
 ---
 
