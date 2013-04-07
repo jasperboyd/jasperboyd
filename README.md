@@ -11,23 +11,16 @@ __Version:__ 1.0
 ---
 
 ##Todo:
+    - PDF HOSTING
+        - Using Clark
     - Smaller Music player at the top of the screen. 
        - Or in a pop up screen
-	- Experience
-		- More responsive 
-		- Better readibility / Styling
-		- Skills section
 	- Optimization
 		- .js
 		    -implement standardized naming convention
 		- .css
 		- .html
-	- Content 
-	    - Copy into folder 
-	    - Add new
 	- Cleanup tumblr code
-	- Centralized Image hosting / PDF Hosting
-	    - Clarks servers 
 	
 ##Features for Later Versions: 
 
@@ -42,6 +35,13 @@ __Version:__ 1.0
 	- Bandcamp player for albums
 	- Store
 	- Remove javascript dependency
+	- Experience
+		- More responsive 
+		- Better readibility / Styling
+		- Skills section
+	- Content 
+	    - Copy into folder 
+	    - Add new
 	
 	
 ##Bugs:
