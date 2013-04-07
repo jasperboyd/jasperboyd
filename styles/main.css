@@ -371,6 +371,10 @@ iframe { margin: 30px auto 0 auto; }
 	text-shadow: 2px 2px 2px #644436;
 }
 
+ul { 
+	list-style-type: none;
+} 
+
 /*General Content*/
 h2,
 h3,
