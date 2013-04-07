@@ -12,7 +12,7 @@ __Version:__ 1.0
 
 ##Todo:
     - Smaller Music player at the top of the screen. 
-    - Implement seperate pages
+       - Or in a pop up screen
 	- Experience
 		- More responsive 
 		- Better readibility / Styling
@@ -32,6 +32,7 @@ __Version:__ 1.0
 ##Features for Later Versions: 
 
 	- About Section
+	- Implement seperate pages
 	- Blog (Using tumblr)
 	- Tutorials 
 	- SMS feature
