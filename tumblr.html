@@ -1,6 +1,6 @@
 <!DOCTYPE html> 
 <html lang="en">
-    <!--HTML5--> 
+	<!--HTML5--> 
 	<script>
     	document.createElement('article');
     	document.createElement('section');
@@ -14,25 +14,562 @@
 	</script>
 
 	<head> 
+		<!---------------------------------------------------
+		
+		.---.                          .--.              . 
+		    |                          |   )             | 
+		    | .-.  .--..,-.  .-. .--.  |--:  .-. .  . .-.| 
+		    ;(   ) `--.|   )(.-' |     |   )(   )|  |(   | 
+		`--'  `-'`-`--'|`-'  `--''     '--'  `-' `--| `-'`-
+		               |                            ;      
+		               '                         `-'    
+		---------------------------------------------------->
 		<title> Jasper Boyd | Software Developer and Musician </title>
 		<meta name="description" content="Jasper Boyd makes music and software and finds new ways to combines the two.">
 		<meta name="keywords" content="Jasper Boyd, Jasper Boyd Music, Jasper Boyd Developer">
 		<meta name="author" content="Jasper Boyd">
-        <style TYPE="text/css">
-            /*
-             * Jasper Boyd 
-             * 03 - 12 - 2013 
-             *
-             */
+		<!-- NORMALIZE.css-->
+		<style type="text/css"> 
+		/*! normalize.css v1.1.0 | MIT License | git.io/normalize */
 
-/* HTML5 Support *********************************************************/
-article, section, aside, hgroup, nav, header, footer, figure, figcaption {
-      display: block;
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
 }
-/* Background ************************************************************/
-body
-{
-	background-color: #274257;
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Address `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+/**
+ * Address margins handled incorrectly in IE 6/7.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 6/7/8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+p,
+pre {
+    margin: 1em 0;
+}
+
+/**
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/**
+ * Address CSS quotes not supported in IE 6/7.
+ */
+
+q {
+    quotes: none;
+}
+
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+dl,
+menu,
+ol,
+ul {
+    margin: 1em 0;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 40px;
+}
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+
+form {
+    margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+		</style> 
+		<!-- MAIN.css --> 
+		<style type="text/css"> 
+			/*http://www.colorcombos.com/color-schemes/424/ColorCombo424.html*/
+
+/* HTML5 Support */
+article, section, aside, hgroup, nav, header, footer, figure, figcaption {
+  	display: block;
+}
+/* Background */
+body { 
+	background-color: #274257; 
 }
 
 article,
@@ -41,7 +578,7 @@ nav
 	width: auto;
 	margin: 0px 25px 0px 25px;
 }
-/* Boot ******************************************************************/
+/* Boot */
 #boot_title
 {
 	color: #8F6048;
@@ -56,26 +593,37 @@ nav
 #restart_b
 {
 	position: absolute;
-	top: 39px;
+	top: 39px; 
 	right: 100px;
 	border-top: 1px solid #8F6048;
     border-left:  1px solid #8F6048;
     border-right:  1px solid #8F6048;
     border-bottom: 0px;
     border-radius: 10px 10px 0 0;
-     -moz-border-radius: 10px 10px 0 0; 
-	 -webkit-border-radius:10px 10px 0 0; 
+    	-moz-border-radius: 10px 10px 0 0; 
+		-webkit-border-radius:10px 10px 0 0; 
 	height: 35px;
-	padding: 2px 5px 2px 5px;
+	padding: 3px;
+	background-image: linear-gradient(left top, #8F6048 0%, #644436 74%);
+		background-image: -o-linear-gradient(left top, #8F6048 0%, #644436 74%);
+		background-image: -moz-linear-gradient(left top, #8F6048 0%, #644436 74%);
+		background-image: -webkit-linear-gradient(left top, #8F6048 0%, #644436 74%);
+		background-image: -ms-linear-gradient(left top, #8F6048 0%, #644436 74%);
+		background-image: -webkit-gradient(
+			linear,
+			left top,
+			right bottom,
+			color-stop(0, #8F6048),
+			color-stop(0.74, #644436)
+		);
 }
 
 #rb_text
 {	
-    line-height: 12px;
 	font-size: 12px;
 	letter-spacing: 4px;
 }
-/* Title *****************************************************************/
+/* Title */
 header
 {
 	width: 500px;
@@ -87,18 +635,17 @@ header
 
 #title{
 	color: #DFC184;
-	font-family: 'Wire One', Times;
+	font-family: 'Wire One', sans-serif;
 	font-size: 30px;
 	text-shadow: 2px 2px 2px #8F6048;
 	letter-spacing: 10px;
 	text-align: center;
 }
 
-/* Navigation *************************************************************/
+/* Navigation */
 #indicator
 {  
 	margin: 0px auto 0px auto; 
-	background-color: #644436;
     width: 350px;  
     height: 35px; 
     text-align: center;  
@@ -113,6 +660,21 @@ header
     border-radius: 20px 20px 0 0; 
     -moz-border-radius: 20px 20px 0 0; 
 	-webkit-border-radius:20px 20px 0 0; 
+	-moz-box-shadow: 0 0 3px #7EB5D6;
+	-webkit-box-shadow: 0 0 3px #7EB5D6;
+	box-shadow: 0 0 3px #7EB5D6;
+	background-image: linear-gradient(left top, #8F6048 0%, #644436 74%);
+		background-image: -o-linear-gradient(left top, #8F6048 0%, #644436 74%);
+		background-image: -moz-linear-gradient(left top, #8F6048 0%, #644436 74%);
+		background-image: -webkit-linear-gradient(left top, #8F6048 0%, #644436 74%);
+		background-image: -ms-linear-gradient(left top, #8F6048 0%, #644436 74%);
+		background-image: -webkit-gradient(
+			linear,
+			left top,
+			right bottom,
+			color-stop(0, #8F6048),
+			color-stop(0.74, #644436)
+		);
 }  
   
 .ball { 
@@ -128,121 +690,53 @@ header
 
 .ballhover { 
 	border: solid 1px #DFC184;
-} 
+	box-shadow: 0 0 1px 1px #DFC184;
+		-moz-box-shadow: 0 0 1px 1px #DFC184;
+		-webkit-box-shadow: 0 0 1px 1px #DFC184;
+	} 
 
 .selected {
 	background-color: #DFC184;
 	border: solid 1px #7EB5D6;
+	box-shadow: 0 0 3px 3px #644436;
+		-moz-box-shadow: 0 0 3px 3px #644436;
+		-webkit-box-shadow: 0 0 3px 3px #644436;
+	background: rgb(219,219,219); /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(219,219,219,1) 0%, rgba(221,183,106,1) 61%, rgba(126,181,214,1) 98%, rgba(126,181,214,1) 100%, rgba(126,181,214,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(219,219,219,1)), color-stop(61%,rgba(221,183,106,1)), color-stop(98%,rgba(126,181,214,1)), color-stop(100%,rgba(126,181,214,1)), color-stop(100%,rgba(126,181,214,1))); /* Chrome,Safari4+ */
+		background: -webkit-radial-gradient(center, ellipse cover,  rgba(219,219,219,1) 0%,rgba(221,183,106,1) 61%,rgba(126,181,214,1) 98%,rgba(126,181,214,1) 100%,rgba(126,181,214,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-radial-gradient(center, ellipse cover,  rgba(219,219,219,1) 0%,rgba(221,183,106,1) 61%,rgba(126,181,214,1) 98%,rgba(126,181,214,1) 100%,rgba(126,181,214,1) 100%); /* Opera 12+ */
+		background: -ms-radial-gradient(center, ellipse cover,  rgba(219,219,219,1) 0%,rgba(221,183,106,1) 61%,rgba(126,181,214,1) 98%,rgba(126,181,214,1) 100%,rgba(126,181,214,1) 100%); /* IE10+ */
+		background: radial-gradient(ellipse at center,  rgba(219,219,219,1) 0%,rgba(221,183,106,1) 61%,rgba(126,181,214,1) 98%,rgba(126,181,214,1) 100%,rgba(126,181,214,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbdbdb', endColorstr='#7eb5d6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-/* Content *****************************************************************/
+/* Content */
 article
 { 
+	min-width: 705px; 
 	padding: 0px 40px 40px 40px;
 	border: 1px solid #7EB5D6;
 	background-color: #2A75A9; 
 	border-radius: 50px;
+	box-shadow: 0 0 5px #7EB5D6;
+		-moz-box-shadow: 0 0 5px #7EB5D6;
+		-webkit-box-shadow: 0 0 5px #7EB5D6;
+	background: rgb(143,96,72); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(143,96,72,1) 0%, rgba(126,181,214,1) 0%, rgba(42,117,169,1) 15%, rgba(42,117,169,1) 98%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(143,96,72,1)), color-stop(0%,rgba(126,181,214,1)), color-stop(15%,rgba(42,117,169,1)), color-stop(98%,rgba(42,117,169,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(143,96,72,1) 0%,rgba(126,181,214,1) 0%,rgba(42,117,169,1) 15%,rgba(42,117,169,1) 98%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(143,96,72,1) 0%,rgba(126,181,214,1) 0%,rgba(42,117,169,1) 15%,rgba(42,117,169,1) 98%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(143,96,72,1) 0%,rgba(126,181,214,1) 0%,rgba(42,117,169,1) 15%,rgba(42,117,169,1) 98%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(143,96,72,1) 0%,rgba(126,181,214,1) 0%,rgba(42,117,169,1) 15%,rgba(42,117,169,1) 98%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f6048', endColorstr='#2a75a9',GradientType=0 ); /* IE6-9 */
 }
 
-.more_padding
-{
-	padding: 20px;
-}
-/* Welcome ********************************************************************/
+.more_padding { padding: 20px; }
 
+.margin_bottom { margin-bottom: 10px; }
 
-#welcomeheader
-{
-	float: left; 
-}
-
-#welcomepic
-{
-	margin-top: 10px;
-	float: right; 
-	border-radius: 30px;
-	border: 1px solid #644436;
-}
-
-#welcomefooter
-{
-	clear: both;
-}
-
-/* Projects ********************************************************************/
-
-#github_link
-{
-	float: right; 
-}
-
-/* Recordings *****************************************************************/
-.album 
-{
-	margin: 10px;
-	border: 2px solid #644436;
-	border-radius: 10px;
-}
-
-.album:hover
-{
-	border: 2px solid #DFC184;
-}
-
-#in_sub:hover
-{
-	border: 2px solid #DFC184;
-}
-
-#albumgrid
-{
-	margin: 10px auto 10px auto; 
-}
-/* Experience *****************************************************************/
-.school
-{
-	font-size: 20px; 
-}
-
-.expheader
-{
-	/*text-align: center;*/
-}
-
-.pos_title,
-.more_info
-{
-	font-size: 18px; 
-	margin-left: 40px;
-}
-
-.organization
-{
-	font-size: 20px; 
-}
-
-#pdf_resume
-{
-	float: right;
-	margin-top: 35px; 
-}
-
-/* Contact ****************************************************************/
-
-#contactbox
-{
-	margin: 0px auto 0px auto; 
-	width: auto;
-	text-align: center;
-	white-space: nowrap; 
-}
-
-#addressbox 
-{ 
-	text-align: center;
-}
-
-/* Button *****************************************************************/
+/* Button */
 .buttontext
 {
 	text-decoration: none;
@@ -258,23 +752,199 @@ button
 	margin: 40px 5px 0 5px;
 	display: inline-block;
 	vertical-align: middle;
-	border: solid 2px #274257;
+	border: solid 2px #644436;
 	background-color: #644436;
 	border-radius: 15px;
 	width: auto; 
-	height: auto;
+	height: 50px;
 	padding: 10px;
+	box-shadow: 0 0 3px #7EB5D6;
+		-moz-box-shadow: 0 0 3px #7EB5D6;
+		-webkit-box-shadow: 0 0 3px #7EB5D6;
+	background: rgb(143,96,72); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(143,96,72,1) 0%, rgba(100,68,54,1) 30%, rgba(100,68,54,1) 70%, rgba(143,96,72,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(143,96,72,1)), color-stop(30%,rgba(100,68,54,1)), color-stop(70%,rgba(100,68,54,1)), color-stop(100%,rgba(143,96,72,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(143,96,72,1) 0%,rgba(100,68,54,1) 30%,rgba(100,68,54,1) 70%,rgba(143,96,72,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(143,96,72,1) 0%,rgba(100,68,54,1) 30%,rgba(100,68,54,1) 70%,rgba(143,96,72,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(143,96,72,1) 0%,rgba(100,68,54,1) 30%,rgba(100,68,54,1) 70%,rgba(143,96,72,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(143,96,72,1) 0%,rgba(100,68,54,1) 30%,rgba(100,68,54,1) 70%,rgba(143,96,72,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f6048', endColorstr='#8f6048',GradientType=0 ); /* IE6-9 */	
 }
 
 .buttonhover { 
 	border: solid 2px #DFC184;
 	background-color: #644436;
+	box-shadow: 0 0 3px #644436;
+		-moz-box-shadow: 0 0 3px #644436;
+		-webkit-box-shadow: 0 0 3px #644436;
+	background: rgb(100,68,54); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(100,68,54,1) 0%, rgba(143,96,72,1) 30%, rgba(143,96,72,1) 70%, rgba(100,68,54,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(100,68,54,1)), color-stop(30%,rgba(143,96,72,1)), color-stop(70%,rgba(143,96,72,1)), color-stop(100%,rgba(100,68,54,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(100,68,54,1) 0%,rgba(143,96,72,1) 30%,rgba(143,96,72,1) 70%,rgba(100,68,54,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(100,68,54,1) 0%,rgba(143,96,72,1) 30%,rgba(143,96,72,1) 70%,rgba(100,68,54,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(100,68,54,1) 0%,rgba(143,96,72,1) 30%,rgba(143,96,72,1) 70%,rgba(100,68,54,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(100,68,54,1) 0%,rgba(143,96,72,1) 30%,rgba(143,96,72,1) 70%,rgba(100,68,54,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#644436', endColorstr='#644436',GradientType=0 ); /* IE6-9 */
 } 
 
 .buttonhover h3 { 
 	color: #DFC184;
 	text-shadow: 1px 1px 1px #7EB5D6; 
 }
+
+/* Welcome */
+#welcomecontent
+{
+	padding: 0 60px 60px 60px;
+}
+
+#welcomeheader { float: left; }
+
+#welcomepic
+{
+	margin-top: 10px 0 0 10px;
+	float: right; 
+	border-radius: 30px;
+	border: 1px solid #644436;
+	box-shadow: 0 0 5px #644436;
+		-moz-box-shadow: 0 0 5px #644436;
+		-webkit-box-shadow: 0 0 5px #644436;
+}
+
+.clear_both { clear: both; }
+
+/* Projects */
+
+#github_link
+{
+	float: right; 
+	margin-right: 60px;
+}
+
+/* Recordings */
+.padded_text
+{
+	padding: 0px 60px 0 60px; 
+}
+
+.album 
+{
+	margin: 10px;
+	border: 2px solid #644436;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #7EB5D6;
+		-moz-box-shadow: 0 0 10px #7EB5D6;
+		-webkit-box-shadow: 0 0 10px #7EB5D6;
+}
+
+.album:hover
+{
+	border: 2px solid #DFC184;
+	box-shadow: 0 0 3px 3px #644436;	
+		-moz-box-shadow: 0 0 3px 3px #644436;
+		-webkit-box-shadow: 0 0 3px 3px #644436;
+}
+
+#in_sub:hover
+{
+	border: 2px solid #DFC184;
+	box-shadow: 0 0 10px #644436;
+		-moz-box-shadow: 0 0 10px #644436;
+		-webkit-box-shadow: 0 0 10px #644436;
+}
+
+#albumgrid { margin: 10px auto 10px auto; }
+
+iframe { margin: 30px auto 0 auto; }
+
+.player { 
+	margin-bottom: 10px;	
+}
+
+.hideplayer { 
+	float: left; 
+} 
+
+/* Experience */
+.school,
+.pos_title,
+.organization,
+.more_info
+{
+	color: #DFC184; 
+	text-shadow: 1px 1px 1px #644436;
+}
+
+.course,
+.job_duties 
+{
+	color: #7EB5D6; 
+	text-shadow: 1px 1px 1px #644436;
+}
+
+
+.school
+{
+	letter-spacing: 3px; 
+	font-size: 20px; 
+}
+
+.pos_title,
+.more_info
+{
+	letter-spacing: 3px; 
+	font-size: 18px; 
+	margin-left: 40px;
+}
+
+.organization
+{
+	letter-spacing: 3px; 
+	font-size: 20px; 
+}
+
+#pdf_resume
+{
+	float: right;
+	margin-top: 35px; 
+	margin-right: 60px;
+}
+
+.experience_link 
+{
+	font-size: 20px;
+	text-shadow: 0 0 0 #644436;
+}
+
+.experience_link:hover
+{
+	text-shadow: 3px 3px 3px #644436;
+}
+
+/* Contact */
+
+#contactbox
+{
+	margin: 0px auto 0px auto; 
+	width: auto;
+	text-align: center;
+	white-space: nowrap; 
+}
+
+#addressbox 
+{ 
+	text-align: center;
+}
+
+.address
+{
+	color: #DFC184; 
+	text-shadow: 2px 2px 2px #644436;
+}
+
+ul { 
+	list-style-type: none;
+} 
 
 /*General Content*/
 h2,
@@ -291,7 +961,7 @@ li
 
 h2
 {
-	color:#7EB5D6;
+	color: #DFC184; 
 	text-shadow: 2px 2px 2px #644436;
 	font-size: 40px;
 	letter-spacing: 10px;
@@ -308,20 +978,11 @@ p
 	letter-spacing: 2px; 
 }
 
-h3
-{
-	font-size: 30px;
-}
+h3{font-size: 30px;}
 
-h4
-{
-	font-size: 25px; 
-}
+h4{font-size: 25px;}
 
-h5
-{
-	font-size: 24px;
-}
+h5{font-size: 24px;}
 
 p
 {
@@ -347,17 +1008,13 @@ a:hover
 
 li
 {
-	font-size: 14px; 
-	letter-spacing: 2px; 
-	line-height: 175%;
+	font-size: 16px; 
+	letter-spacing: 5px; 
+	line-height: 250%;
 	margin-left: 40px; 
 }
 
-
-
-
-
-/* Footer ******************************************************************/
+/* Footer */
 footer
 {
 	position: relative; 
@@ -373,26 +1030,61 @@ footer
 	text-align:center;
 }
 
-        </style>
+		</style> 
+		<!--FIREFOX.css--> 
+		<style type="text/css"> 
+		@-moz-document url-prefix() {
+    			.buttontext
+				{
+					text-decoration: none;
+					text-align: center;
+					text-shadow: 2px 2px 2px #274257;
+					letter-spacing: 3px;
+					font-size: 15px;
+				}
+
+
+				button
+				{
+					margin: 40px 5px 0 5px;
+					border: solid 2px #644436;
+					background-color: #644436;
+					border-radius: 15px;
+					width: auto; 
+					height: 60px;
+					padding: 0 3px 0 3px;
+		
+				}
+
+				.buttonhover { 
+					border: solid 2px #DFC184;
+					background-color: #644436;
+	
+
+				} 
+
+				.buttonhover h3 { 
+					color: #DFC184;
+					text-shadow: 1px 1px 1px #7EB5D6; 
+				}
+				
+				#rb_text
+				{ font-size: 10px; }
+}
+		</style> 
 		<link href='http://fonts.googleapis.com/css?family=Wire+One|Open+Sans:400,300|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script type="text/javascript" src="plugins/jquery.backstrech.js"></script>
-		<script type="text/javascript">
-    	    //Author:   Jasper Boyd
-//Date:     03/12/2013
-$(document).ready(function(){		
-				//pages array for navigation
+		<script tpye="text/javascript">
+			$(document).ready(function () {
+					
+				//navigation
 				var pages = new Array();
-				
 				pages[0] = '#welcome';
 				pages[1] = '#projects';
 				pages[2] = '#recordings';
 				pages[3] = '#experience';
 				pages[4] = '#contact';
-				
-				//array of divs used to navigate
 				var balls = new Array(); 
-				
 				balls[0] = '#b1';
 				balls[1] = '#b2';
 				balls[2] = '#b3';
@@ -440,12 +1132,67 @@ $(document).ready(function(){
 				var $album_g = $('#albumgrid'); 
 				var $rec_link = $('#rec_link'); 
 				var $rec_text = $('#rec_text');  
-				var $in_sub = $('#in_sub'); 
+				
 				var $in_sub_l = $('#in_sub_link'); 
+				
+				//Album Covers
+				var $tge_cover = $('#tge_cover'); 
+				var $par_cover = $('#par_cover'); 
+				var $isu_cover = $('#isu_cover'); 
+				var $bri_cover = $('#bri_cover'); 
+				var $rdi_cover = $('#rdi_cover'); 
+				var $dos_cover = $('#dos_cover');
+				var $bro_cover = $('#bro_cover'); 
+				var covers = new Array(); 
+				covers[0] = $tge_cover; 
+				covers[1] = $par_cover; 
+				covers[2] = $isu_cover; 
+				covers[3] = $bri_cover; 
+				covers[4] = $rdi_cover; 
+				covers[5] = $dos_cover; 
+				covers[6] = $bro_cover; 
+				
+				//Players
+				var $tge_player = $('#tge_player');
+				var $par_player = $('#par_player'); 
+				var $isu_player = $('#isu_player'); 
+				var $bri_player = $('#bri_player'); 
+				var $rdi_player = $('#rdi_player'); 
+				var $dos_player = $('#dos_player'); 
+				var $bro_player = $('#bro_player'); 
+				var players = new Array(); 
+				players[0] = $tge_player;
+				players[1] = $par_player;
+				players[2] = $isu_player; 
+				players[3] = $bri_player; 
+				players[4] = $rdi_player; 
+				players[5] = $dos_player; 
+				players[6] = $bro_player; 
+				
+				var $hideplayer = $('.hideplayer'); 
 				
 				//Experience
 				var $experience = $('#experience'); 
 				var $exp_link = $('#exp_link'); 
+				var $courses_expand = $('#current_c');
+				var $courses = $('#courses');  
+				var $razzo_expand = $('#razzo_exp'); 
+				var $razzo = $('#razzo');
+				var $events_expand = $('#office_exp'); 
+				var $events = $('#eventsoffice'); 
+				var $swater_expand = $('#salt_exp'); 
+				var $swater = $('#swater'); 
+				var $clarks_expand = $('#clarks_exp');
+				var $clarks = $('#clarks');
+				var $tmc_expand = $('#tmc_exp');
+				var $tmc = $('#tmc');   
+				
+				var courses_exp = 0; 
+				var razzo_exp = 0; 
+				var events_exp = 0; 
+				var swater_exp = 0; 
+				var clarks_exp = 0; 
+				var tmc_exp = 0;
 				
 				//Contact
 				var $contact = $('#contact');
@@ -454,52 +1201,119 @@ $(document).ready(function(){
 				var $address_b = $('#addressbutton');
 				var $email = $('#emailbutton'); 
 				 
-				
-				//init to blank page
 				$('.init_blank').css('display', 'none'); 
 				
-				//prime color
 				$body.css('background-color', '#DFC184'); 
 				
 				var fade = 500;
 				
 				var cursor = 0; 
-				var temp = 0; //init to -1
+				var temp = 0; 
 				
+				var album_cursor = -1; 
+				var last_album = -1; 
+				
+				/*
+				===================================================
+				closeAlbumPlayer: 
+				
+				Closes the music player for any album that was just
+				clicked. 
+				===================================================
+				*/
+				var closeAlbumPlayer = function(c){ 
+					if (album_cursor === c){
+						players[c].fadeToggle(); 
+						album_cursor = -1; 
+						last_album = -1; 
+					}
+				}
+				
+				/*
+				===================================================
+				openAlbumPlayer: 
+				
+				Opens the music player for any album that was just
+				clicked. 
+				===================================================
+				*/
+				var openAlbumPlayer = function(c){ 
+					if (album_cursor === -1 && last_album === -1) {
+						album_cursor = c; 
+						players[album_cursor].fadeToggle(function(){
+							$('html, body').animate({ scrollTop: 1000 }, 300);
+						}); 
+					} else if (album_cursor === c) {
+						$('html, body').animate({ scrollTop: 1000 }, 300);
+					} else { 
+						last_album = album_cursor; 
+						album_cursor = c; 
+						players[last_album].fadeToggle(function(){
+							players[album_cursor].fadeToggle(function(){
+								$('html, body').animate({ scrollTop: 1000 }, 300);
+							}); 
+						});
+					}
+				}
+				
+				/*
+				===================================================
+				renderWelcome: 
+				
+				Insures proper position of picture and text for 
+				a collapsing browser page. 
+				===================================================
+				*/
 				var renderWelcome = function(){
 					var i_w = $welcome_c.innerWidth();
 					i_w /= 2; 
 					i_w -= 40; 
 					$welcome_h.css('width', 2*i_w); 
-					var t_w = (3*i_w)/2; 
-					t_w -= 25; 
-					$welcome_t.css('width', t_w);
+					var t_w = i_w*2;
+					t_w /= 3;  
+					t_w -= 40;
+					$welcome_t.css('width', 2*t_w);
 					i_w /= 2; 
 					i_w += 60;
 					$welcome_p.css('width', i_w);
 				}
 				
+				/*
+				===================================================
+				renderAlbumArt: 
+				
+				Insures proper grid formatting of album art in the
+				recording section. 
+				===================================================
+				*/
 				var renderAlbumArt = function(){
 					var inner_w = $recordings.innerWidth(); 
 					album_w = inner_w/3; 
-					album_w -= 80; //padding
-					album_w -= 8; //border
+					album_w -= 80; 
+					album_w -= 8; 
 					$albums.css('width', album_w);
 					$albums.css('height', album_w);
-					inner_w -= 180; //offset
+					inner_w -= 180; 
 					$album_g.css('width', inner_w); 
 				}
 				
-				//Changes the page hiding and showing the content
+				/*
+				===================================================
+				render: 
+				
+				renders the next page taking current page, and
+				the target page as parameters. 
+				===================================================
+				*/
 				function render(t, c){					
-					$(pages[t]).slideUp(fade/2, function(){
+					$(pages[t]).slideUp(fade/3, function(){
 						switch(c){
 							case 2: 
 								renderAlbumArt();
 								break; 	
 						}	
 						$(balls[t]).toggleClass('selected');
-						$(pages[c]).delay(fade/2).slideDown(fade/2, function(){
+						$(pages[c]).delay(fade/3).slideDown(fade/3, function(){
 							renderWelcome();
 						});
 						
@@ -508,22 +1322,31 @@ $(document).ready(function(){
 					});	
 				}
 				
-				//Boot Animation
+				/*
+				===================================================
+				boot: 
+				
+				shows a splash screen before loading the site. 
+				===================================================
+				*/
 				var boot = function (){
-					$boot.fadeTo(fade, .5, function(){
-						$boot.fadeTo(fade, 0, function(){
+					$boot.fadeTo(fade, 1, function(){
+						$boot.delay(fade).fadeTo(fade, 0, function(){
 							$boot.empty();
 							$body.css('background-color', '#274257');
-							$restart_b.fadeIn(fade);
-							$header.fadeIn(fade);
-							$balls.fadeIn(fade);
-							$footer.fadeIn(fade, function(){ 
-								render(temp, cursor); 
-								$welcome.delay(1000).fadeIn(fade);
-								$(balls[0]).toggleClass('selected');
+							$restart_b.fadeIn(fade, function(){
+								$header.fadeIn(fade, function(){
+									$(balls[0]).toggleClass('selected');
+									render(temp, cursor);
+									$balls.fadeIn(fade, function(){
+											$footer.fadeIn(fade, function(){  
+												$welcome_p.fadeIn(fade);
+										});
+									});
+								});
 							});
 						});
-					});	 
+					});	
 				}
 				
 				//Keyboard Navigation
@@ -622,7 +1445,7 @@ $(document).ready(function(){
 				
 				//Links
 				
-				//Experience
+					//Experience
 				$exp_link.mouseover(function(){
 					$title.fadeOut(fade/4, function(){
 						$title.text('Experience');
@@ -645,7 +1468,7 @@ $(document).ready(function(){
 					render(temp, cursor); 
 				}); 
 				
-				//Projects
+					//Projects
 				$pro_link.mouseover(function(){
 					$title.fadeOut(fade/4, function(){
 						$title.text('Projects');
@@ -668,7 +1491,7 @@ $(document).ready(function(){
 					render(temp, cursor); 
 				}); 
 				
-				//Recordings
+					//Recordings
 				$rec_link.mouseover(function(){
 					$title.fadeOut(fade/4, function(){
 						$title.text('Recordings');
@@ -691,7 +1514,7 @@ $(document).ready(function(){
 					render(temp, cursor); 
 				}); 
 				
-				//Contact
+					//Contact
 				$con_link.mouseover(function(){
 					$title.fadeOut(fade/4, function(){
 						$title.text('Recordings');
@@ -712,16 +1535,117 @@ $(document).ready(function(){
 					temp = cursor; 
 					cursor = 4; 
 					render(temp, cursor); 
-				}); 
-				
-				//In Submission
+				});
+				//Recording Page
+					
+					//In Submission Link
 				$in_sub_l.mouseover(function(){ 
-					$in_sub.css('border', '1px solid #DFC184')
+					$isu_cover.css('border', '1px solid #DFC184')
 				});
 				
 				$in_sub_l.mouseleave(function(){ 
-					$in_sub.css('border', '0px solid #DFC184')
+					$isu_cover.css('border', '0px solid #DFC184')
 				});
+				
+				$albums.click(function(){
+					var thisId = $(this).attr('id');
+					var choice; 
+					switch(thisId){
+							case 'tge_cover':
+								choice = 0;
+								break;
+							case 'par_cover':
+								choice = 1;
+								break;
+							case 'isu_cover':
+								choice = 2;
+								break;
+							case 'bri_cover':
+								choice = 3;
+								break;
+							case 'rdi_cover':
+								choice = 4;
+								break;
+							case 'dos_cover':
+								choice = 5; 
+								break; 
+							case 'bro_cover': 
+								choice = 6; 
+								break; 
+					}
+					openAlbumPlayer(choice); 
+				}); 
+				 
+				$hideplayer.click(function(){
+					closeAlbumPlayer(album_cursor); 
+				}); 
+				
+				//Experience Page
+				$courses_expand.click(function(){
+					$courses.fadeToggle(fade);
+					if (courses_exp === 0){
+						courses_exp = 1; 
+						$courses_expand.text('-');
+					} else { 
+						courses_exp = 0; 
+						$courses_expand.text('+');
+					}
+				}); 
+				
+				$razzo_expand.click(function(){ 
+					$razzo.fadeToggle(fade);
+					if (razzo_exp === 0){
+						razzo_exp = 1; 
+						$razzo_expand.text('-');
+					} else { 
+						razzo_exp = 0; 
+						$razzo_expand.text('+');
+					}
+				}); 
+				
+				$events_expand.click(function(){ 
+					$events.fadeToggle(fade);
+					if (events_exp === 0){
+						events_exp = 1; 
+						$events_expand.text('-');
+					} else { 
+						events_exp = 0; 
+						$events_expand.text('+');
+					}
+				}); 
+				
+				$swater_expand.click(function(){
+					$swater.fadeToggle(fade); 
+					if (swater_exp === 0){
+						swater_exp = 1; 
+						$swater_expand.text('-');
+					} else { 
+						swater_exp = 0; 
+						$swater_expand.text('+');
+					}
+				}); 
+				
+				$clarks_expand.click(function(){
+					$clarks.fadeToggle(fade);
+					if (clarks_exp === 0){
+						clarks_exp = 1; 
+						$clarks_expand.text('-');
+					} else { 
+						clarks_exp = 0; 
+						$clarks_expand.text('+');
+					}
+				});  
+				
+				$tmc_expand.click(function(){ 
+					$tmc.fadeToggle(fade); 
+					if (tmc_exp === 0){
+						tmc_exp = 1; 
+						$tmc_expand.text('-');
+					} else { 
+						tmc_exp = 0; 
+						$tmc_expand.text('+');
+					}
+				}); 
 
 				//Resize Function for Album Art
 				$(window).resize(function(){ 
@@ -742,39 +1666,38 @@ $(document).ready(function(){
 				//begin the program
 				boot();
 			});
-         
-		</script> 
+		</script>
 	</head> 
 	 
 	<body>
+		<!--Refresh Button--> 
 		<button id="restart_b" class='init_blank'> 
-			<h3 id="rb_text">Restart</h3>
+			<h3 id="rb_text">Refresh</h3>
 		</button> 
-	
+		<!--Header--> 
 		<header class='init_blank'>
 			<h1 id="title"> Jasper Boyd </h1>
-			<div id="indicator">
+			<nav id="indicator">
 				<div id="b1" class="ball"></div>
 				<div id="b2" class="ball"></div>
 				<div id="b3" class="ball"></div>
 				<div id="b4" class="ball"></div>					
 				<div id="b5" class="ball"></div>
-			</div>
+			</nav>
 		</header>
 		
 		<div id='boot' class='init_blank'>
 			<h1 id="boot_title">Jasper Boyd</h1>
 		</div> 
 	
-		<article id='welcome' class='init_blank'>					 
-			<section id='welcomecontent'>
-				
+		<article id='welcome' class='init_blank margin_bottom'>					 
+			<section id='welcomecontent'>	
 				<section id="welcomeheader">
 					<h2>Welcome</h2>
 				</section>
 				
 				<section>
-					<img src="http://s23.postimage.org/6py71mitn/profile.jpg" id="welcomepic"/>
+					<img src="img/profile.jpg" id="welcomepic" class="init_blank"/>
 				</section>
 			
 				<section id='welcometext'>
@@ -793,26 +1716,22 @@ $(document).ready(function(){
 					that information can be found in the 
 					<a id="rec_link">Recordings</a> section. 
 				</p>  
-				</section> 
-				<section id='welcomefooter'>
 				<p> 
 					If you have any questions feel free to 
 					<a class="con_link">Contact</a> me. 
 				</p>
-				</section>
-				
-				
+				</section> 
+				<section class='clear_both'></section>
 			</section>		
-
 		</article>
 		
-		<article id='about' class='init_blank'>
+		<article id='about' class='init_blank margin_bottom'>
 			<section>
 				<!--For future Versions-->
 			</section> 
 		</article>
 		
-		<article id='projects' class='init_blank'>
+		<article id='projects' class='init_blank margin_bottom'>
 			
 			<a href="http://github.com/jasperboyd/the_weather_sound" target="_blank">
 				<button id="github_link">
@@ -820,7 +1739,7 @@ $(document).ready(function(){
 				</button>
 			</a>
 				
-			<section id='projectstext'>
+			<section class='padded_text'>
 				<h2>The Weather Sound</h2> 
 				
 				
@@ -860,8 +1779,8 @@ $(document).ready(function(){
 			</section> 
 		</article>
 		
-		<article id='recordings' class='init_blank'>
-			<section id='rec_text'> 
+		<article id='recordings' class='init_blank margin_bottom'>
+			<section class='padded_text'> 
 				<h2> Recordings </h2> 
 				<p> 
 					Below you can find samples of music I have done in a number of different bands.
@@ -873,34 +1792,78 @@ $(document).ready(function(){
 					I eventually want to set up a marketplace here, as of right now I have physical copies of 
 					Croque Madame's 
 					<a id="in_sub_link" href="http://croquemadamejazz.bandcamp.com/album/in-submission" target="_blank"> 
-						In Submission 
+						In Submission for $5
 					</a>. 
 					If you are interested in a copy please <a class="con_link">Contact</a> me.
 				</p> 
 			</section> 
 			<section id='albumgrid'>
-				<a href="http://croquemadamejazz.bandcamp.com/album/its-the-great-emulsifier" target="_blank">
-					<img class="album" src="http://f0.bcbits.com/z/84/37/843704333-1.jpg" alt="Croque Madame's The Great Emulsifier Album Cover Art"> 
-				</a>
+			
+				<img id='bro_cover' class="album" src="http://f0.bcbits.com/z/23/20/2320019783-1.jpg" alt="Missing Twin's Brothers Album Cover">
 				
-				<a href="http://miketierneytrio.bandcamp.com/album/paradigm" target="_blank">
-					<img class="album" src="http://f0.bcbits.com/z/28/04/2804895914-1.jpg" alt="Mike Tierney Trio's Paradigm Album Cover Art">
-				</a> 
+				<img id='tge_cover' class="album" src="img/thegreat.jpg" alt="Croque Madame's The Great Emulsifier Album Cover Art"> 
+
+				<img id='par_cover' class="album" src="img/paradigm.jpg" alt="Mike Tierney Trio's Paradigm Album Cover Art">	
 				
-				<a href="http://croquemadamejazz.bandcamp.com/album/in-submission" target="_blank">
-					<img id='in_sub' class="album" src="http://f0.bcbits.com/z/32/27/3227365977-1.jpg" alt="Croque Madame's In Submission Album Cover Art">
-				</a>
-				<a href="http://wryclimate.bandcamp.com/album/bridge-ice" target="_blank">
-					<img class="album" src="http://f0.bcbits.com/z/42/13/4213590741-1.jpg" alt="Wry Climate's Bridge Ice Album Cover Art"> 
-				</a>
-				<a href="http://themilkmansunion.bandcamp.com/album/roads-in " target="_blank">
-					<img class="album" src="http://userserve-ak.last.fm/serve/500/40489925/Roads+In.jpg" alt="The Milkman's Union Roads In Album Cover Art">
-				</a> 
-				<a href="http://9thrail.bandcamp.com/" target="_blank"> 
-					<img class="album" src="http://userserve-ak.last.fm/serve/500/25684263/Dreaming+of+Sleep+dreamingofsleep001.jpg" alt="9th Rail's Dreaming of Sleep Album Cover Art">  
-				</a> 
+			    <img id='isu_cover' class="album" src="img/submission.jpg" alt="Croque Madame's In Submission Album Cover Art">
+
+				<img id='bri_cover' class="album" src="img/wry.jpg" alt="Wry Climate's Bridge Ice Album Cover Art"> 
+			
+				<img id='rdi_cover' class="album" src="img/roads.jpg" alt="The Milkman's Union Roads In Album Cover Art"> 
+				
+				<img id='dos_cover' class="album" src="img/dreaming.jpg" alt="9th Rail's Dreaming of Sleep Album Cover Art">  
+				
 			</section>
 		</article>
+		
+		<article id="bro_player" class="init_blank player">
+			<button class="hideplayer">
+				<h3 class="buttontext"> Hide </h3>
+			</button>
+			<iframe width="400" height="100" style="position: relative; display: block; width: 400px; height: 100px;" src="http://bandcamp.com/EmbeddedPlayer/v=2/album=3769184858/size=venti/bgcol=DCF184/linkcol=DFC184/transparent=true/" allowtransparency="true" frameborder="0"><a href="http://missingtwin.bandcamp.com/album/brothers">Brothers by Missing Twin</a></iframe>		
+		</article> 
+		
+		<article id="tge_player" class='init_blank player'> 
+			<button class="hideplayer">
+				<h3 class="buttontext"> Hide </h3>
+			</button>
+			<iframe width="400" height="100" style="position: relative; display: block; width: 400px; height: 100px;" src="http://bandcamp.com/EmbeddedPlayer/v=2/album=799482065/size=venti/bgcol=FFFFFF/linkcol=DFC184/transparent=true/" allowtransparency="true" frameborder="0"><a href="http://croquemadamejazz.bandcamp.com/album/its-the-great-emulsifier">It&#39;s The Great Emulsifier by Croque Madame</a></iframe>
+		</article> 
+		
+		<article id="par_player" class='init_blank player'> 
+			<button class="hideplayer">
+				<h3 class="buttontext"> Hide </h3>
+			</button>
+			<iframe width="400" height="100" style="position: relative; display: block; width: 400px; height: 100px;" src="http://bandcamp.com/EmbeddedPlayer/v=2/album=3565375394/size=venti/bgcol=FFFFFF/linkcol=DFC184/transparent=true/" allowtransparency="true" frameborder="0"><a href="http://miketierneytrio.bandcamp.com/album/paradigm">Paradigm by Mike Tierney Trio</a></iframe>
+		</article> 
+		
+		<article id="isu_player" class='init_blank player'> 
+			<button class="hideplayer">
+				<h3 class="buttontext"> Hide </h3>
+			</button>
+			<iframe width="400" height="100" style="position: relative; display: block; width: 400px; height: 100px;" src="http://bandcamp.com/EmbeddedPlayer/v=2/album=2832136430/size=venti/bgcol=FFFFFF/linkcol=DFC184/transparent=true/" allowtransparency="true" frameborder="0"><a href="http://croquemadamejazz.bandcamp.com/album/in-submission">In Submission by Croque Madame</a></iframe>
+		</article> 
+		
+		<article id="bri_player" class='init_blank player'> 
+			<button class="hideplayer">
+				<h3 class="buttontext"> Hide </h3>
+			</button>
+			<iframe width="400" height="100" style="position: relative; display: block; width: 400px; height: 100px;" src="http://bandcamp.com/EmbeddedPlayer/v=2/album=3456084604/size=venti/bgcol=FFFFFF/linkcol=DFC184/transparent=true/" allowtransparency="true" frameborder="0"><a href="http://wryclimate.bandcamp.com/album/bridge-ice">Bridge Ice by Wry Climate</a></iframe>
+		</article> 
+		
+		<article id="rdi_player" class='init_blank player'> 
+			<button class="hideplayer">
+				<h3 class="buttontext"> Hide </h3>
+			</button>
+			<iframe width="400" height="100" style="position: relative; display: block; width: 400px; height: 100px;" src="http://bandcamp.com/EmbeddedPlayer/v=2/album=663083732/size=venti/bgcol=FFFFFF/linkcol=DFC184/transparent=true/" allowtransparency="true" frameborder="0"><a href="http://themilkmansunion.bandcamp.com/album/roads-in">Roads In by The Milkman&#39;s Union</a></iframe>
+		</article> 
+		
+		<article id="dos_player" class='init_blank player'> 
+			<button class="hideplayer">
+				<h3 class="buttontext"> Hide </h3>
+			</button>
+			<iframe width="400" height="100" style="position: relative; display: block; width: 400px; height: 100px;" src="http://bandcamp.com/EmbeddedPlayer/v=2/album=1054101135/size=venti/bgcol=FFFFFF/linkcol=DFC184/transparent=true/" allowtransparency="true" frameborder="0"><a href="http://9thrail.bandcamp.com/album/dreaming-of-sleep">Dreaming of Sleep by 9th Rail</a></iframe>
+		</article> 
 		
 		<article id='experience' class='init_blank'>
 			<section class='more_padding'> 
@@ -910,6 +1873,7 @@ $(document).ready(function(){
 						<h3 class="buttontext">PDF Resume</h3>
 					</button>
 				</a>
+				<section class='padded_text'>
 				
 				<h2>Education</h2>
 				
@@ -917,46 +1881,54 @@ $(document).ready(function(){
 					<h4 class="school"> Brunswick High School - Class of 2011 </h4>
 					<h4 class="school"> Clark University - Class of 2015 </h4> 
 					<h5 class="more_info"> Current GPA: 3.3 </h5>
+					<h5 class="more_info"><a class="experience_link" id="current_c"> + </a> Current Courses: </h5> 
+					<ul id="courses" class="init_blank">
+						<li class="course">Computer Graphics</li>
+						<li class="course">Operating Systems</li>
+						<li class="course">Analysis of Programming Languages</li>
+						<li class="course">Algorithms</li>
+						<li class="course">Data Structures</li>
+					</ul> 
 				</section> 
 				
 				<h2>Work</h2> 
 				
 				<section class='expsection'>
 					<h4 class='organization'> Clark University - Visual and Performing Arts Department </h4>
-					<h5 class='pos_title'> Razzo Hall Technician </h5> 
-					<ul id="#razzo"> 
-						<li>Light and Sound Production</li>
-						<li>Recording Engineering</li>
-						<li>Stage Managing</li> 
+					<h5 class='pos_title'><a class="experience_link" id="razzo_exp"> + </a> Razzo Hall Technician</h5> 
+					<ul id="razzo" class="init_blank"> 
+						<li class='job_duties'>Light and Sound Production</li>
+						<li class='job_duties'>Recording Engineering</li>
+						<li class='job_duties'>Stage Managing</li> 
 					</ul> 
-					<h5 class='pos_title'> Events Office Worker </h5> 
-					<ul id="#eventsoffice"> 
-						<li>Events Promotion</li>
-						<li>Ushering</li> 
+					<h5 class='pos_title'><a class="experience_link" id="office_exp"> + </a> Events Office Worker</h5> 
+					<ul id="eventsoffice" class="init_blank"> 
+						<li class='job_duties'>Events Promotion</li>
+						<li class='job_duties'>Ushering</li> 
 					</ul> 
 					<h4 class='organization'> Saltwater Celtic Music Festival </h4> 
-					<h5 class='pos_title'> Communications Associate (Intern) </h5> 	
-					<ul id="#saltwater"> 
-						<li>Sold Sponsorship Plans</li>
-						<li>Organized Volunteers</li> 
-						<li>Stage Managed the festival</li> 
+					<h5 class='pos_title'><a class="experience_link" id="salt_exp"> + </a> Communications Associate (Intern)</h5> 	
+					<ul id="swater" class="init_blank"> 
+						<li class='job_duties'>Sold Sponsorship Plans</li>
+						<li class='job_duties'>Organized Volunteers</li> 
+						<li class='job_duties'>Stage Managed the festival</li> 
 					</ul> 	
 					<h4 class='organization'> Clarks </h4> 		
-					<h5 class='pos_title'> Sales Associate </h5> 
-					<ul id="#clarks">
-						<li>Sales</li>
-						<li>Customer Service</li> 
+					<h5 class='pos_title'><a class="experience_link" id="clarks_exp"> + </a> Sales Associate</h5> 
+					<ul id="clarks" class="init_blank">
+						<li class='job_duties'>Sales</li>
+						<li class='job_duties'>Customer Service</li> 
 					</ul> 
 					<h4 class='organization'> The Music Center </h4> 	
-					<h5 class='pos_title'> Music Instructor </h5> 
-					<ul id="#tmc">
-						<li>Guitar</li>
-						<li>Upright & Electric Bass</li>  
-						<li>Piano</li>
-						<li>Ukelele</li> 
+					<h5 class='pos_title'><a class="experience_link" id="tmc_exp"> + </a> Music Instructor</h5> 
+					<ul id="tmc" class="init_blank">
+						<li class='job_duties'>Guitar</li>
+						<li class='job_duties'>Upright & Electric Bass</li>  
+						<li class='job_duties'>Piano</li>
+						<li class='job_duties'>Ukelele</li> 
 					</ul> 
 				</section>  
-				
+				</section>  
 			</section>
 		</article>
 		
@@ -1004,7 +1976,14 @@ $(document).ready(function(){
 		</article>
 		
 		<footer class='init_blank'> 
-			<h6 id="f"> All Rights Reserved 2013 </h6> 
+			<h6 id="f"> All Rights Reserved Jasper Boyd 2013 </h6> 
 		</footer>
+		<!--Google Analytics--> 
+		 <script>
+            var _gaq=[['_setAccount','UA-39300895-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
 	</body>
 </html> 
