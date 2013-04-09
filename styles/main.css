@@ -171,6 +171,8 @@ article
 
 .more_padding { padding: 20px; }
 
+.margin_bottom { margin-bottom: 10px; }
+
 /* Button */
 .buttontext
 {
@@ -292,7 +294,13 @@ button
 
 iframe { margin: 30px auto 0 auto; }
 
-.player { margin-top: 10px; }
+.player { 
+	margin-bottom: 10px;	
+}
+
+.hideplayer { 
+	float: left; 
+} 
 
 /* Experience */
 .school,

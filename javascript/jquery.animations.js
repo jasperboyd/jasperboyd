@@ -94,6 +94,8 @@ $(document).ready(function () {
 				players[5] = $dos_player; 
 				players[6] = $bro_player; 
 				
+				var $hideplayer = $('.hideplayer'); 
+				
 				//Experience
 				var $experience = $('#experience'); 
 				var $exp_link = $('#exp_link'); 
@@ -134,6 +136,23 @@ $(document).ready(function () {
 				var temp = 0; 
 				
 				var album_cursor = -1; 
+				var last_album = -1; 
+				
+				/*
+				===================================================
+				closeAlbumPlayer: 
+				
+				Closes the music player for any album that was just
+				clicked. 
+				===================================================
+				*/
+				var closeAlbumPlayer = function(c){ 
+					if (album_cursor === c){
+						players[c].fadeToggle(); 
+						album_cursor = -1; 
+						last_album = -1; 
+					}
+				}
 				
 				/*
 				===================================================
@@ -144,18 +163,22 @@ $(document).ready(function () {
 				===================================================
 				*/
 				var openAlbumPlayer = function(c){ 
-					var t; 
-					if (album_cursor===-1){
-						album_cursor = c;
-						players[album_cursor].fadeToggle(); 
-					} else { 
-						t = album_cursor; 
+					if (album_cursor === -1 && last_album === -1) {
 						album_cursor = c; 
-						players[t].fadeToggle(function(){
-							players[album_cursor].fadeToggle(); 
+						players[album_cursor].fadeToggle(function(){
+							$('html, body').animate({ scrollTop: 1000 }, 300);
 						}); 
+					} else if (album_cursor === c) {
+						$('html, body').animate({ scrollTop: 1000 }, 300);
+					} else { 
+						last_album = album_cursor; 
+						album_cursor = c; 
+						players[last_album].fadeToggle(function(){
+							players[album_cursor].fadeToggle(function(){
+								$('html, body').animate({ scrollTop: 1000 }, 300);
+							}); 
+						});
 					}
-					
 				}
 				
 				/*
@@ -478,6 +501,9 @@ $(document).ready(function () {
 					openAlbumPlayer(choice); 
 				}); 
 				 
+				$hideplayer.click(function(){
+					closeAlbumPlayer(album_cursor); 
+				}); 
 				
 				//Experience Page
 				$courses_expand.click(function(){
