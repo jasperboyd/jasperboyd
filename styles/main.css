@@ -1,4 +1,7 @@
 /*http://www.colorcombos.com/color-schemes/424/ColorCombo424.html*/
+html {
+	-webkit-font-smoothing: antialiased;
+}
 
 /* HTML5 Support */
 article, section, aside, hgroup, nav, header, footer, figure, figcaption {
