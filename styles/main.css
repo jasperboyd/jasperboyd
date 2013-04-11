@@ -1,5 +1,9 @@
 /*http://www.colorcombos.com/color-schemes/424/ColorCombo424.html*/
 
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
 /* HTML5 Support */
 article, section, aside, hgroup, nav, header, footer, figure, figcaption {
   	display: block;
@@ -315,7 +319,8 @@ iframe { margin: 30px auto 0 auto; }
 .course,
 .job_duties 
 {
-	color: #7EB5D6; 
+	-webkit-font-smoothing: subpixel-antialiased;
+	color: #DFC184; 
 	text-shadow: 1px 1px 1px #644436;
 }
 
@@ -423,7 +428,7 @@ h5{font-size: 24px;}
 
 p
 {
-	font-size: 22px;
+	font-size: 28px;
 	color: #7EB5D6;
 	text-align:justify;
 	text-justify:inter-word;
