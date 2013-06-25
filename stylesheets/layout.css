@@ -47,13 +47,15 @@ body
 }
 
 #featuredimg,
-#sidebarimg
+#sidebarimg,
+#musicsidebarimg
 {
 	width: 100%;
 } 
 
 #sidebar #imgbkrnd,
-#featured #imgbkrnd
+#featured #imgbkrnd,
+#musicsidebarimg
 {
 	background-color: #9e3e3e;
 }
@@ -194,6 +196,14 @@ li
 	letter-spacing: 1px; 
 } 
 
+.albumart
+{
+	width: 100%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+		border-radius: 5px;
+}
+
 .initblank 
 { 
 	display: none; 
@@ -207,6 +217,16 @@ li
 .justify
 {
 	text-align: justify;
+} 
+
+.margtop
+{
+	margin-top: 25px; 
+} 
+
+.obscure
+{
+	color: #c24c4c;
 } 
 
 .padall
