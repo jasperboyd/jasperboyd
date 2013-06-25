@@ -21,19 +21,22 @@
 	<link rel="stylesheet" href="../stylesheets/base.css">
 	<link rel="stylesheet" href="../stylesheets/skeleton.css">
 	<link rel="stylesheet" href="../stylesheets/layout.css">
-	<link href='http://fonts.googleapis.com/css?family=Raleway:100,300,600|Cabin+Condensed:400,700' rel='stylesheet' type='text/css'>
-
+	<link href='http://fonts.googleapis.com/css?family=Raleway:100,300,600&effect=3d-float|Cabin+Condensed:400,700' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script> 
+	<script src="../js/main.js"></script> 
+	<script language="javascript" type="text/javascript">
+	<!--
+	function popitup(url) {
+		newwindow=window.open(url,'name','height=325,width=300');
+		if (window.focus) {newwindow.focus()}
+		return false;
+	}
+	// -->
+	</script>
+	
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-
 </head>
 <body>
 
@@ -47,24 +50,25 @@
 	<div class="container">
 		<div id="sidebar" class="one-third column">
 			<header> 
-				<h1 id="title" class="remove-bottom padright">Jasper Boyd</h1>
+				<a href="../"><h1 id="title" class="remove-bottom padright">Jasper Boyd</h1></a>
 				<nav class="padright">
+					<!--<a href="blog.jboyd.co">BLOG</a>--> 
 					<a href="/resume">RESUME</a> 
-					<a href="/music">MUSIC</a> 
+					<a class="selected">MUSIC</a> 
 					<a href="/web">WEB</a> 
-					<a href="/contact">CONTACT</a> 
+					<a id="contactlink">CONTACT</a> 
 				</nav> 
 			</header> 
 			<div id="contact" class="initblank">
 				<p>
 				<a id="addresslink">Address</a> 
-				<span id="address" class="initblank">
-				Jasper Boyd
-				Campus Box 0210 
-				950 Main St. 
+				<a id="emaillink" href="mailto:jasperboyd@lavabit.com">Email</a><br />
+				<p id="address" class="initblank">
+				Jasper Boyd <br />
+				Campus Box 0210 <br />
+				950 Main St. <br />
 				Worcester MA
-				</span>
-				<a id="emaillink" href="mailto:jasperboyd@lavabit.com">Email</a>
+				</p>
 				</p>
 			</div> 
 			
@@ -87,7 +91,7 @@
 			</div> 
 			
 			<div class="two-thirds column"> 
-				<h3 class="center">THE PUREST CACOPHONY</h3>
+				<h3 class="center margtop">THE PUREST CACOPHONY</h3>
 				<p class="justify">
 					The Purest Cacophony is my solo venture. For a long time I was the 
 					bassist in a number of different groups and after
@@ -96,7 +100,7 @@
 					was in control.
 				</p> 
 				<p class="justify"> 
-					The Purest Cacophony's debut EP, <A>I Will Not Fall</a>, was released in 
+					The Purest Cacophony's debut EP, <a href="http://music.thepureca.co/album/i-will-not-fall" target="_blank">I Will Not Fall</a>, was released in 
 					June of 2013 and more is on the way. 
 				</p> 
 				<h4 class="center">Other Links</h4> 
@@ -115,7 +119,7 @@
 					and character to the music. 
 				</p> 
 				<p class="justify">
-					The Halfs' debut EP, <a>Shut Off The Fan!</a>, was released in April of 2013 and
+					The Halfs' debut EP, <a href="http://thehalfs.bandcamp.com/album/shut-off-the-fan" target="_blank">Shut Off The Fan!</a>, was released in April of 2013 and
 					a full-length album is scheduled to be released in late summer. 
 				</p>
 				<h4 class="center">Other Links</h4> 
@@ -126,76 +130,75 @@
 				</div>
 			</div>
 			
-			<div class="two-thirds column"> 
-				
-			</div> 
+			<div id="discography"> 
 			
-			<div class="sixteen columns"> 
+			<div class="sixteen columns inheritbackground"> 
 				<h2 class="center">Discography</h2>
 				<p class="center obscure"> Insure that popups are enabled </p>
 			</div> 
 			
-			<div class="one-third column center padtop"> 
+			<div class="one-third column center padtop inheritbackground"> 
 				<h4>I WILL NOT FALL</h4> 
 				<img class="albumart" src="../images/IWNF.jpg"> 
 				<h4>The Purest Cacophony</h4> 
-				<a>Download</a> | <a>Listen</a>
+				<a href="http://music.thepureca.co/album/i-will-not-fall">Download</a> | <a onclick="return popitup('http://www.windytunnel.co/thepurestcacophony/iwillnotfall')">Listen</a>
 			</div> 
 			
-			<div class="one-third column center padtop"> 
+			<div class="one-third column center padtop inheritbackground"> 
 				<h4>SHUT OFF THE FAN!</h4> 
 				<img class="albumart" src="../images/sotf.jpg"> 
 				<h4>The Halfs</h4> 
-				<a>Download</a> | <a>Listen</a>
+				<a href="http://thehalfs.bandcamp.com/album/shut-off-the-fan">Download</a> | <a onclick="return popitup('http://www.windytunnel.co/thehalfs/shutoffthefan')">Listen</a>
 			</div> 
 			
-			<div class="one-third column center padtop"> 
+			<div class="one-third column center padtop inheritbackground"> 
 				<h4>BROTHERS</h4> 
 				<img class="albumart" src="../images/brothers.jpg"> 
 				<h4>Missing Twin</h4> 
-				<a>Download</a> | <a>Listen</a>
+				<a href="http://missingtwin.bandcamp.com/album/brothers">Download</a> | <a onclick="return popitup('http://www.windytunnel.co/missingtwin/brothers')">Listen</a>
 			</div> 
 			
-			<div class="one-third column center padtop"> 
+			<div class="one-third column center padtop inheritbackground"> 
 				<h4>IT'S THE GREAT EMULSIFIER</h4>
 				<img class="albumart" src="../images/thegreat.jpg"> 
 				<h4>Croque Madame</h4> 
-				<a>Download</a> | <a>Listen</a>
+				<a href="http://croquemadamejazz.bandcamp.com/album/its-the-great-emulsifier">Download</a> | <a onclick="return popitup('thegreatemulsifier.html')">Listen</a>
 			</div>
 			
-			<div class="one-third column center padtop"> 
+			<div class="one-third column center padtop inheritbackground"> 
 				<h4>PARADIGM</h4> 
 				<img class="albumart" src="../images/paradigm.jpg">
 				<h4>The Mike Tierney Trio</h4> 
-				<a>Download</a> | <a>Listen</a>
+				<a href="http://miketierneytrio.bandcamp.com/album/paradigm">Download</a> | <a onclick="return popitup('paradigm.html')">Listen</a>
 			</div>
 			
-			<div class="one-third column center padtop"> 
+			<div class="one-third column center padtop inheritbackground"> 
 				<h4>IN SUBMISSION</h4> 
 				<img class="albumart" src="../images/submission.jpg">
 				<h4>Croque Madame</h4> 
-				<a>Download</a> | <a>Listen</a>
+				<a href="http://croquemadamejazz.bandcamp.com/album/in-submission">Download</a> | <a onclick="return popitup('insubmission.html')">Listen</a>
 			</div> 
 			
-			<div class="one-third column center padtop"> 
+			<div class="one-third column center padtop inheritbackground"> 
 				<h4>BRIDGE ICE</h4> 
 				<img class="albumart" src="../images/wry.jpg">
 				<h4>Wry Climate</h4> 
-				<a>Download</a> | <a>Listen</a>
+				<a href="http://wryclimate.bandcamp.com/album/bridge-ice">Download</a> | <a onclick="return popitup('bridgeice.html')">Listen</a>
 			</div>
 			
-			<div class="one-third column center padtop"> 
+			<div class="one-third column center padtop inheritbackground"> 
 				<h4>ROADS IN</h4> 
 				<img class="albumart" src="../images/roads.jpg">
 				<h4>The Milkman's Union</h4> 
-				<a>Download</a> | <a>Listen</a>
+				<a href="http://themilkmansunion.bandcamp.com/album/roads-in">Download</a> | <a onclick="return popitup('roadsin.html')">Listen</a>
 			</div>
 			
-			<div class="one-third column center padtop"> 
+			<div class="one-third column center padtop inheritbackground"> 
 				<h4>DREAMING OF SLEEP</h4> 
 				<img class="albumart" src="../images/dreaming.jpg">
 				<h4>9th Rail</h4> 
-				<a>Download</a> | <a>Listen</a>
+				<a href="https://myspace.com/9thrail" target="_blank">Listen</a>
+			</div>
 			</div>
 		</div>
 

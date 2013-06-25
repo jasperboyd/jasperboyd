@@ -21,18 +21,13 @@
 	<link rel="stylesheet" href="../stylesheets/base.css">
 	<link rel="stylesheet" href="../stylesheets/skeleton.css">
 	<link rel="stylesheet" href="../stylesheets/layout.css">
-	<link href='http://fonts.googleapis.com/css?family=Raleway:100,300,600|Cabin+Condensed:400,700' rel='stylesheet' type='text/css'>
-
+	<link href='http://fonts.googleapis.com/css?family=Raleway:100,300,600&effect=3d-float|Cabin+Condensed:400,700' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script> 
+	<script src="js/main.js"></script> 
+	
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
 </head>
 <body>
@@ -47,24 +42,25 @@
 	<div class="container">
 		<div id="sidebar" class="one-third column">
 			<header> 
-				<h1 id="title" class="remove-bottom padright">Jasper Boyd</h1>
+				<a href="../"><h1 id="title" class="remove-bottom padright">Jasper Boyd</h1></a>
 				<nav class="padright">
+					<!--<a href="blog.jboyd.co">BLOG</a>-->
 					<a href="/resume">RESUME</a> 
 					<a href="/music">MUSIC</a> 
-					<a href="/web">WEB</a> 
-					<a href="/contact">CONTACT</a> 
+					<a class="selected">WEB</a> 
+					<a id="contactlink">CONTACT</a> 
 				</nav> 
 			</header> 
 			<div id="contact" class="initblank">
 				<p>
 				<a id="addresslink">Address</a> 
-				<span id="address" class="initblank">
-				Jasper Boyd
-				Campus Box 0210 
-				950 Main St. 
+				<a id="emaillink" href="mailto:jasperboyd@lavabit.com">Email</a><br />
+				<p id="address" class="initblank">
+				Jasper Boyd <br />
+				Campus Box 0210 <br />
+				950 Main St. <br />
 				Worcester MA
-				</span>
-				<a id="emaillink" href="mailto:jasperboyd@lavabit.com">Email</a>
+				</p>
 				</p>
 			</div> 
 			
@@ -77,68 +73,64 @@
 			</p> 
 			
 			<div id="imgbkrnd"> 
-				<img id="sidebarimg" src="../images/sidebar.png">
+				<img id="sidebarimg" src="../images/sidebaralt.png">
 			</div>
 		</div>
 		
 		<div id="main">
-			<div class="two-thirds column inheritbackground">
-			<h2 class="center">Resume</h2> 
+			<div class="two-thirds column"> 
+				<h2 class="center">Handmade Websites</h2> 
+				<p class="justify"> 
+					Although many websites these days are made from 
+					templates and programs like dreamweaver, nothing
+					beats a handmade website. It gives 
+					you ultimate freedom and control over the design. 
+				</p> 
+				<h3 class="center">Need A Website?</h3> 
+				<p class="justify">
+					I will work with you to figure out what will be
+					the best site for your needs, and what features
+					you need and what you dont.
+				</p>
 			</div>
-			
-		<div class="one-third column"> 
-			<h3 class="center"> ABOUT </h3> 
-			<p class="justify smaller"> 
-				I love coding websites from scratch. I'm interested in 
-				creating easy-to-use, lightweight, and functional
-				web applications. I offer a balance of technical 
-				know-how, with artistic intuition, as well as the ability
-				to work well with others.  
-			</p>
-		</div> 
-			
-		<div class="one-third column">
-			<h3 class="center"> SKILLS </h3>  
-			<ul>
-				<li>Languages: Javascript, PHP, C/C++, Java</li>
-				<li>Libraries: JQuery</li> 
-				<li>Technologies: HTML5/CSS3, Photoshop, Wordpress</li> 
-			</ul>
-		</div> 
-			
-		<div class="one-third column">
-			<h3 class="center"> EDUCATION </h3> 
-			<ul>
-				<li>Brunswick High School - Class of 2011</li>
-				<li>Clark University - Class of 2015</li>
-				<ul>
-					<li>Major: Computer Science / Music Technology</li>
-					<li>Current GPA: 3.06</li> 
-					<li>Relevant Courses</li>
-					<ul> 
-						<li>Software Engineering</li> 
-						<li>Senior Tutorial in Computer Music</li>
-						<li>Operating Systems</li>
-						<li>Computer Graphics</li> 
-						<li>Analysis of Programming Languages</li> 
-						<li>Algorithms</li>
-					</ul>
+			<div class="one-third column"> 
+				<h4 class="center">Core Features</h4>
+				<ul class="center"> 
+					<li>Mobile Compatible</li> 
+					<li>Search Engine Optimized</li> 
+					<li>User Friendly</li> 
 				</ul> 
-			</ul> 
-		</div> 
-		
-		<div class="one-third column">
-			<h3 class="center"> EXPERIENCE </h3> 
-			<ul>
-				<li>Founder - Windy Tunnel Media</li> 
-				<li>Graphic Designer - Clark U.</li> 
-				<li>Sound & Light Tech. - Clark U.</li>
-				<li>Communications Associate - Saltwater Festival</li> 
-				<li>Sales Associate - Clarks USA</li> 
-				<li>Music Instructor - The Music Center</li>
-			</ul> 
-		</div> 
-	
+			</div> 
+			<div class="one-third column">
+				<h4 class="center">Additional Features</h4> 
+				<ul class="center"> 
+					<li>Blog</li> 
+					<li>Store</li> 
+					<li>Webapp</li>
+				</ul> 
+			</div> 
+			<div class="two-thirds column">
+				<h3 class="center">Why Not Use a More Experienced Designer?</h3> 
+				<p class="justify"> 
+					There are a few reasons you should consider me over someone 
+					with a much longer resume. Firstly I will be more available to communicate
+					because you won't be just another name on an endless list of clients. 
+					Furthermore my pricing is much cheaper than your typical web 
+					designer. However the most important reasons is that I know what 
+					I'm doing and I guarantee a unique website that you will be happy 
+					with. 
+				</p> 
+				<div class="center"><a href="mailto:jasperboyd@lavabit.com">I hope to hear from you!</a></div>
+			</div> 
+			<div class="two-thirds column center">
+				<h2>Portfolio</h2> 
+				<img class="screenshot" src="../images/windytunnel.png"> 
+				<h3> WINDY TUNNEL MEDIA </h3>
+				<a href="http://www.windytunnel.co">Visit Site</a>
+				<img class="screenshot" src="../images/thehalfs.png">
+				<h3> THE HALFS </h3> 
+				<a href="http://thehalfs.tumblr.com/">Visit Site</a>
+			</div> 
 		</div>
 
 	</div><!-- container -->
