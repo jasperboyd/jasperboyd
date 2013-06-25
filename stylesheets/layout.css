@@ -16,24 +16,17 @@
 
 /* #Site Styles
 ================================================== */
+html, 
 body
 { 
 	background-color: #9e3e3e;
-} 
+}
 
 #sidebar
 {
 	 box-sizing:border-box;
- 		-moz-box-sizing:border-box;
-  		-webkit-box-sizing:border-box;
-	 padding-bottom: 125px;
-	 -webkit-border-bottom-right-radius: 150px;
-	-webkit-border-bottom-left-radius: 150px;
-	-moz-border-radius-bottomright: 150px;
-	-moz-border-radius-bottomleft: 150px;
-	border-bottom-right-radius: 150px;
-	border-bottom-left-radius: 150px; 
-	 
+ 	   -moz-box-sizing:border-box;
+  	   -webkit-box-sizing:border-box;
 } 
 
 #sidebar,
@@ -50,8 +43,24 @@ body
 #sidebar p, 
 #sidebar h2
 {
-	color: white;
 	padding: 0 10px;
+}
+
+#featuredimg,
+#sidebarimg
+{
+	width: 100%;
+} 
+
+#sidebar #imgbkrnd,
+#featured #imgbkrnd
+{
+	background-color: #9e3e3e;
+}
+
+#featured #imgbkrnd
+{
+	height: 75px;
 }
 
 #profile
@@ -71,19 +80,17 @@ nav
 	font-size: 3.7em;
 	letter-spacing: -2px;
 	text-align: right; 
+	font-weight: 300;
+}
+
+#title:hover
+{
+	font-weight: 100;
 }
 
 #featured
 {
-	-webkit-border-radius: 5px;
-	-webkit-border-top-left-radius: 150px;
-	-webkit-border-top-right-radius: 150px;
-	-moz-border-radius: 5px;
-	-moz-border-radius-topleft: 150px;
-	-moz-border-radius-topright: 150px;
-	border-radius: 5px;
-	border-top-left-radius: 150px;
-	border-top-right-radius: 150px;
+
 }
 
 #featured p 
@@ -99,7 +106,8 @@ h3,
 h4,
 h5,
 h6,
-p
+p, 
+li
 {
 	color: white;
 } 
@@ -123,7 +131,8 @@ h3
 
 h1, 
 h2,
-nav a
+nav a, 
+#title
 {
 	font-family: 'Raleway', sans-serif;
 }
@@ -149,7 +158,8 @@ nav a
 
 
 nav a:hover, 
-nav a:visited:hover
+nav a:visited:hover,
+.selected
 { 
 	font-weight: 300; 
 	font-style: italic;
@@ -172,10 +182,16 @@ a:visited
 }
 
 a:hover,
-a:visited:hover
+a:visited:hover,
+#title:hover
 {
 	color: #e6ed18;
 	font-style: italic; 
+} 
+
+li
+{
+	letter-spacing: 1px; 
 } 
 
 .initblank 
@@ -211,6 +227,11 @@ a:visited:hover
 .inheritbackground
 {
 	background-color: inherit; 
+} 
+
+.smaller
+{
+	font-size: .9em;
 } 
 
 .selected
