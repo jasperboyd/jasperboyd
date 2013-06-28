@@ -1,0 +1,697 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass"; 
+
+
+
+/*Variables*/
+$white-blue: #e6f9ff;
+$light-blue: #279be8; 
+$teal: #2086bd;
+$bright-yellow: #dee827;
+$dark-blue: #144396;
+$light-orange: #e89b27;
+
+/*Vertical Rhythm*/
+$base-font-size: 18px; 
+$base-line-height: 27px; 
+@include establish-baseline(); 
+
+
+html,
+body
+{ 
+	height: 100%; 
+	width: 100%;
+} 
+
+body
+{
+	background-color: $light-orange; 
+	margin: 0 auto;
+} 
+
+
+/*Responsive Design*/ 
+@media (max-width: 320px) {
+	#currentprojects h1,
+	#discography h1, 
+	#musiclanding h1 {
+		font-size: 48.829px;
+		letter-spacing: -1px;
+	}
+	
+	#bloglink,
+	#musiclink,
+	#weblink,
+	#resumelink,
+	#contactlink {
+		font-size: 16px;
+	}
+	
+	#cp_link,
+	#d_link
+	 {
+		font-size: 20px;
+	}
+	
+	#titlelink 
+	{
+		font-size: 16px;
+		letter-spacing: 0px;
+	} 
+	
+	.greeting 
+	{
+		float: left;
+		width: 350px;
+		h1 {
+			font-size: 58.594px; 
+		} 
+		p { 
+			font-size: 12.8px;
+			letter-spacing: -1px;
+		} 
+	} 
+	#profile {
+		height: 150px; 
+		width: 150px;
+	} 
+	
+	#address p {font-size: 12.8px};
+	
+	#webdesignlanding 
+	{
+		article {
+			width: 90%;
+		}
+		h1 {font-size: 58.594px;}
+		p {font-size: 16px;}
+	} 
+	
+	#skills,
+	#education, 
+	#about {
+		margin-top: 0em;
+		margin-bottom: .5em;
+	} 
+	
+	#skills,
+	#education, 
+	#about,
+	#experience { 
+		h1 {font-size: 30px;
+			margin-bottom: .5em}
+		li {font-size: 12.8px;
+			letter-spacing: -2px}
+		p {font-size: 12.8px;}
+	} 
+	
+	.four.columns,
+	.two.columns,
+	.three-forths.columns
+	{
+		width: 90%;
+		margin: 0 5%;
+	} 
+}
+
+@media (min-width: 320px) and (max-width: 480px) { 
+	#currentprojects h1,
+	#discography h1, 
+	#musiclanding h1
+	{
+		font-size: 48.829px;
+	} 
+	#bloglink,
+	#musiclink,
+	#weblink,
+	#resumelink,
+	#contactlink {
+		font-size: 16px;
+	}
+	
+	#cp_link,
+	#d_link,
+	{
+		font-size: 25px;
+	}
+	
+	#titlelink 
+	{
+		font-size: 19.2px;
+		letter-spacing: 0px;
+	} 
+	
+	#address p {font-size: 12.8px};
+	
+	.greeting 
+	{
+		float: left;
+		width: 350px;
+		margin-top: 1em;
+		h1 {
+			font-size: 76.95px; 
+			margin-top: 0em;
+		} 
+		p { 
+			font-size: 12.8px;
+			letter-spacing: -1px;
+		} 
+	} 
+	
+	#webdesignlanding 
+	{
+		article {
+			width: 90%;
+		}
+		h1 {font-size: 58.594px;}
+		p {font-size: 16px;}
+	} 
+	
+	.sidebar
+	{
+		margin-top: .5em;
+	}
+	
+	#skills,
+	#education, 
+	#about {
+		margin-top: 0em;
+		margin-bottom: .5em;
+	} 
+	
+	#skills,
+	#education, 
+	#about,
+	#experience { 
+		h1 {font-size: 30px;
+			margin-bottom: .5em}
+		li {font-size: 12.8px;
+			letter-spacing: -2px}
+		p {font-size: 12.8px;}
+	} 
+	
+	.two.columns,
+	.four.columns,
+	.three-forths.columns
+	{
+		width: 90%;
+		margin: 0 5%;
+	} 
+	
+	#currentprojects h1{text-align:center;
+						margin: 0;}
+} 
+
+@media (min-width: 480px) and (max-width: 600px) { 
+	#resumelink,
+	#contactlink,
+	#bloglink,
+	#musiclink,
+	#weblink { 
+		font-size: 16px;
+	} 
+	
+	#currentprojects h1,
+	#discography h1, 
+	#musiclanding h1,
+	#skills h1,
+	#education h1, 
+	#about h1,
+	#experience h1 { 
+		font-size: 48.829px;
+	}
+	
+	#cp_link
+	#d_link
+	{
+		font-size: 30px;
+	}
+	
+	#titlelink 
+	{
+		font-size: 20px; 
+		letter-spacing: 2px;
+	} 
+	
+	.greeting 
+	{
+		float: left;
+		width: 350px;
+		h1 {
+			font-size: 76.95px; 
+			margin-top: 0em;
+		} 
+		p { 
+			font-size: 15.8px;
+			letter-spacing: -1px;
+		} 
+	} 
+	.sidebar
+	{
+		margin-top: .2em;
+	}  
+	
+	
+	#webdesignlanding 
+	{
+		article {
+			width: 90%;
+		}
+		h1 {font-size: 58.594px;}
+		p {font-size: 16px;}
+	} 
+	
+	.two.columns,
+	.four.columns,
+	.three-forths
+	{
+		width: 90%;
+		margin: auto 5%;
+	} 
+
+} 
+
+@media (min-width: 600px) and (max-width: 800px) { 
+	#currentprojects h1,
+	#discography h1, 
+	#musiclanding h1 {
+		font-size: 61.036px;
+	} 
+	
+	
+	#cp_link,
+	#d_link {
+		font-size: 39.063px;
+	}
+	
+	#titlelink
+	{
+		font-size: 25px; 
+		letter-spacing: 4px;
+	} 
+	
+	.greeting 
+	{
+		width: 300px;
+		h1 {
+			font-size: 76.95px; 
+		} 
+		p { 
+			font-size: 16px;
+			letter-spacing: -1px;
+		} 
+	} 
+	#profile
+	{
+		width: 200px;
+		height: 200px;
+	} 
+	
+	#webdesignlanding 
+	{
+		article {
+			width: 90%;
+		}
+		h1 {font-size: 61.036px;}
+		p {font-size: 20px;}
+	} 
+	
+	.four.columns
+	{
+		margin: auto 5%;
+		width: 40%;
+	} 
+	
+	.two.columns,
+	.three-forths.columns
+	{
+		clear: both;
+		width: 90%;
+		margin: auto 5%;
+	}
+} 
+
+@media (min-width: 800px) and (max-width: 1024px) { 
+	#currentprojects h1,
+	#discography h1, 
+	#musiclanding h1,
+	{
+		font-size: 61.036px;
+	}
+	
+	#cp_link,
+	#d_link {
+		font-size: 39.063px;
+	}
+	
+	#titlelink
+	{
+		font-size: 30px; 
+		letter-spacing: 6px;
+	} 
+	
+	.greeting 
+	{
+		width: 400px;
+		h1 {
+			font-size: 76.95px; 
+		} 
+		p { 
+			font-size: 20px;
+		} 
+	} 
+	
+	#webdesignlanding 
+	{
+		article {
+			width: 90%;
+		}
+		h1 {font-size: 61.036px;}
+		p {font-size: 20px;}
+	} 
+} 
+
+header
+{ 
+	position: fixed; 
+	bottom: 0;
+	width: 100%;
+	min-width: 340px;
+	background-color: $light-blue;
+	h1 { 
+		@include adjust-font-size-to(37.5px); 
+		font-family: "Raleway";
+		font-weight: 100;
+		letter-spacing: 6px;
+		padding: .1em 5px;
+		color: $white-blue;
+		.selected {
+			color: $dark-blue;
+		}
+	}
+} 
+
+nav
+{
+	width: 100%; 
+	background-color: $dark-blue;
+	a { 
+		@include inline-block();
+		padding:0 .5em;
+		color: $white-blue;
+		@include adjust-font-size-to(30px); 
+	} 
+	a:hover,
+	.selected
+	{
+		background-color: $light-blue;
+		color: $dark-blue;
+		border-top: 5px solid $dark-blue;
+	} 
+	section { 
+		margin-left: 1em;
+		width: 100%; 
+		background-color: $light-blue;
+		a {font-family: "ubuntu mono";
+		   font-size: 16px;}
+		a:hover {
+			font-style: italic;
+			border: 0px solid white;
+		} 
+		p { 
+			font-family: "Raleway";
+			color: $white-blue;
+		}
+	} 
+} 
+
+#address {
+	background-color: $dark-blue;
+	margin-left: 0;
+	padding-left: 0;
+} 
+
+#musiclink{
+	font-family: "Merriweather";
+	font-weight: 300;
+}
+
+#weblink,
+#contactlink
+{
+	font-family: "ubuntu mono";
+	font-weight: 400; 
+} 
+
+#contactlink{
+	font-style: italic;
+}
+
+#resumelink { 
+	font-family: "Raleway";
+} 
+
+h2 {
+		text-align: center;
+		font-family: "Merriweather";
+		@include adjust-font-size-to(30px);
+		@include leader();
+		@include trailer();
+} 
+
+aside 
+{
+	margin-top: 7em;
+	margin-right: 20px;
+	float: right;
+} 
+
+article  
+{ 
+	width: 100%;
+	float: right;
+	text-align: right;
+	color: $white-blue;
+	h1 { 
+		font-family: "Raleway"; 
+		@include leader();
+		@include adjust-font-size-to(76.95px); 
+	} 
+	ul { 
+		font-family: "Ubuntu Mono";
+		@include adjust-font-size-to(30px);
+	} 
+	p { 
+		font-family: "Ubuntu Mono"; 
+		@include adjust-font-size-to(30px);
+		@include trailer(); 
+	}
+}
+
+.one { 
+	width: 100%;
+	clear: both;
+} 
+
+.two { 
+	width: 40%;
+	margin: 0 5%;
+} 
+
+.three-forths {
+	width: 69%; 
+	margin: 0 3%
+}
+
+.four {
+	width: 23%;
+	margin: 0 1%;
+}	
+
+.columns {
+	float: left;
+} 
+
+a 
+{ 
+	color: $dark-blue;
+	text-decoration: none;
+} 
+
+a:hover
+{
+	color: $white-blue; 
+} 
+
+.justify {text-align:justify;}
+.center {text-align:center;}
+.obscure {color: adjust-lightness($light-blue, -5)};
+.initblank {display:none;} 
+
+/*Page Styles*/
+
+/*Home*/
+.greeting
+{
+	float: right;
+	max-width: 700px;
+} 
+
+
+aside {
+	img {
+		display: block;
+		float: left;
+		@include border-radius(300px, 300px);
+		height: 300px;
+		width: 300px;
+		margin: 0 auto 0 0;
+	}
+}
+
+
+#webdesignlanding{padding: 5em 0;}
+
+#musiclanding,
+#currentprojects, 
+#discography
+{
+	padding: 3em 0;
+	a { 
+		margin: 0 .5em 0 auto;
+		color: $dark-blue;
+		font-family: "Merriweather";
+		@include adjust-font-size-to(30px);
+	} 
+	a:hover {
+		color: $white-blue;
+	} 
+}
+
+#discography { 
+	background-color: $light-blue;
+	text-align: center;
+	section {
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+	h1 { 
+		margin-bottom: 2em;
+	} 
+	h4 {
+		font-family: "Raleway";
+		letter-spacing: -1px;
+	}
+	a { 
+		font-family: "Ubuntu mono";
+		font-size: 16px;
+	} 
+	img {
+		width: 100%; 
+		margin: 0 auto;
+		@include border-radius(5px, 5px);
+	}
+} 
+
+#discography #tt_link {
+	font-size: 46.875px;
+}
+
+#currentprojects
+{
+	img {
+		max-width: 300px; 
+		max-height: 300px; 
+		margin: 2em auto;
+		display: block;
+	} 
+	background-color: $dark-blue;
+	h1 {text-align: center;}
+	p { font-size: 20px;}
+	a { 
+		font-size: 20px;
+		color: $bright-yellow;
+	}
+} 
+
+/*WEB*/
+
+#portfolio
+{
+	text-align: center;
+	background-color: $dark-blue;
+	margin-bottom: 5em; 
+	h1 {margin-bottom: 2em;}
+	h2 {
+		font-family:"Raleway";
+	}
+	a { 
+		color: $white-blue;
+	} 
+	img { 
+		width: 90%; 
+		margin-top: 2em;
+		margin: 0 auto;
+		@include border-radius(20px, 20px);
+	} 
+} 
+
+/*Resume*/
+#skills, 
+#about, 
+#experience, 
+#education { 
+	margin-top: 91.554px;
+	h1 {font-size: 49px;
+	}
+}
+
+#skills,
+#about,
+{
+	text-align: left;
+	h1 {margin-top: 1em;}
+	p, li { font-size: 16px;}
+	p,
+	ul {
+		line-height: 20px;
+	}
+	ul{
+		margin: 0;
+	}
+	li { 
+		display:inline-block;
+		padding: 0;
+	}
+	@include trailer(); 
+} 
+
+#education
+{
+	text-align: left;
+	margin-bottom: 0;
+	padding-bottom: 1em;
+	h1 { margin-top: 1em;}
+	p, li { font-size: 16px;}
+	ul {
+		margin: 0; 
+		line-height: 20px;
+		margin-left: 16px;
+	}
+	@include trailer();
+}
+
+#experience
+{
+	padding-top: 3em;
+	background-color: $dark-blue;
+	li{text-align: center;}
+	li {font-size: 16px;}
+	padding-bottom: 7em;
+} 
