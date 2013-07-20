@@ -11,6 +11,7 @@
 	<link href="../stylesheets/print.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link href="../stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Raleway:100|Ubuntu+Mono:400,400italic|Merriweather:300italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=BenchNine:400,300,700' rel='stylesheet' type='text/css'>
 	<script src="http://code.jquery.com/jquery-2.0.0.min.js"> </script>
 	<script src="../javascripts/main.js"></script>
 	<script src="../javascripts/resume.js"></script>
@@ -28,27 +29,33 @@
 </head>
 <body> 
 	<header> 
-		<nav>
+		<h1><a id="titlelink" href="../">Jasper Boyd</a></h1>
+		<h2><a href="/music">Musician</a> & <a href="/web">Web Designer</a></h2>
+	</header>
+	<nav id="mastnav">
+			<a id="bloglink" href="/blog">Blog</a>
 			<a id="musiclink" href="/music">Music</a> 
 			<a id="weblink" href="/web">Web</a> 
-			<a id="resumelink" class="selected">Resume</a> 
-			<a id="contactlink">Contact</a> 
+			<a id="resumelink" class="selected">Resume</a>
+			<a id="contactlink">Contact</a>
 			<section id="contact" class="initblank"> 
 				<a id="addresslink">Address</a> 
 				<a href="mailto:jasperboyd@lavabit.com">Email</a>
 				<section id="address" class="initblank">
 					<p>
-					   Campus Box 210,
-					   Clark U, 
-					   Worcester, MA 01610
+					   Campus Box 210 <br />
+					   Clark U <br />
+					   Worcester, MA 01610 <br />
 					</p>
 				</section>
 			</section>
-		</nav> 
-		<h1><a id="titlelink" href="../">JASPER BOYD'S INTERNET HOUSE</a></h1>
-	</header>
+	</nav> 
+	<nav id="secnav" class="initblank"> 
+		<a id="ed_link">Education</a>
+		<a id="ex_link">Experience</a>  
+	</nav> 
 	<div id="wrapper"> 
-		<article id="about" class="four columns"> 
+		<article id="about" class="one-third column"> 
 			<h1 class="center"> ABOUT </h1> 
 			<p class="justify"> 
 				I love coding websites from scratch. I'm interested in 
@@ -57,11 +64,10 @@
 				know-how, with artistic intuition, as well as the ability
 				to work well with others.  
 			</p>
-			<p class="center"><a id="e_link">Experience</a></p>
 		</article> 
-		<article id="skills" class="four columns"> 
+		<article id="skills" class="one-third column"> 
 			<h1 class="center"> SKILLS </h1>  
-			<ul>
+			<ul class="center">
 				<li>HTML5/CSS3</li>
 				<li> SCSS</li> 
 				<li>Javascript</li> 
@@ -74,9 +80,9 @@
 				<li>Wordpress</li> 
 			<ul>
 		</article>
-		<article id="education" class="two columns">
+		<article id="education" class="one-third column">
 			<h1 class="center"> EDUCATION </h1> 
-			<ul>
+			<ul class="left">
 				<li>Brunswick High School - Class of 2011</li>
 				<li>Clark University - Class of 2015</li>
 				<ul>
@@ -93,9 +99,13 @@
 					</ul>
 				</ul> 
 			</ul>
-		</article> 
+		</article>
 		
-		<article id="experience" class="one column">
+		<section class="one column buttons">
+			<button id="exp_button">Experience</button>
+		</section> 
+		
+		<article id="experience">
 			<h1 class="center"> EXPERIENCE </h1> 
 			<ul>
 				<li>Founder - Windy Tunnel Media</li> 

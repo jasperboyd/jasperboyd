@@ -80,710 +80,465 @@ html {
   line-height: 1.5em;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 html,
 body {
   height: 100%;
   width: 100%;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 body {
   background-color: #e89b27;
   margin: 0 auto;
 }
 
-/*Responsive Design*/
-@media (max-width: 320px) {
-  /* line 43, ../sass/screen.scss */
-  #currentprojects h1,
-  #discography h1,
-  #musiclanding h1 {
-    font-size: 48.829px;
-    letter-spacing: -1px;
-  }
-
-  /* line 52, ../sass/screen.scss */
-  #bloglink,
-  #musiclink,
-  #weblink,
-  #resumelink,
-  #contactlink {
-    font-size: 16px;
-  }
-
-  /* line 58, ../sass/screen.scss */
-  #cp_link,
-  #d_link {
-    font-size: 20px;
-  }
-
-  /* line 63, ../sass/screen.scss */
-  #titlelink {
-    font-size: 16px;
-    letter-spacing: 0px;
-  }
-
-  /* line 69, ../sass/screen.scss */
-  .greeting {
-    float: left;
-    width: 350px;
-  }
-  /* line 72, ../sass/screen.scss */
-  .greeting h1 {
-    font-size: 58.594px;
-  }
-  /* line 75, ../sass/screen.scss */
-  .greeting p {
-    font-size: 12.8px;
-    letter-spacing: -1px;
-  }
-
-  /* line 80, ../sass/screen.scss */
-  #profile {
-    height: 150px;
-    width: 150px;
-  }
-
-  /* line 85, ../sass/screen.scss */
-  #address p {
-    font-size: 12.8px;
-  }
-
-  /* line 89, ../sass/screen.scss */
-  #webdesignlanding article {
-    width: 90%;
-  }
-  /* line 92, ../sass/screen.scss */
-  #webdesignlanding h1 {
-    font-size: 58.594px;
-  }
-  /* line 93, ../sass/screen.scss */
-  #webdesignlanding p {
-    font-size: 16px;
-  }
-
-  /* line 98, ../sass/screen.scss */
-  #skills,
-  #education,
-  #about {
-    margin-top: 0em;
-    margin-bottom: .5em;
-  }
-
-  /* line 107, ../sass/screen.scss */
-  #skills h1,
-  #education h1,
-  #about h1,
-  #experience h1 {
-    font-size: 30px;
-    margin-bottom: .5em;
-  }
-  /* line 109, ../sass/screen.scss */
-  #skills li,
-  #education li,
-  #about li,
-  #experience li {
-    font-size: 12.8px;
-    letter-spacing: -2px;
-  }
-  /* line 111, ../sass/screen.scss */
-  #skills p,
-  #education p,
-  #about p,
-  #experience p {
-    font-size: 12.8px;
-  }
-
-  /* line 117, ../sass/screen.scss */
-  .four.columns,
-  .two.columns,
-  .three-forths.columns {
-    width: 90%;
-    margin: 0 5%;
-  }
+/* TYPOGRAPHY */
+/* line 48, ../sass/screen.scss */
+h1 {
+  font-size: 2.25em;
+  line-height: 1.33333em;
+  font-family: "Raleway";
+  margin-bottom: 1.5em;
 }
-@media (min-width: 320px) and (max-width: 480px) {
-  /* line 127, ../sass/screen.scss */
-  #currentprojects h1,
-  #discography h1,
-  #musiclanding h1 {
-    font-size: 48.829px;
-  }
 
-  /* line 134, ../sass/screen.scss */
-  #bloglink,
-  #musiclink,
-  #weblink,
-  #resumelink,
-  #contactlink {
-    font-size: 16px;
-  }
-
-  /* line 140, ../sass/screen.scss */
-  #cp_link,
-  #d_link {
-    font-size: 25px;
-  }
-
-  /* line 145, ../sass/screen.scss */
-  #titlelink {
-    font-size: 19.2px;
-    letter-spacing: 0px;
-  }
-
-  /* line 150, ../sass/screen.scss */
-  #address p {
-    font-size: 12.8px;
-  }
-
-  /* line 153, ../sass/screen.scss */
-  .greeting {
-    float: left;
-    width: 350px;
-    margin-top: 1em;
-  }
-  /* line 157, ../sass/screen.scss */
-  .greeting h1 {
-    font-size: 76.95px;
-    margin-top: 0em;
-  }
-  /* line 161, ../sass/screen.scss */
-  .greeting p {
-    font-size: 12.8px;
-    letter-spacing: -1px;
-  }
-
-  /* line 169, ../sass/screen.scss */
-  #webdesignlanding article {
-    width: 90%;
-  }
-  /* line 172, ../sass/screen.scss */
-  #webdesignlanding h1 {
-    font-size: 58.594px;
-  }
-  /* line 173, ../sass/screen.scss */
-  #webdesignlanding p {
-    font-size: 16px;
-  }
-
-  /* line 177, ../sass/screen.scss */
-  .sidebar {
-    margin-top: .5em;
-  }
-
-  /* line 183, ../sass/screen.scss */
-  #skills,
-  #education,
-  #about {
-    margin-top: 0em;
-    margin-bottom: .5em;
-  }
-
-  /* line 192, ../sass/screen.scss */
-  #skills h1,
-  #education h1,
-  #about h1,
-  #experience h1 {
-    font-size: 30px;
-    margin-bottom: .5em;
-  }
-  /* line 194, ../sass/screen.scss */
-  #skills li,
-  #education li,
-  #about li,
-  #experience li {
-    font-size: 12.8px;
-    letter-spacing: -2px;
-  }
-  /* line 196, ../sass/screen.scss */
-  #skills p,
-  #education p,
-  #about p,
-  #experience p {
-    font-size: 12.8px;
-  }
-
-  /* line 202, ../sass/screen.scss */
-  .two.columns,
-  .four.columns,
-  .three-forths.columns {
-    width: 90%;
-    margin: 0 5%;
-  }
-
-  /* line 207, ../sass/screen.scss */
-  #currentprojects h1 {
-    text-align: center;
-    margin: 0;
-  }
+/* line 54, ../sass/screen.scss */
+h2 {
+  font-size: 1.5em;
+  line-height: 2em;
+  font-family: "BenchNine";
+  letter-spacing: 3px;
+  font-weight: 700;
 }
-@media (min-width: 480px) and (max-width: 600px) {
-  /* line 216, ../sass/screen.scss */
-  #resumelink,
-  #contactlink,
-  #bloglink,
-  #musiclink,
-  #weblink {
-    font-size: 16px;
-  }
 
-  /* line 226, ../sass/screen.scss */
-  #currentprojects h1,
-  #discography h1,
-  #musiclanding h1,
-  #skills h1,
-  #education h1,
-  #about h1,
-  #experience h1 {
-    font-size: 48.829px;
-  }
-
-  /* line 232, ../sass/screen.scss */
-  #cp_link
-  #d_link {
-    font-size: 30px;
-  }
-
-  /* line 237, ../sass/screen.scss */
-  #titlelink {
-    font-size: 20px;
-    letter-spacing: 2px;
-  }
-
-  /* line 243, ../sass/screen.scss */
-  .greeting {
-    float: left;
-    width: 350px;
-  }
-  /* line 246, ../sass/screen.scss */
-  .greeting h1 {
-    font-size: 76.95px;
-    margin-top: 0em;
-  }
-  /* line 250, ../sass/screen.scss */
-  .greeting p {
-    font-size: 15.8px;
-    letter-spacing: -1px;
-  }
-
-  /* line 256, ../sass/screen.scss */
-  .sidebar {
-    margin-top: .2em;
-  }
-
-  /* line 263, ../sass/screen.scss */
-  #webdesignlanding article {
-    width: 90%;
-  }
-  /* line 266, ../sass/screen.scss */
-  #webdesignlanding h1 {
-    font-size: 58.594px;
-  }
-  /* line 267, ../sass/screen.scss */
-  #webdesignlanding p {
-    font-size: 16px;
-  }
-
-  /* line 273, ../sass/screen.scss */
-  .two.columns,
-  .four.columns,
-  .three-forths {
-    width: 90%;
-    margin: auto 5%;
-  }
+/* line 61, ../sass/screen.scss */
+h3 {
+  font-size: 1em;
+  line-height: 1.5em;
+  font-family: "Ubuntu Mono";
 }
-@media (min-width: 600px) and (max-width: 800px) {
-  /* line 283, ../sass/screen.scss */
-  #currentprojects h1,
-  #discography h1,
-  #musiclanding h1 {
-    font-size: 61.036px;
-  }
 
-  /* line 289, ../sass/screen.scss */
-  #cp_link,
-  #d_link {
-    font-size: 39.063px;
-  }
-
-  /* line 294, ../sass/screen.scss */
-  #titlelink {
-    font-size: 25px;
-    letter-spacing: 4px;
-  }
-
-  /* line 300, ../sass/screen.scss */
-  .greeting {
-    width: 300px;
-  }
-  /* line 302, ../sass/screen.scss */
-  .greeting h1 {
-    font-size: 76.95px;
-  }
-  /* line 305, ../sass/screen.scss */
-  .greeting p {
-    font-size: 16px;
-    letter-spacing: -1px;
-  }
-
-  /* line 311, ../sass/screen.scss */
-  #profile {
-    width: 200px;
-    height: 200px;
-  }
-
-  /* line 318, ../sass/screen.scss */
-  #webdesignlanding article {
-    width: 90%;
-  }
-  /* line 321, ../sass/screen.scss */
-  #webdesignlanding h1 {
-    font-size: 61.036px;
-  }
-  /* line 322, ../sass/screen.scss */
-  #webdesignlanding p {
-    font-size: 20px;
-  }
-
-  /* line 326, ../sass/screen.scss */
-  .four.columns {
-    margin: auto 5%;
-    width: 40%;
-  }
-
-  /* line 333, ../sass/screen.scss */
-  .two.columns,
-  .three-forths.columns {
-    clear: both;
-    width: 90%;
-    margin: auto 5%;
-  }
+/* line 66, ../sass/screen.scss */
+p {
+  font-size: 0.75em;
+  line-height: 2em;
+  font-family: "Ubuntu Mono";
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
-@media (min-width: 800px) and (max-width: 1024px) {
-  /* line 344, ../sass/screen.scss */
-  #currentprojects h1,
-  #discography h1,
-  #musiclanding h1 {
-    font-size: 61.036px;
-  }
 
-  /* line 349, ../sass/screen.scss */
-  #cp_link,
-  #d_link {
-    font-size: 39.063px;
-  }
-
-  /* line 354, ../sass/screen.scss */
-  #titlelink {
-    font-size: 30px;
-    letter-spacing: 6px;
-  }
-
-  /* line 360, ../sass/screen.scss */
-  .greeting {
-    width: 400px;
-  }
-  /* line 362, ../sass/screen.scss */
-  .greeting h1 {
-    font-size: 76.95px;
-  }
-  /* line 365, ../sass/screen.scss */
-  .greeting p {
-    font-size: 20px;
-  }
-
-  /* line 372, ../sass/screen.scss */
-  #webdesignlanding article {
-    width: 90%;
-  }
-  /* line 375, ../sass/screen.scss */
-  #webdesignlanding h1 {
-    font-size: 61.036px;
-  }
-  /* line 376, ../sass/screen.scss */
-  #webdesignlanding p {
-    font-size: 20px;
-  }
+/* line 72, ../sass/screen.scss */
+ul {
+  margin-left: .25em;
 }
-/* line 381, ../sass/screen.scss */
+
+/* line 76, ../sass/screen.scss */
+li {
+  font-size: 13.5px;
+  line-height: 150%;
+}
+
+/* HEADER */
+/* line 83, ../sass/screen.scss */
 header {
   position: fixed;
-  bottom: 0;
+  top: 0;
   width: 100%;
-  min-width: 340px;
-  background-color: #279be8;
-}
-/* line 387, ../sass/screen.scss */
-header h1 {
-  font-size: 2.08333em;
-  line-height: 1.44em;
-  font-family: "Raleway";
-  font-weight: 100;
-  letter-spacing: 6px;
-  padding: .1em 5px;
-  color: #e6f9ff;
-}
-/* line 394, ../sass/screen.scss */
-header h1 .selected {
-  color: #144396;
-}
-
-/* line 401, ../sass/screen.scss */
-nav {
-  width: 100%;
-  background-color: #144396;
-}
-/* line 404, ../sass/screen.scss */
-nav a {
+  background-color: rgba(39, 155, 232, 0.95);
+  text-align: center;
+  padding: .5em 0;
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
-  padding: 0 .5em;
-  color: #e6f9ff;
-  font-size: 1.66667em;
-  line-height: 1.8em;
+  -webkit-box-shadow: #0a214b 0px 0px 2px 2px;
+  -moz-box-shadow: #0a214b 0px 0px 2px 2px;
+  box-shadow: #0a214b 0px 0px 2px 2px;
+  text-transform: uppercase;
 }
-/* line 412, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
+header a, header a:visited {
+  color: #e6f9ff;
+}
+/* line 94, ../sass/screen.scss */
+header a:hover, header a:visited:hover {
+  font-style: italic;
+}
+/* line 95, ../sass/screen.scss */
+header h1 {
+  font-size: 1.6875em;
+  line-height: 1.77778em;
+  font-family: "BenchNine";
+  font-weight: 300;
+  letter-spacing: 4.5px;
+  margin-bottom: 0;
+}
+/* line 102, ../sass/screen.scss */
+header h2 {
+  font-weight: 300;
+  letter-spacing: 4.5px;
+  font-size: 0.75em;
+  line-height: 2em;
+}
+/* line 108, ../sass/screen.scss */
+header section {
+  background-color: #279be8;
+}
+
+/* line 113, ../sass/screen.scss */
+#bloglink {
+  padding-left: .25em;
+}
+
+/* line 116, ../sass/screen.scss */
+nav {
+  background-color: #144396;
+  padding: .5em 0;
+  font-size: 1em;
+  line-height: 1.5em;
+  -webkit-border-radius: 0 0 0 5px;
+  -moz-border-radius: 0 0 0 5px;
+  -ms-border-radius: 0 0 0 5px;
+  -o-border-radius: 0 0 0 5px;
+  border-radius: 0 0 0 5px;
+  -webkit-box-shadow: #0a214b 0px 0px 1px 1px inset, #0a214b 0px 0px 5px 1px;
+  -moz-box-shadow: #0a214b 0px 0px 1px 1px inset, #0a214b 0px 0px 5px 1px;
+  box-shadow: #0a214b 0px 0px 1px 1px inset, #0a214b 0px 0px 5px 1px;
+}
+/* line 122, ../sass/screen.scss */
+nav a {
+  padding: .25em;
+  margin: 0 .25em;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  color: #e6f9ff;
+}
+/* line 131, ../sass/screen.scss */
 nav a:hover,
+nav a:visited:hover,
 nav .selected {
   background-color: #279be8;
   color: #144396;
-  border-top: 5px solid #144396;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -ms-border-radius: 5px 5px 5px 5px;
+  -o-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-box-shadow: #0a214b 0px 0px 1px 1px inset, #279be8 0px 0px 1px 1px;
+  -moz-box-shadow: #0a214b 0px 0px 1px 1px inset, #279be8 0px 0px 1px 1px;
+  box-shadow: #0a214b 0px 0px 1px 1px inset, #279be8 0px 0px 1px 1px;
 }
-/* line 417, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 nav section {
-  margin-left: 1em;
   width: 100%;
   background-color: #279be8;
+  margin-top: .5em;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -ms-border-radius: 0 0 5px 5px;
+  -o-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
 }
-/* line 421, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 nav section a {
   font-family: "ubuntu mono";
-  font-size: 16px;
 }
-/* line 423, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 nav section a:hover {
   font-style: italic;
-  border: 0px solid white;
 }
-/* line 427, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 nav section p {
-  font-family: "Raleway";
+  font-family: "ubuntu mono";
   color: #e6f9ff;
+  padding-right: 1em;
+  margin-bottom: 0;
+  padding-bottom: 1.5em;
 }
 
-/* line 434, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
+#mastnav {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+/* line 164, ../sass/screen.scss */
+#secnav {
+  position: fixed;
+  left: 0;
+  -webkit-border-radius: 0 0 5px 0;
+  -moz-border-radius: 0 0 5px 0;
+  -ms-border-radius: 0 0 5px 0;
+  -o-border-radius: 0 0 5px 0;
+  border-radius: 0 0 5px 0;
+  font-family: "BenchNine";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* line 174, ../sass/screen.scss */
+#contact,
 #address {
-  background-color: #144396;
-  margin-left: 0;
-  padding-left: 0;
+  font-size: 18px;
+  background-color: #279be8;
+  margin-bottom: 0;
+  padding-right: 1em;
+  text-align: right;
+}
+/* line 175, ../sass/screen.scss */
+#contact a,
+#address a {
+  margin-top: 1em;
+}
+/* line 176, ../sass/screen.scss */
+#contact a:hover,
+#address a:hover {
+  box-shadow: none;
 }
 
-/* line 440, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 #musiclink {
   font-family: "Merriweather";
   font-weight: 300;
 }
 
-/* line 447, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 #weblink,
 #contactlink {
   font-family: "ubuntu mono";
   font-weight: 400;
 }
 
-/* line 452, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 #contactlink {
   font-style: italic;
 }
 
-/* line 456, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 #resumelink {
   font-family: "Raleway";
 }
 
-/* line 460, ../sass/screen.scss */
-h2 {
-  text-align: center;
-  font-family: "Merriweather";
-  font-size: 1.66667em;
-  line-height: 1.8em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-}
-
-/* line 469, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 aside {
   margin-top: 7em;
   margin-right: 20px;
   float: right;
 }
 
-/* line 476, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 article {
+  padding: 7.5em 0 2em 0;
   width: 100%;
   float: right;
   text-align: right;
   color: #e6f9ff;
 }
-/* line 481, ../sass/screen.scss */
-article h1 {
-  font-family: "Raleway";
-  margin-top: 1.5em;
-  font-size: 4.275em;
-  line-height: 1.05263em;
-}
-/* line 486, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 article ul {
   font-family: "Ubuntu Mono";
   font-size: 1.66667em;
   line-height: 1.8em;
 }
-/* line 490, ../sass/screen.scss */
-article p {
-  font-family: "Ubuntu Mono";
-  font-size: 1.66667em;
-  line-height: 1.8em;
-  margin-bottom: 1.5em;
+
+/* line 224, ../sass/screen.scss */
+button {
+  display: inline-block;
+  margin: 0 auto;
 }
 
-/* line 497, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
+img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 231, ../sass/screen.scss */
 .one {
-  width: 100%;
+  width: 90%;
   clear: both;
+  margin: 0 4.5%;
 }
 
-/* line 502, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
+.one-third {
+  width: 30%;
+  margin: 0 1.6%;
+}
+
+/* line 245, ../sass/screen.scss */
 .two {
   width: 40%;
-  margin: 0 5%;
+  margin: 0 4.5%;
 }
 
-/* line 507, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .three-forths {
   width: 69%;
   margin: 0 3%;
 }
 
-/* line 512, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 .four {
   width: 23%;
   margin: 0 1%;
 }
 
-/* line 517, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 .columns {
   float: left;
 }
 
-/* line 522, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 a {
   color: #144396;
   text-decoration: none;
 }
 
-/* line 528, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 a:hover {
   color: #e6f9ff;
 }
 
-/* line 532, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
+.buttons {
+  text-align: center;
+  padding: 0 0 2em 0;
+}
+
+/* line 280, ../sass/screen.scss */
+.italic {
+  font-style: italic;
+}
+
+/* line 281, ../sass/screen.scss */
+.left {
+  text-align: left;
+}
+
+/* line 282, ../sass/screen.scss */
 .justify {
   text-align: justify;
 }
 
-/* line 533, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 .center {
   text-align: center;
 }
 
-/* line 534, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .obscure {
-  color: #188fde;
+  color: #c78015;
 }
 
-/* line 535, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 .initblank {
   display: none;
 }
 
 /*Page Styles*/
 /*Home*/
-/* line 541, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 .greeting {
-  float: right;
-  max-width: 700px;
+  text-align: center;
 }
-
-/* line 548, ../sass/screen.scss */
-aside img {
-  display: block;
-  float: left;
+/* line 293, ../sass/screen.scss */
+.greeting img {
   -webkit-border-radius: 300px 300px;
   -moz-border-radius: 300px / 300px;
   border-radius: 300px / 300px;
   height: 300px;
   width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+/* line 302, ../sass/screen.scss */
+.greeting p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/* line 309, ../sass/screen.scss */
+aside img {
+  float: left;
   margin: 0 auto 0 0;
 }
 
-/* line 559, ../sass/screen.scss */
-#webdesignlanding {
-  padding: 5em 0;
-}
-
-/* line 564, ../sass/screen.scss */
-#musiclanding,
-#currentprojects,
-#discography {
-  padding: 3em 0;
-}
-/* line 566, ../sass/screen.scss */
-#musiclanding a,
-#currentprojects a,
-#discography a {
-  margin: 0 .5em 0 auto;
-  color: #144396;
-  font-family: "Merriweather";
-  font-size: 1.66667em;
-  line-height: 1.8em;
-}
-/* line 572, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 #musiclanding a:hover,
 #currentprojects a:hover,
 #discography a:hover {
   color: #e6f9ff;
 }
 
-/* line 577, ../sass/screen.scss */
-#discography {
-  background-color: #279be8;
+/* line 327, ../sass/screen.scss */
+#currentprojects {
+  background-color: #144396;
+}
+/* line 328, ../sass/screen.scss */
+#currentprojects img {
+  max-width: 300px;
+  width: 100%;
+  margin: 2em auto;
+  display: block;
+}
+/* line 335, ../sass/screen.scss */
+#currentprojects .one img {
+  max-width: 800px;
+  width: 100%;
+}
+/* line 340, ../sass/screen.scss */
+#currentprojects h1 {
   text-align: center;
 }
-/* line 580, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
+#currentprojects a {
+  color: #89a1ca;
+}
+
+/* line 346, ../sass/screen.scss */
+#discography {
+  background-color: #e89b27;
+  text-align: center;
+}
+/* line 349, ../sass/screen.scss */
 #discography section {
   margin-top: 2em;
   margin-bottom: 2em;
 }
-/* line 584, ../sass/screen.scss */
-#discography h1 {
-  margin-bottom: 2em;
+/* line 353, ../sass/screen.scss */
+#discography h4, #discography h5 {
+  font-family: "BenchNine";
+  font-weight: 300;
+  letter-spacing: 1px;
 }
-/* line 587, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 #discography h4 {
-  font-family: "Raleway";
-  letter-spacing: -1px;
+  font-size: 1.5em;
+  line-height: 2em;
 }
-/* line 591, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
+#discography h5 {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+/* line 364, ../sass/screen.scss */
 #discography a {
   font-family: "Ubuntu mono";
   font-size: 16px;
+  color: #744d13;
 }
-/* line 595, ../sass/screen.scss */
+/* line 369, ../sass/screen.scss */
 #discography img {
   width: 100%;
   margin: 0 auto;
@@ -792,150 +547,268 @@ aside img {
   border-radius: 5px / 5px;
 }
 
-/* line 602, ../sass/screen.scss */
-#discography #tt_link {
-  font-size: 46.875px;
+/* line 378, ../sass/screen.scss */
+#tt_link {
+  font-size: 4em;
+  line-height: 1.125em;
+  border: #744d13 solid 2px;
+  font-family: "BenchNine";
+  text-transform: uppercase;
+  color: #fbf0de;
+  background-color: #ae741d;
+  -webkit-box-shadow: #744d13 0px 0px 5px 1px;
+  -moz-box-shadow: #744d13 0px 0px 5px 1px;
+  box-shadow: #744d13 0px 0px 5px 1px;
+  margin: 1em auto;
 }
 
-/* line 607, ../sass/screen.scss */
-#currentprojects {
-  background-color: #144396;
-}
-/* line 608, ../sass/screen.scss */
-#currentprojects img {
-  max-width: 300px;
-  max-height: 300px;
-  margin: 2em auto;
-  display: block;
-}
-/* line 615, ../sass/screen.scss */
-#currentprojects h1 {
-  text-align: center;
-}
-/* line 616, ../sass/screen.scss */
-#currentprojects p {
-  font-size: 20px;
-}
-/* line 617, ../sass/screen.scss */
-#currentprojects a {
-  font-size: 20px;
-  color: #dee827;
+/* line 389, ../sass/screen.scss */
+#tt_link:hover {
+  background-color: #744d13;
+  color: #f3cd93;
+  text-shadow: black 1px 1px 1px;
+  -webkit-box-shadow: black 0px 0px 2px 1px;
+  -moz-box-shadow: black 0px 0px 2px 1px;
+  box-shadow: black 0px 0px 2px 1px;
 }
 
 /*WEB*/
-/* line 626, ../sass/screen.scss */
+/* line 398, ../sass/screen.scss */
 #portfolio {
   text-align: center;
-  background-color: #144396;
-  margin-bottom: 5em;
+  background-color: #e89b27;
 }
-/* line 630, ../sass/screen.scss */
+/* line 401, ../sass/screen.scss */
 #portfolio h1 {
-  margin-bottom: 2em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
-/* line 631, ../sass/screen.scss */
-#portfolio h2 {
-  font-family: "Raleway";
-}
-/* line 634, ../sass/screen.scss */
+/* line 405, ../sass/screen.scss */
 #portfolio a {
   color: #e6f9ff;
 }
-/* line 637, ../sass/screen.scss */
+/* line 408, ../sass/screen.scss */
+#portfolio p {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+}
+/* line 413, ../sass/screen.scss */
 #portfolio img {
   width: 90%;
   margin-top: 2em;
   margin: 0 auto;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
   -webkit-border-radius: 20px 20px;
   -moz-border-radius: 20px / 20px;
   border-radius: 20px / 20px;
 }
 
-/*Resume*/
-/* line 649, ../sass/screen.scss */
-#skills,
-#about,
-#experience,
-#education {
-  margin-top: 91.554px;
-}
-/* line 651, ../sass/screen.scss */
-#skills h1,
-#about h1,
-#experience h1,
-#education h1 {
-  font-size: 49px;
-}
-
-/* line 657, ../sass/screen.scss */
-#skills,
-#about {
-  text-align: left;
-  margin-bottom: 1.5em;
-}
-/* line 659, ../sass/screen.scss */
-#skills h1,
-#about h1 {
-  margin-top: 1em;
-}
-/* line 660, ../sass/screen.scss */
-#skills p, #skills li,
-#about p,
-#about li {
-  font-size: 16px;
-}
-/* line 662, ../sass/screen.scss */
-#skills p,
-#skills ul,
-#about p,
-#about ul {
-  line-height: 20px;
-}
-/* line 665, ../sass/screen.scss */
-#skills ul,
-#about ul {
-  margin: 0;
-}
-/* line 668, ../sass/screen.scss */
-#skills li,
-#about li {
-  display: inline-block;
-  padding: 0;
-}
-
-/* line 676, ../sass/screen.scss */
-#education {
-  text-align: left;
-  margin-bottom: 0;
-  padding-bottom: 1em;
-  margin-bottom: 1.5em;
-}
-/* line 680, ../sass/screen.scss */
-#education h1 {
-  margin-top: 1em;
-}
-/* line 681, ../sass/screen.scss */
-#education p, #education li {
-  font-size: 16px;
-}
-/* line 682, ../sass/screen.scss */
-#education ul {
-  margin: 0;
-  line-height: 20px;
-  margin-left: 16px;
-}
-
-/* line 691, ../sass/screen.scss */
-#experience {
-  padding-top: 3em;
+/* line 424, ../sass/screen.scss */
+#selfpromotion {
   background-color: #144396;
-  padding-bottom: 7em;
 }
-/* line 694, ../sass/screen.scss */
-#experience li {
+/* line 426, ../sass/screen.scss */
+#selfpromotion h1 {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+/* line 430, ../sass/screen.scss */
+#selfpromotion h1, #selfpromotion h2 {
   text-align: center;
 }
-/* line 695, ../sass/screen.scss */
-#experience li {
-  font-size: 16px;
+/* line 431, ../sass/screen.scss */
+#selfpromotion p {
+  margin-top: 2em;
+  font-size: 1em;
+}
+/* line 435, ../sass/screen.scss */
+#selfpromotion ol {
+  margin-top: 1.75em;
+}
+/* line 438, ../sass/screen.scss */
+#selfpromotion li {
+  font-family: "Ubuntu mono";
+  text-align: center;
+  line-height: 1.8em;
+}
+/* line 443, ../sass/screen.scss */
+#selfpromotion h2 a, #selfpromotion a:visited {
+  color: #279be8;
+}
+/* line 444, ../sass/screen.scss */
+#selfpromotion h2 a:hover, #selfpromotion a:visited:hover {
+  color: white;
+}
+/* line 445, ../sass/screen.scss */
+#selfpromotion .one {
+  text-align: center;
+}
+/* line 448, ../sass/screen.scss */
+#selfpromotion button {
+  width: 100px;
+  height: 100px;
+  margin: .25em;
+  background-color: #1d74ae;
+  font-size: 4em;
+  line-height: 1.125em;
+  border: #279be8 solid 2px;
+  -webkit-box-shadow: #134d74 0px 0px 2px 1px;
+  -moz-box-shadow: #134d74 0px 0px 2px 1px;
+  box-shadow: #134d74 0px 0px 2px 1px;
+  color: white;
+  font-family: "BenchNine";
+}
+/* line 460, ../sass/screen.scss */
+#selfpromotion button:hover {
+  background-color: #09263a;
+  text-shadow: #279be8 1px 1px 1px;
+}
+
+/*Resume*/
+/* line 469, ../sass/screen.scss */
+#experience {
+  background-color: #144396;
+  text-align: center;
+}
+
+/* line 474, ../sass/screen.scss */
+#exp_button {
+  font-family: "BenchNine";
+  text-transform: Uppercase;
+  font-weight: 300;
+  background-color: #ae741d;
+  border: #e89b27 solid 2px;
+  color: white;
+  -webkit-box-shadow: #ae741d 0px 0px 2px 2px;
+  -moz-box-shadow: #ae741d 0px 0px 2px 2px;
+  box-shadow: #ae741d 0px 0px 2px 2px;
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+/* line 485, ../sass/screen.scss */
+#exp_button:hover {
+  background-color: #3a2609;
+  -webkit-box-shadow: #3a2609 0px 0px 2px 2px;
+  -moz-box-shadow: #3a2609 0px 0px 2px 2px;
+  box-shadow: #3a2609 0px 0px 2px 2px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  /* line 354, ../sass/screen.scss */
+  /* line 494, ../sass/screen.scss */
+  header {
+    text-align: left;
+    padding-left: 2em;
+  }
+
+  /* line 498, ../sass/screen.scss */
+  #secnav {
+    top: 5em;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -ms-border-radius: 5px 5px 5px 5px;
+    -o-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  /* line 503, ../sass/screen.scss */
+  #discography h4,
+  #discography h5 {
+    font-size: 1em;
+    line-height: 1.5em;
+    letter-spacing: 0px;
+  }
+
+  /* line 506, ../sass/screen.scss */
+  .one-third {
+    width: 40%;
+    margin: 0 4.5%;
+  }
+
+  /* line 511, ../sass/screen.scss */
+  .one-third:nth-child(3) {
+    width: 90%;
+    clear: both;
+    margin: 0 4.5%;
+  }
+
+  /* line 517, ../sass/screen.scss */
+  #education ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* line 523, ../sass/screen.scss */
+  #exp_button {
+    display: none;
+  }
+
+  /* line 527, ../sass/screen.scss */
+  #secnav {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  /* line 354, ../sass/screen.scss */
+  /* line 534, ../sass/screen.scss */
+  header {
+    margin-top: 1.5em;
+  }
+
+  /* line 537, ../sass/screen.scss */
+  nav {
+    width: 100%;
+    font-size: 13.5px;
+  }
+
+  /* line 541, ../sass/screen.scss */
+  #secnav {
+    top: 9em;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -ms-border-radius: 5px 5px 5px 5px;
+    -o-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  /* line 546, ../sass/screen.scss */
+  #tt_link {
+    font-size: 2.25em;
+    line-height: 1.33333em;
+  }
+
+  /* line 548, ../sass/screen.scss */
+  article:nth-child(1) {
+    padding: 9em 0 2em 0;
+  }
+
+  /* line 552, ../sass/screen.scss */
+  article {
+    padding: 1em 0;
+  }
+
+  /* line 556, ../sass/screen.scss */
+  article h1 {
+    margin: .5em 0;
+  }
+
+  /* line 561, ../sass/screen.scss */
+  .two,
+  .one-third {
+    width: 90%;
+    clear: both;
+    margin: 0 4.5%;
+  }
+
+  /* line 568, ../sass/screen.scss */
+  .four,
+  .three-forths {
+    width: 40%;
+    margin: 0 4.5%;
+  }
 }

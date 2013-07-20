@@ -1,6 +1,6 @@
 <DOCTYPE !HTML> 
 <head>
-	<title>Jasper Boyd's Internet House</title> 
+	<title>Jasper Boyd</title> 
 	<meta name="description" content="Jasper Boyd is a web designer and a musican, here you can view his resume, discography and more.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW" />
@@ -11,6 +11,7 @@
 	<link href="stylesheets/print.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Raleway:100|Ubuntu+Mono:400,400italic|Merriweather:300italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=BenchNine:400,300,700' rel='stylesheet' type='text/css'>
 	<script src="http://code.jquery.com/jquery-2.0.0.min.js"> </script>
 	<script src="javascripts/main.js"></script>
 	<link rel="icon" href="favicon.gif" type="image/gif" />
@@ -27,8 +28,11 @@
 </head>
 <body> 
 	<header> 
-		<nav>
-			<!--<a id="bloglink">Blog</a>-->
+		<h1><a id="titlelink" class="italic">Jasper Boyd</a></h1>
+		<h2><a href="/music">Musician</a> & <a href="/web">Web Designer</a></h2>
+	</header>
+	<nav id="mastnav">
+			<a id="bloglink" href="/blog">Blog</a>
 			<a id="musiclink" href="/music">Music</a> 
 			<a id="weblink" href="/web">Web</a> 
 			<a id="resumelink" href="/resume">Resume</a>
@@ -38,22 +42,25 @@
 				<a href="mailto:jasperboyd@lavabit.com">Email</a>
 				<section id="address" class="initblank">
 					<p>
-					   Campus Box 210,
-					   Clark U, 
-					   Worcester, MA 01610
+					   Campus Box 210 <br />
+					   Clark U <br />
+					   Worcester, MA 01610 <br />
 					</p>
 				</section>
 			</section>
-		</nav> 
-		<h1><a id="titlelink" class="selected">JASPER BOYD'S INTERNET HOUSE</a></h1>
-	</header>
-	<aside class="sidebar"> 
-		<img id="profile" src="images/profile.jpg">
-	</aside> 
-	<article class="greeting"> 
-			<h1>Hello,</h1>
-			<p>I am a <a href="/web">Web Designer</a> & <a href="/music">Musician</a>.<br /> 
-			Please enjoy my <a href="/web">Websites</a> & <a href="/music">Recordings</a>.</p> 
+	</nav> 	
+	<article class="greeting">
+		<section class="two columns">
+		<img id="profile" src="images/profile.jpg"> 
+		</section> 
+		<section class="two columns"> 
+		<h1>Welcome</h1>
+		<p class="justify">
+			Here you can find information on my <a href="/music">musical endeavors</a> as well as the 
+			<a href="/web">websites that I design</a>. If you have any questions or comments feel free to 
+			<a href="mailto:jasperboyd@lavabit.com">get in touch</a>!
+		</p> 
+		</section>
 	</article> 
 </body> 
 </html> 

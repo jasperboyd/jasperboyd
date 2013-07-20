@@ -17,6 +17,14 @@ $dark-blue: #144396;
 $light-orange: #e89b27;
 
 /*Vertical Rhythm*/
+$huge: 72px;
+$large: 40.5px; 
+$semi-large: 30.375px;
+$pseudo-large: 27px; 
+$medium: 18px; 
+$normal: 13.5px; 
+$tiny: 9px; 
+
 $base-font-size: 18px; 
 $base-line-height: 27px; 
 @include establish-baseline(); 
@@ -35,406 +43,142 @@ body
 	margin: 0 auto;
 } 
 
+/* TYPOGRAPHY */ 
 
-/*Responsive Design*/ 
-@media (max-width: 320px) {
-	#currentprojects h1,
-	#discography h1, 
-	#musiclanding h1 {
-		font-size: 48.829px;
-		letter-spacing: -1px;
-	}
-	
-	#bloglink,
-	#musiclink,
-	#weblink,
-	#resumelink,
-	#contactlink {
-		font-size: 16px;
-	}
-	
-	#cp_link,
-	#d_link
-	 {
-		font-size: 20px;
-	}
-	
-	#titlelink 
-	{
-		font-size: 16px;
-		letter-spacing: 0px;
-	} 
-	
-	.greeting 
-	{
-		float: left;
-		width: 350px;
-		h1 {
-			font-size: 58.594px; 
-		} 
-		p { 
-			font-size: 12.8px;
-			letter-spacing: -1px;
-		} 
-	} 
-	#profile {
-		height: 150px; 
-		width: 150px;
-	} 
-	
-	#address p {font-size: 12.8px};
-	
-	#webdesignlanding 
-	{
-		article {
-			width: 90%;
-		}
-		h1 {font-size: 58.594px;}
-		p {font-size: 16px;}
-	} 
-	
-	#skills,
-	#education, 
-	#about {
-		margin-top: 0em;
-		margin-bottom: .5em;
-	} 
-	
-	#skills,
-	#education, 
-	#about,
-	#experience { 
-		h1 {font-size: 30px;
-			margin-bottom: .5em}
-		li {font-size: 12.8px;
-			letter-spacing: -2px}
-		p {font-size: 12.8px;}
-	} 
-	
-	.four.columns,
-	.two.columns,
-	.three-forths.columns
-	{
-		width: 90%;
-		margin: 0 5%;
-	} 
+h1 { 
+	@include adjust-font-size-to($large); 
+	font-family: "Raleway";
+	@include trailer();
+} 
+
+h2 { 
+	@include adjust-font-size-to($pseudo-large);
+	font-family: "BenchNine";
+	letter-spacing: 3px; 
+	font-weight: 700; 
 }
 
-@media (min-width: 320px) and (max-width: 480px) { 
-	#currentprojects h1,
-	#discography h1, 
-	#musiclanding h1
-	{
-		font-size: 48.829px;
-	} 
-	#bloglink,
-	#musiclink,
-	#weblink,
-	#resumelink,
-	#contactlink {
-		font-size: 16px;
-	}
-	
-	#cp_link,
-	#d_link,
-	{
-		font-size: 25px;
-	}
-	
-	#titlelink 
-	{
-		font-size: 19.2px;
-		letter-spacing: 0px;
-	} 
-	
-	#address p {font-size: 12.8px};
-	
-	.greeting 
-	{
-		float: left;
-		width: 350px;
-		margin-top: 1em;
-		h1 {
-			font-size: 76.95px; 
-			margin-top: 0em;
-		} 
-		p { 
-			font-size: 12.8px;
-			letter-spacing: -1px;
-		} 
-	} 
-	
-	#webdesignlanding 
-	{
-		article {
-			width: 90%;
-		}
-		h1 {font-size: 58.594px;}
-		p {font-size: 16px;}
-	} 
-	
-	.sidebar
-	{
-		margin-top: .5em;
-	}
-	
-	#skills,
-	#education, 
-	#about {
-		margin-top: 0em;
-		margin-bottom: .5em;
-	} 
-	
-	#skills,
-	#education, 
-	#about,
-	#experience { 
-		h1 {font-size: 30px;
-			margin-bottom: .5em}
-		li {font-size: 12.8px;
-			letter-spacing: -2px}
-		p {font-size: 12.8px;}
-	} 
-	
-	.two.columns,
-	.four.columns,
-	.three-forths.columns
-	{
-		width: 90%;
-		margin: 0 5%;
-	} 
-	
-	#currentprojects h1{text-align:center;
-						margin: 0;}
+h3 {
+	@include adjust-font-size-to($medium);
+	font-family: "Ubuntu Mono"; 
 } 
 
-@media (min-width: 480px) and (max-width: 600px) { 
-	#resumelink,
-	#contactlink,
-	#bloglink,
-	#musiclink,
-	#weblink { 
-		font-size: 16px;
-	} 
-	
-	#currentprojects h1,
-	#discography h1, 
-	#musiclanding h1,
-	#skills h1,
-	#education h1, 
-	#about h1,
-	#experience h1 { 
-		font-size: 48.829px;
-	}
-	
-	#cp_link
-	#d_link
-	{
-		font-size: 30px;
-	}
-	
-	#titlelink 
-	{
-		font-size: 20px; 
-		letter-spacing: 2px;
-	} 
-	
-	.greeting 
-	{
-		float: left;
-		width: 350px;
-		h1 {
-			font-size: 76.95px; 
-			margin-top: 0em;
-		} 
-		p { 
-			font-size: 15.8px;
-			letter-spacing: -1px;
-		} 
-	} 
-	.sidebar
-	{
-		margin-top: .2em;
-	}  
-	
-	
-	#webdesignlanding 
-	{
-		article {
-			width: 90%;
-		}
-		h1 {font-size: 58.594px;}
-		p {font-size: 16px;}
-	} 
-	
-	.two.columns,
-	.four.columns,
-	.three-forths
-	{
-		width: 90%;
-		margin: auto 5%;
-	} 
+p { @include adjust-font-size-to($normal); 
+	font-family: "Ubuntu Mono"; 
+	@include leader();
+	@include trailer(); 
+}
 
+ul { 
+	margin-left: .25em;
 } 
 
-@media (min-width: 600px) and (max-width: 800px) { 
-	#currentprojects h1,
-	#discography h1, 
-	#musiclanding h1 {
-		font-size: 61.036px;
-	} 
-	
-	
-	#cp_link,
-	#d_link {
-		font-size: 39.063px;
-	}
-	
-	#titlelink
-	{
-		font-size: 25px; 
-		letter-spacing: 4px;
-	} 
-	
-	.greeting 
-	{
-		width: 300px;
-		h1 {
-			font-size: 76.95px; 
-		} 
-		p { 
-			font-size: 16px;
-			letter-spacing: -1px;
-		} 
-	} 
-	#profile
-	{
-		width: 200px;
-		height: 200px;
-	} 
-	
-	#webdesignlanding 
-	{
-		article {
-			width: 90%;
-		}
-		h1 {font-size: 61.036px;}
-		p {font-size: 20px;}
-	} 
-	
-	.four.columns
-	{
-		margin: auto 5%;
-		width: 40%;
-	} 
-	
-	.two.columns,
-	.three-forths.columns
-	{
-		clear: both;
-		width: 90%;
-		margin: auto 5%;
-	}
-} 
+li { 
+	font-size: $normal; 
+	line-height: 150%;
+}
 
-@media (min-width: 800px) and (max-width: 1024px) { 
-	#currentprojects h1,
-	#discography h1, 
-	#musiclanding h1,
-	{
-		font-size: 61.036px;
-	}
-	
-	#cp_link,
-	#d_link {
-		font-size: 39.063px;
-	}
-	
-	#titlelink
-	{
-		font-size: 30px; 
-		letter-spacing: 6px;
-	} 
-	
-	.greeting 
-	{
-		width: 400px;
-		h1 {
-			font-size: 76.95px; 
-		} 
-		p { 
-			font-size: 20px;
-		} 
-	} 
-	
-	#webdesignlanding 
-	{
-		article {
-			width: 90%;
-		}
-		h1 {font-size: 61.036px;}
-		p {font-size: 20px;}
-	} 
-} 
-
+/* HEADER */ 
 header
 { 
 	position: fixed; 
-	bottom: 0;
+	top: 0;
 	width: 100%;
-	min-width: 340px;
-	background-color: $light-blue;
-	h1 { 
-		@include adjust-font-size-to(37.5px); 
-		font-family: "Raleway";
-		font-weight: 100;
-		letter-spacing: 6px;
-		padding: .1em 5px;
-		color: $white-blue;
-		.selected {
-			color: $dark-blue;
-		}
+	background-color: rgba(39, 155, 232, .95);
+	text-align: center;
+	padding: .5em 0;
+	@include inline-block();
+	@include box-shadow(shade($dark-blue, 50) 0px 0px 2px 2px);
+	text-transform: uppercase; 
+	a, a:visited {color: $white-blue;}
+	a:hover, a:visited:hover { font-style: italic; }
+	h1 {
+		@include adjust-font-size-to($semi-large);
+		font-family: "BenchNine";
+		font-weight: 300;
+		letter-spacing: 4.5px;
+		margin-bottom: 0;
 	}
+	h2 { 
+		font-weight: 300; 
+		letter-spacing: 4.5px; 
+		@include adjust-font-size-to($normal);
+		
+	} 
+	section { 
+		background-color: $light-blue;
+	} 
 } 
+
+#bloglink {padding-left: .25em}
 
 nav
 {
-	width: 100%; 
 	background-color: $dark-blue;
+	padding: .5em 0;
+	@include adjust-font-size-to($medium);
+	@include border-radius(0 0 0 5px);
+	@include box-shadow (shade($dark-blue, 50) 0px 0px 1px 1px inset, shade($dark-blue, 50) 0px 0px 5px 1px);
 	a { 
+		padding: .25em;
+		margin: 0 .25em;
 		@include inline-block();
-		padding:0 .5em;
-		color: $white-blue;
-		@include adjust-font-size-to(30px); 
+		color: $white-blue; 
 	} 
 	a:hover,
+	a:visited:hover,
 	.selected
 	{
 		background-color: $light-blue;
 		color: $dark-blue;
-		border-top: 5px solid $dark-blue;
+		@include border-radius(5px 5px 5px 5px);
+		@include box-shadow (shade($dark-blue, 50) 0px 0px 1px 1px inset, $light-blue 0px 0px 1px 1px);
 	} 
 	section { 
-		margin-left: 1em;
 		width: 100%; 
 		background-color: $light-blue;
-		a {font-family: "ubuntu mono";
-		   font-size: 16px;}
+		margin-top: .5em;
+		@include border-radius(0 0 5px 5px);
+		a {
+			font-family: "ubuntu mono";
+		}
 		a:hover {
 			font-style: italic;
-			border: 0px solid white;
 		} 
 		p { 
-			font-family: "Raleway";
+			font-family: "ubuntu mono";
 			color: $white-blue;
+			padding-right: 1em;
+			margin-bottom: 0; 
+			padding-bottom: 1.5em;
 		}
 	} 
 } 
 
+#mastnav { 
+	position: fixed;
+	top: 0; 
+	right: 0;
+}
+
+#secnav {
+	position: fixed;
+	left: 0;
+	@include border-radius(0 0 5px 0);
+	font-family: "BenchNine";
+	letter-spacing: 1px; 
+	text-transform: uppercase; 
+}
+
+#contact,
 #address {
-	background-color: $dark-blue;
-	margin-left: 0;
-	padding-left: 0;
+	a { margin-top: 1em; }
+	a:hover { box-shadow: none; }
+	font-size: 18px;
+	background-color: $light-blue;
+	margin-bottom: 0;
+	padding-right: 1em;
+	text-align: right;
 } 
 
 #musiclink{
@@ -457,14 +201,6 @@ nav
 	font-family: "Raleway";
 } 
 
-h2 {
-		text-align: center;
-		font-family: "Merriweather";
-		@include adjust-font-size-to(30px);
-		@include leader();
-		@include trailer();
-} 
-
 aside 
 {
 	margin-top: 7em;
@@ -474,34 +210,41 @@ aside
 
 article  
 { 
+	padding: 7.5em 0 2em 0; 
 	width: 100%;
 	float: right;
 	text-align: right;
 	color: $white-blue;
-	h1 { 
-		font-family: "Raleway"; 
-		@include leader();
-		@include adjust-font-size-to(76.95px); 
-	} 
 	ul { 
 		font-family: "Ubuntu Mono";
 		@include adjust-font-size-to(30px);
 	} 
-	p { 
-		font-family: "Ubuntu Mono"; 
-		@include adjust-font-size-to(30px);
-		@include trailer(); 
-	}
 }
 
+button {  
+	display: inline-block;
+	margin: 0 auto;
+}
+
+img { @include border-radius(5px);}
+
 .one { 
-	width: 100%;
+	width: 90%;
 	clear: both;
+	margin: 0 4.5%;
+	img { 
+	
+	} 
 } 
+
+.one-third { 
+	width: 30%; 
+	margin: 0 1.6%;
+}
 
 .two { 
 	width: 40%;
-	margin: 0 5%;
+	margin: 0 4.5%;
 } 
 
 .three-forths {
@@ -529,9 +272,16 @@ a:hover
 	color: $white-blue; 
 } 
 
+.buttons {
+	text-align: center;
+	padding: 0 0 2em 0;	
+}
+
+.italic {font-style: italic;}
+.left {text-align:left;}
 .justify {text-align:justify;}
 .center {text-align:center;}
-.obscure {color: adjust-lightness($light-blue, -5)};
+.obscure {color: adjust-lightness($light-orange, -10)};
 .initblank {display:none;} 
 
 /*Page Styles*/
@@ -539,159 +289,284 @@ a:hover
 /*Home*/
 .greeting
 {
-	float: right;
-	max-width: 700px;
+	text-align: center;
+	img { 
+		@include border-radius(300px, 300px);
+		height: 300px;
+		width: 300px;
+		
+		display: block;
+		margin: 0 auto;
+	}
+	
+	p { 
+		@include adjust-font-size-to($medium); 
+	} 
 } 
 
 
 aside {
 	img {
-		display: block;
+		
 		float: left;
-		@include border-radius(300px, 300px);
-		height: 300px;
-		width: 300px;
+		
 		margin: 0 auto 0 0;
 	}
 }
-
-
-#webdesignlanding{padding: 5em 0;}
 
 #musiclanding,
 #currentprojects, 
 #discography
 {
-	padding: 3em 0;
-	a { 
-		margin: 0 .5em 0 auto;
-		color: $dark-blue;
-		font-family: "Merriweather";
-		@include adjust-font-size-to(30px);
-	} 
 	a:hover {
 		color: $white-blue;
 	} 
 }
 
+#currentprojects
+{
+	img {
+		max-width: 300px;
+		width: 100%; 
+		margin: 2em auto;
+		display: block;
+	} 
+	
+	.one img { 
+		max-width: 800px;
+		width: 100%; 
+	} 
+	background-color: $dark-blue;
+	h1 {text-align: center;}
+	a { 
+		color: tint($dark-blue, 50);
+	}
+} 
+
 #discography { 
-	background-color: $light-blue;
+	background-color: $light-orange;
 	text-align: center;
 	section {
 		margin-top: 2em;
 		margin-bottom: 2em;
 	}
-	h1 { 
-		margin-bottom: 2em;
-	} 
-	h4 {
-		font-family: "Raleway";
-		letter-spacing: -1px;
+	h4, h5 { 
+		font-family: "BenchNine";
+		font-weight: 300; 
+		letter-spacing: 1px;
+	}
+	h4 { 
+		@include adjust-font-size-to($pseudo-large);	
+	}
+	h5 { 
+		@include adjust-font-size-to($medium);
 	}
 	a { 
 		font-family: "Ubuntu mono";
 		font-size: 16px;
+		color: shade($light-orange, 50);
 	} 
 	img {
 		width: 100%; 
 		margin: 0 auto;
 		@include border-radius(5px, 5px);
 	}
+	
+	
 } 
 
-#discography #tt_link {
-	font-size: 46.875px;
+#tt_link {
+	@include adjust-font-size-to($huge);
+	border: shade($light-orange, 50) solid 2px;
+	font-family: "BenchNine";
+	text-transform: uppercase; 
+	color: tint($light-orange, 85);
+	background-color: shade($light-orange, 25);
+	@include box-shadow(shade($light-orange, 50) 0px 0px 5px 1px);
+	margin: 1em auto;
 }
 
-#currentprojects
-{
-	img {
-		max-width: 300px; 
-		max-height: 300px; 
-		margin: 2em auto;
-		display: block;
-	} 
-	background-color: $dark-blue;
-	h1 {text-align: center;}
-	p { font-size: 20px;}
-	a { 
-		font-size: 20px;
-		color: $bright-yellow;
-	}
+#tt_link:hover { 
+	background-color: shade($light-orange, 50);
+	color: tint($light-orange, 50);
+	text-shadow: black 1px 1px 1px;
+	@include box-shadow(shade($light-orange, 100) 0px 0px 2px 1px);
 } 
 
 /*WEB*/
-
 #portfolio
 {
 	text-align: center;
-	background-color: $dark-blue;
-	margin-bottom: 5em; 
-	h1 {margin-bottom: 2em;}
-	h2 {
-		font-family:"Raleway";
+	background-color: $light-orange;
+	h1 {
+		@include leader(); 
+		@include trailer(); 
 	}
 	a { 
 		color: $white-blue;
+	} 
+	p { 
+		max-width: 800px;
+		margin: 0 auto; 
+		@include trailer();
 	} 
 	img { 
 		width: 90%; 
 		margin-top: 2em;
 		margin: 0 auto;
-		@include border-radius(20px, 20px);
+		@include leader(); 
+		@include trailer();
+		@include border-radius(20px, 20px);;
 	} 
 } 
 
-/*Resume*/
-#skills, 
-#about, 
-#experience, 
-#education { 
-	margin-top: 91.554px;
-	h1 {font-size: 49px;
-	}
-}
-
-#skills,
-#about,
+#selfpromotion
 {
-	text-align: left;
-	h1 {margin-top: 1em;}
-	p, li { font-size: 16px;}
-	p,
-	ul {
-		line-height: 20px;
+	background-color: $dark-blue;
+	h1 {
+		@include leader(); 
+		@include trailer(); 
 	}
-	ul{
-		margin: 0;
+	h1, h2 { text-align: center; } 
+	p {
+		margin-top: 2em;
+		font-size: 1em;
+	}
+	ol {
+		margin-top: 1.75em;
 	}
 	li { 
-		display:inline-block;
-		padding: 0;
+		font-family:"Ubuntu mono";
+		text-align: center; 
+		line-height: 1.8em;
 	}
-	@include trailer(); 
+	h2 a, a:visited {color: $light-blue;}
+	h2 a:hover, a:visited:hover {color: white;}
+	.one { 
+		text-align: center;
+	}
+	button { 
+		width: 100px;
+		height: 100px;
+		margin: .25em;
+		background-color: shade($light-blue, 25);
+		@include adjust-font-size-to($huge); 
+		border: $light-blue solid 2px; 
+		@include box-shadow(shade($light-blue, 50) 0px 0px 2px 1px); 
+		color: white; 
+		font-family: "BenchNine"
+	}
+	
+	button:hover { 
+		background-color: shade($light-blue, 75);
+		text-shadow: $light-blue 1px 1px 1px; 
+	}  
 } 
 
-#education
-{
-	text-align: left;
-	margin-bottom: 0;
-	padding-bottom: 1em;
-	h1 { margin-top: 1em;}
-	p, li { font-size: 16px;}
-	ul {
-		margin: 0; 
-		line-height: 20px;
-		margin-left: 16px;
-	}
-	@include trailer();
-}
+/*Resume*/
 
 #experience
 {
-	padding-top: 3em;
 	background-color: $dark-blue;
-	li{text-align: center;}
-	li {font-size: 16px;}
-	padding-bottom: 7em;
+	text-align: center;
 } 
+
+#exp_button { 
+	font-family: "BenchNine";
+	text-transform: Uppercase; 
+	font-weight: 300;
+	background-color: shade($light-orange, 25);
+	border: $light-orange solid 2px; 
+	color: white;
+	@include box-shadow(shade($light-orange, 25) 0px 0px 2px 2px);
+	@include adjust-font-size-to($pseudo-large);
+} 
+
+#exp_button:hover { 
+	background-color: shade($light-orange, 75);
+	@include box-shadow(shade($light-orange, 75) 0px 0px 2px 2px);
+} 
+
+/* Responsive */ 
+
+@media (max-width: 1024px) {
+  /* line 354, ../sass/screen.scss */
+	header { 
+		text-align: left;
+		padding-left: 2em;
+	}
+	#secnav { 
+		top: 5em; 
+		@include border-radius(5px 5px 5px 5px);
+	} 
+	#discography h4,
+	#discography h5 {@include adjust-font-size-to($medium);
+					 letter-spacing: 0px;}
+					 
+	.one-third {
+		width: 40%;
+		margin: 0 4.5%;
+	}
+	
+	.one-third:nth-child(3) {
+		width: 90%; 
+		clear: both;
+		margin: 0 4.5%;
+	}
+	
+	#education ul { 
+		text-align: center;
+		padding: 0; 
+		margin: 0;
+	} 
+	
+	#exp_button { 
+		display: none; 
+	}
+	
+	#secnav {
+		display: block; 
+	} 
+}
+
+@media (max-width: 600px) {
+  /* line 354, ../sass/screen.scss */
+	header { 
+		margin-top: 1.5em;
+	} 
+	nav { 
+		width: 100%; 
+		font-size: 13.5px;
+	}
+	#secnav { 
+		top: 9em; 
+		@include border-radius(5px 5px 5px 5px);
+	}
+	
+	#tt_link {@include adjust-font-size-to($large);} 
+	
+	article:nth-child(1) { 
+		padding: 9em 0 2em 0;
+	} 
+	
+	article {
+		padding: 1em 0; 
+	}
+	
+	article h1 { 
+		margin: .5em 0;
+	} 
+	
+	.two, 
+	.one-third { 
+		width: 90%;
+		clear: both;
+		margin: 0 4.5%;
+	} 
+	
+	.four,
+	.three-forths { 
+		width: 40%;
+		margin: 0 4.5%;
+	} 
+}

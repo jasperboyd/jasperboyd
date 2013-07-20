@@ -14,13 +14,13 @@ $(document).ready(function(){
 	
 	$d_link.click(function(){
 		$('html, body').animate({
-         scrollTop: $discography.offset().top
+         scrollTop: $discography.offset().top -125
      	}, 500);
 	}); 
 	
 	$tt_link.click(function(){
 		$('html, body').animate({
-         scrollTop: $musiclanding.offset().top
+         scrollTop: $currentprojects.offset().top
      	}, 500);
 	});
 }); 

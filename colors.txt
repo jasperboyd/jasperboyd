@@ -1,0 +1,6 @@
+$white-blue: #e6f9ff;
+$light-blue: #279be8; 
+$teal: #2086bd;
+$bright-yellow: #dee827;
+$dark-blue: #144396;
+$light-orange: #e89b27;

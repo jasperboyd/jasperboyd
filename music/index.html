@@ -11,6 +11,7 @@
 	<link href="../stylesheets/print.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link href="../stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Raleway:100|Ubuntu+Mono:400,400italic|Merriweather:300italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=BenchNine:400,300,700' rel='stylesheet' type='text/css'>
 	<script src="http://code.jquery.com/jquery-2.0.0.min.js"> </script>
 	<script src="../javascripts/main.js"></script>
 	<script src="../javascripts/music.js"></script>
@@ -28,7 +29,11 @@
 </head>
 <body> 
 	<header> 
-		<nav>
+		<h1><a id="titlelink"  href="../">Jasper Boyd</a></h1>
+		<h2><a class="italic">Musician</a> & <a href="/web">Web Designer</a></h2>
+	</header>
+	<nav id="mastnav">
+			<a id="bloglink" href="/blog">Blog</a>
 			<a id="musiclink" class="selected">Music</a> 
 			<a id="weblink" href="/web">Web</a> 
 			<a id="resumelink" href="/resume">Resume</a>
@@ -38,100 +43,108 @@
 				<a href="mailto:jasperboyd@lavabit.com">Email</a>
 				<section id="address" class="initblank">
 					<p>
-					   Campus Box 210,
-					   Clark U, 
-					   Worcester, MA 01610
+					   Campus Box 210 <br />
+					   Clark U <br />
+					   Worcester, MA 01610 <br />
 					</p>
 				</section>
 			</section>
-		</nav> 
-		<h1><a id="titlelink" href="../">JASPER BOYD'S INTERNET HOUSE</a></h1>
-	</header>
+	</nav>
+	<nav id="secnav"> 
+		<a id="cp_link">Current Projects</a> 
+		<a id="d_link">Discography</a> 
+	</nav>
 	<div id="wrapper"> 
-		<article id="musiclanding" > 
-			<h1>Music</h1>
-			<a id="cp_link">Current Projects</a> <a id="d_link">Discography</a>
-		</article> 
 		<article id="currentprojects" > 
 			<h1>Current Projects</h1> 
-			<div class="two columns">
+			<section class="two columns">
 				<img src="../images/WindyTunnelMediaLogo.png">
 				<h2 class="center">Windy Tunnel Media</h2> 
-				<p class="justify">Windy Tunnel Media is a DIY record label that I started working on in the spring of 2013. My goal with the project was to bring musicians together under one banner in the spirit of cooperation and collaboration. You can see the result <a href="www.windytunnel.co">here</a>.</p>
-			</div> 
-			<div class="two columns">
+				<p class="justify">Windy Tunnel Media is a DIY record label that I started working on in the spring of 2013. My goal with the project was to bring musicians together under one banner in the spirit of cooperation and collaboration. You can see the result <a href="http://www.windytunnel.co">here</a>.</p>
+			</section> 
+			<section class="two columns">
 				<img src="../images/TheWeatherSoundLogo.png">
-				<h2>The Weather Sound</h2> 
-				<p class="justify">The Weather Sound is a experiment in computer music. The premise was to create a program that made ambient music from real time weather data that didn't just sound like a smelly heap of garbage. The project is built in MAX / MSP. You can listen to it <a href="">here</a>.</p>
-			</div>
+				<h2 class="center">The Weather Sound</h2> 
+				<p class="justify">The Weather Sound is a experiment in computer music. The premise was to create a program that made ambient music from real time weather data that didn't just sound like a smelly heap of garbage. The project is built in MAX / MSP.</p>
+			</section>
+			<section class="one columns"> 
+				<img src="../images/iwnf-big.jpg">
+				<h2 class="center">The Purest Cacophony</h2>
+				<p class="justify"> 
+					The Purest Cacophony is my solo music venture. After playing the supporting role in a number of different 
+					groups I set out to make music that I could call my own. With the help of Jonathan Dana, Mike Tierney and
+					Paul Puiia, the group released it's first EP <a href="http://music.pureca.co" target="_blank">I Will Not Fall</a> on June 12th, 2013. You can find
+					out more at The Purest Cacophony's <a href="http://www.pureca.co" target="_blank">Website</a>.
+				</p>  
+			</section>
 		</article> 
 		<article id="discography" >
 			<h1>Discography</h1> 
-			<p class="obscure">Insure that popups are enabled</p>
+			<h3 class="obscure">Insure that popups are enabled</h3>
 			<section class="four columns"> 
 				<img class="albumart" src="../images/IWNF.jpg"> 
-				<h4>I WILL NOT FALL</h4> 
-				<h4>The Purest Cacophony</h4> 
+				<h4>I Will Not Fall</h4> 
+				<h5>The Purest Cacophony</h5> 
 				<a href="http://music.thepureca.co/album/i-will-not-fall">Download</a>  <a onclick="return popitup('http://www.windytunnel.co/thepurestcacophony/iwillnotfall')">Listen</a>
 			</section> 
 			
 			<section class="four columns"> 
 				<img class="albumart" src="../images/sotf.jpg"> 
-				<h4>SHUT OFF THE FAN!</h4> 
-				<h4>The Halfs</h4> 
+				<h4>Shut Off The Fan!</h4> 
+				<h5>The Halfs</h5> 
 				<a href="http://thehalfs.bandcamp.com/album/shut-off-the-fan">Download</a>  <a onclick="return popitup('http://www.windytunnel.co/thehalfs/shutoffthefan')">Listen</a>
 			</section> 
 			
 			<section class="four columns"> 
 				<img class="albumart" src="../images/brothers.jpg"> 
-				<h4>BROTHERS</h4> 
-				<h4>Missing Twin</h4> 
+				<h4>Brothers</h4> 
+				<h5>Missing Twin</h5> 
 				<a href="http://missingtwin.bandcamp.com/album/brothers">Download</a>  <a onclick="return popitup('http://www.windytunnel.co/missingtwin/brothers')">Listen</a>
 			</section> 
 			
 			<section class="four columns"> 
 				<img class="albumart" src="../images/thegreat.jpg"> 
-				<h4>IT'S THE GREAT EMULSIFIER</h4>
-				<h4>Croque Madame</h4> 
+				<h4>It's The Great Emulsifier</h4>
+				<h5>Croque Madame</h5> 
 				<a href="http://croquemadamejazz.bandcamp.com/album/its-the-great-emulsifier">Download</a>  <a onclick="return popitup('thegreatemulsifier.html')">Listen</a>
 			</section>
 			
 			<section class="four columns"> 
 				<img class="albumart" src="../images/paradigm.jpg">
-				<h4>PARADIGM</h4> 
-				<h4>The Mike Tierney Trio</h4> 
+				<h4>Paradigm</h4> 
+				<h5>The Mike Tierney Trio</h5> 
 				<a href="http://miketierneytrio.bandcamp.com/album/paradigm">Download</a>  <a onclick="return popitup('paradigm.html')">Listen</a>
 			</section>
 			
 			<section class="four columns"> 
 				<img class="albumart" src="../images/submission.jpg">
-				<h4>IN SUBMISSION</h4> 
-				<h4>Croque Madame</h4> 
+				<h4>In Submission</h4> 
+				<h5>Croque Madame</h5> 
 				<a href="http://croquemadamejazz.bandcamp.com/album/in-submission">Download</a>  <a onclick="return popitup('insubmission.html')">Listen</a>
 			</section> 
 			
 			<section class="four columns"> 
 				<img class="albumart" src="../images/wry.jpg">
-				<h4>BRIDGE ICE</h4> 
-				<h4>Wry Climate</h4> 
+				<h4>Bridge Ice</h4> 
+				<h5>Wry Climate</h5> 
 				<a href="http://wryclimate.bandcamp.com/album/bridge-ice">Download</a>  <a onclick="return popitup('bridgeice.html')">Listen</a>
 			</section>
 			
 			<section class="four columns"> 
 				<img class="albumart" src="../images/roads.jpg">
-				<h4>ROADS IN</h4> 
-				<h4>The Milkman's Union</h4> 
+				<h4>Roads In</h4> 
+				<h5>The Milkman's Union</h5> 
 				<a href="http://themilkmansunion.bandcamp.com/album/roads-in">Download</a>  <a onclick="return popitup('roadsin.html')">Listen</a>
 			</section>
 			
 			<section class="four columns"> 
 				<img class="albumart" src="../images/dreaming.jpg">
-				<h4>DREAMING OF SLEEP</h4> 
-				<h4>9th Rail</h4> 
+				<h4>Dreaming of Sleep</h4> 
+				<h5>9th Rail</h5> 
 				<a href="https://myspace.com/9thrail" target="_blank">Listen</a>
 			</section>
 			<section class="three-forths columns">
-				<a class="center" id="tt_link">To Top</a>
+				<button class="center" id="tt_link">To Top</button>
 			</section>
 		</article> 
 	</div>

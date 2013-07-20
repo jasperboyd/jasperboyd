@@ -11,6 +11,7 @@
 	<link href="../stylesheets/print.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link href="../stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Raleway:100|Ubuntu+Mono:400,400italic|Merriweather:300italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=BenchNine:400,300,700' rel='stylesheet' type='text/css'>
 	<script src="http://code.jquery.com/jquery-2.0.0.min.js"> </script>
 	<script src="../javascripts/main.js"></script>
 	<script src="../javascripts/web.js"></script>
@@ -28,7 +29,11 @@
 </head>
 <body> 
 	<header> 
-		<nav>
+		<h1><a id="titlelink"  href="../">Jasper Boyd</a></h1>
+		<h2><a href="/music">Musician</a> & <a class="italic">Web Designer</a></h2>
+	</header>
+	<nav id="mastnav">
+			<a id="bloglink" href="/blog">Blog</a>
 			<a id="musiclink" href="/music">Music</a> 
 			<a id="weblink" class="selected">Web</a> 
 			<a id="resumelink" href="/resume">Resume</a>
@@ -38,35 +43,88 @@
 				<a href="mailto:jasperboyd@lavabit.com">Email</a>
 				<section id="address" class="initblank">
 					<p>
-					   Campus Box 210,
-					   Clark U, 
-					   Worcester, MA 01610
+					   Campus Box 210 <br />
+					   Clark U <br />
+					   Worcester, MA 01610 <br />
 					</p>
 				</section>
 			</section>
-		</nav> 
-		<h1><a id="titlelink" href="../">JASPER BOYD'S INTERNET HOUSE</a></h1>
-	</header>
+	</nav>
+	<nav id="secnav"> 
+		<a id="p_link">Portfolio</a> 
+		<a id="ph_link">Need A Website?</a> 
+	</nav>
 	<div id="wrapper"> 
-		<article id="webdesignlanding"> 
-			<h1>Web Design</h1>
-			<p> 
-				I love hand-coding websites using SCSS, JQUERY and HTML5.<br /> 
-				I dig Responsive, Minimal and Lightweight Designs.<br />
-				<a id="p_link">Portfolio</a>
-			</p> 
-		</article> 
 		<article id="portfolio">
-			<h1>Portfolio</h2> 
+			<h1>Portfolio</h1> 
 			<section>
 			<img class="screenshot" src="../images/windytunnel.png"> 
 			<h2 class="center"> WINDY TUNNEL MEDIA </h2>
+			<p class="justify">
+				This is the website that I've been working on
+				for my own record label. It's mobile-friendly,
+				has a built in blog, as well as a store. I've 
+				designed everything from the layout to the 
+				branding. 
+			</p> 
 			</section>
+			<section> 
+			<img class="screenshot" src="../images/pureca.png">
+			<h2 class="center"> THE PUREST CACOPHONY </h2>
+			<p class="justify"> 
+				This is the website for my band it currently
+				is very simplistic, but is soon to feature a
+				built in blog.
+			</p> 
+			</section> 
 			<section>
 			<img class="screenshot" src="../images/thehalfs.png">
 			<h2 class="center"> THE HALFS </h2> 
+			<p class="justify">
+				This is one of the very first websites I ever
+				built It's simplistic and is hosted on tumblr.
+				It's up here mostly to show the progress I've 
+				made. It will soon see a complete overhaul. 
+			</p> 
 			</section>
 		</article>
+		<article id="selfpromotion"> 
+			<h1 class="center">Do You Need A Website?</h1>
+			<section class="two columns">
+			<h2>Design Philosophy</h2>
+			<p class="justify">
+				I design lightweight and responsive websites that will display
+				on all sorts of internet devices. I will work with you to find
+				the design that fits your needs the best. Because I build my
+				sites from scratch I can give you whatever you need without 
+				having to work within the framework of a template. This will
+				also mean that your site will be unique and not just a carbon
+				copy of any other website out there.
+			</p>  
+			</section>
+			<section class="two columns">
+			<h2>Features</h2> 
+			<ol>	
+				<li>Mobile Compatible</li> 
+				<li>Cross-browser</li> 
+				<li>Interactive</li> 
+				<li>Lightweight</li> 
+				<li>Blog</li> 
+				<li>E-Commerce</li> 
+				<li>Web App</li> 
+			</ol> 
+			</section>
+			<section class="one columns">
+			<h2 class="center">Am I What You're looking For?</h2>
+			<button id="yes_button">Yes</button><button id="no_button">No</button>
+				<section id="yes_answer" class="init_blank">
+				<h2><a href="mailto:jasperboyd@lavabit.com">Get in Touch!</a></h2> 
+				</section> 
+				<section id="no_answer" class="init_blank">
+				<h2><a href="mailto:jasperboyd@lavabit.com">What can I do better?</a></h2> 
+				</section> 
+			</section>
+		</article> 
 	</div>
 </body> 
 </html> 
