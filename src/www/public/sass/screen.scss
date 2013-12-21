@@ -1,0 +1,122 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass"; 
+
+$sans_serif: 'Lato', sans-serif;
+$serif: 'Sorts Mill Goudy', serif;
+
+$normal: 300; 
+$medium: 400; 
+$bold: 900; 
+
+$normal: 18px; 
+$small: $normal / 2; 
+$tiny: $small / 1.5; 
+$medium: $normal * 2;
+$large: $medium * 1.5; 
+$huge: $large * 1.5; 
+
+$blue: #2372e8; 
+$orange: #e84923;
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 { 
+	font-family: $sans_serif;
+}
+
+p { 
+	font-family: $serif;
+	font-size: $normal;
+	line-height: 1.5;
+}
+
+a { 
+	text-decoration: none; 
+	color: $blue;
+}
+
+a:hover { 
+	color: $orange;
+}
+
+header { 
+	
+	text-align: center;
+
+	h1 { 
+		font-size: $large; 
+		text-transform: uppercase; 
+		font-weight: $normal; 
+		letter-spacing: $small; 
+		@include text-shadow(shade($blue, 75) 1px 1px 2px);
+
+	}
+
+	h2 { 
+		font-size: $normal; 
+		font-family: $serif; 
+		text-transform: lowercase; 
+		font-style: italic; 
+		color: $orange;
+		margin: $small auto;
+	}
+}
+
+nav { 
+	background-color: shade($blue, 75);
+	text-align: center; 
+	padding: $small;
+	margin: $small 0;
+	a { 
+		display: inline-block; 
+		padding: $small; 
+		@include border-radius($small, $small);
+		color: tint($blue, 25);
+		@include text-shadow(shade($blue, 75) 1px 1px 2px);
+		border: solid $blue 1px;
+		margin: $small; 
+		text-transform: uppercase; 
+		letter-spacing: $small / 2;
+		background-color: shade($blue, 25);
+	}
+
+	a:hover { 
+		border: solid $orange 1px;
+		background-color: shade($blue, 75);
+	}
+}
+
+footer { 
+	position: fixed; 
+	bottom: 0;
+	background-color: shade($blue, 75);
+	width: 100%;
+
+	h6 { 
+		text-transform: uppercase; 
+		letter-spacing: $small;
+		text-align: center;
+		padding: $small;
+		font-family: $small;
+		color: $blue;
+	}
+}
+
+article { 
+	margin: 0 auto;
+	width: 80%;
+
+	h1 { 
+		font-size: $medium; 
+		text-align: center; 
+		margin: $normal auto;
+	}
+}
