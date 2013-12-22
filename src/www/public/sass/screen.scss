@@ -41,6 +41,8 @@ p {
 a { 
 	text-decoration: none; 
 	color: $blue;
+	@include transition-property(all);
+  	@include transition-duration(1s);
 }
 
 a:hover { 
@@ -65,9 +67,18 @@ input {
 	padding: $small;
 	margin: 0 auto;
 	border: none;
+
+	@include transition-property(all);
+  	@include transition-duration(1s);
+}
+
+input:hover, input:active, input:focus {
+	background-color: tint($orange, 75);
 }
 
 header { 
+
+	@include background(image-url("bluepattern.png"));
 	
 	text-align: center;
 
@@ -121,7 +132,7 @@ nav {
 
 	a:hover { 
 		border: solid $orange 1px;
-		background-color: shade($blue, 75);
+		background-color: shade($blue, 90);
 		@include box-shadow(shade($orange, 50) 1px 1px 1px 1px, shade($orange, 75) 1px 1px 1px 1px);
 	}
 }
@@ -171,6 +182,11 @@ article {
 		font-family: $serif;
 		margin: $tiny auto;
 	}
+
+	p {
+		width: 75%;
+		margin: 0 auto;
+	}
 }
 
 section { 
@@ -183,6 +199,7 @@ section {
 
 .highlight {
 	background-color: $orange; 
+	font-style: italic;
 	color: white;
 	padding: $small/2; 
 	margin: $small/2;
@@ -207,7 +224,7 @@ section {
 		font-size: $medium;
 	}
 
-	.description { 
+	.description, .cost { 
 		font-family: $serif; 
 		font-size: $normal;
 	}
@@ -221,9 +238,9 @@ section {
 
 .register, .login, .album_creator, .project_creator, 
 .thought_creator, .service_creator, .project_editor,
-.service_editor {
+.service_editor, .user_editor {
 	p {
-		margin: $small auto;
+		margin: $normal auto;
 		font-size: $normal;
 	}
 

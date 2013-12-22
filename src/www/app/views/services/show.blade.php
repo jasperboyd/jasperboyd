@@ -5,7 +5,11 @@
 <article class="service_profile"> 
 
 <h1>{{$service->name}}</h1> 
-<p>{{$service->description}}</p>
+<h2>Cost: {{$service->cost}}$</h2>
+
+@if($service->more_info != NULL)
+<p>{{$service->more_info}}</p>
+@endif
 
 </article>
 
