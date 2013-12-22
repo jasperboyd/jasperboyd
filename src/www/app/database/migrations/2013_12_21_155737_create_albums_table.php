@@ -17,6 +17,8 @@ class CreateAlbumsTable extends Migration {
 			$table->string('title'); 
 			$table->string('artist'); 
 			$table->string('bandcamp_url')->nullable(); 
+			$table->text('description')->nullable(); 
+			$table->longtext('more_info')->nullable();
 			$table->timestamps();
 		});
 	}

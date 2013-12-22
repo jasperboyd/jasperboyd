@@ -11,7 +11,8 @@ class UserTableSeeder extends Seeder {
 			'first_name' => 'jasper', 
 			'last_name' => 'boyd', 
 			'email' => 'jboyd@clarku.edu', 
-			'password' => 'root'
+			'password' => 'root',
+			'admin' => true
 		);
 
 		// Uncomment the below to run the seeder

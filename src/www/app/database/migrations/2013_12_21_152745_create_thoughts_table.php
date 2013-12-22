@@ -15,6 +15,9 @@ class CreateThoughtsTable extends Migration {
 		Schema::create('thoughts', function(Blueprint $table) {
 			$table->increments('id');
 			$table->string('title'); 
+			$table->string('subtitle')->nullable(); 
+			$table->text('summary')->nullable(); 
+			$table->string('image_url')->nullable(); 
 			$table->longtext('body'); 
 			$table->timestamps();
 		});

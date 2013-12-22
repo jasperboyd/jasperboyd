@@ -10,8 +10,7 @@
 
 	<header> 
 		<h1>{{link_to_route('home.welcome', 'Jasper Boyd')}}</h1> 
-		<h2>Web Developer / Musician</h2> 
-	</header> 
+		<h2><span class="highlight">Web Developer</span> <span class="normal">|</span> <span class="highlight">Musician</span></h2> 
 
 	<nav> 
 		{{link_to_route('albums.index', 'Music')}}
@@ -19,6 +18,8 @@
 		{{link_to_route('thoughts.index', 'Thoughts')}}
 		{{link_to_route('home.webdev', 'Build Me A Website!')}}
 	</nav>
+
+	</header> 
 
 	@yield('content') 
 

@@ -2,6 +2,8 @@
 
 @section('content')
 
+<article class="music"> 
+
 <h1>Albums</h1> 
 
 @foreach($albums as $album)
@@ -11,5 +13,7 @@
 	<h3>{{$album->artist}}</h2> 
 
 @endforeach
+
+</article> 
 
 @stop 
