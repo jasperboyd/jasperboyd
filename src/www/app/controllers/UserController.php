@@ -78,7 +78,7 @@ class UserController extends BaseController {
 
 		if($user->isSaved())
    		{
-      		return Redirect::route('users.show', $id)
+      		return Redirect::route('users.edit', $id)
         	->with('flash', 'The user was updated');
    		}
 

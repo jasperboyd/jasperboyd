@@ -2,15 +2,17 @@
 
 @section('content')
 
+@if(Auth::check())
 @if(Auth::user()->admin == true)
 	<article class="service_creator"> 
 		@include('services.create')
 	</article> 
 @endif
+@endif
 
 <article class="webdev">
 
-<h1>Web Development</h1>
+<h1>Order A Website</h1>
 
 <section class="services"> 
 

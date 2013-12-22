@@ -68,8 +68,20 @@ input {
 	margin: 0 auto;
 	border: none;
 
+	@include border-radius($small, $small); 
+
 	@include transition-property(all);
   	@include transition-duration(1s);
+}
+
+input[type=submit]{
+	background-color: $blue;
+	color:white; 
+}
+
+input[type=submit]:hover {
+	background-color: shade($blue, 90);
+	width: 50%;
 }
 
 input:hover, input:active, input:focus {
@@ -121,7 +133,7 @@ nav {
 		@include box-shadow(shade($blue, 50) 1px 1px 1px 1px, shade($blue, 75) 1px 1px 1px 1px);
 		margin: $small auto;
 		border: solid $blue 1px;
-		background-color: shade($blue, 25);
+		background-color: $blue;
 		
 		color: white;
 		font-weight: $bold;
@@ -181,6 +193,14 @@ article {
 		font-size: $medium;
 		font-family: $serif;
 		margin: $tiny auto;
+	}
+
+	ul { 
+		width: 75%; 
+		margin: 0 auto;
+		ul { 
+			width: 100%;
+		}
 	}
 
 	p {

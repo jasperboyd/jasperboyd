@@ -9,11 +9,13 @@
 		<li class="cost"><span class="highlight">Cost:</span>{{$service->cost}}$</li>
 	</ul>	
 
-	@if(Auth::user()->admin == true)
-	<section class="admin_controls"> 
-		{{link_to_route('services.edit', 'edit', $service->id)}} |
-		{{link_to_route('services.showDestroy', 'delete', $service->id)}}
-	</section> 
+	@if(Auth::check())
+		@if(Auth::user()->admin == true)
+		<section class="admin_controls"> 
+			{{link_to_route('services.edit', 'edit', $service->id)}} |
+			{{link_to_route('services.showDestroy', 'delete', $service->id)}}
+		</section> 
+		@endif
 	@endif
 </section>
 @endforeach

@@ -2,11 +2,13 @@
 
 @section('content')
 
-<article class="album_creator"> 
-@if(Auth::user()->admin == true)
-	@include('albums.create')
+@if(Auth::check())
+	@if(Auth::user()->admin == true)
+	<article class="album_creator"> 
+		@include('albums.create')
+	</article> 
+	@endif
 @endif
-</article> 
 
 <article class="music"> 
 
@@ -18,13 +20,14 @@
 
 	<h3>{{$album->artist}}</h2> 
 
-
+@if(Auth::check())
 	@if(Auth::user()->admin == true)
 	<section class="admin_controls"> 
 		{{link_to_route('albums.edit', 'edit', $album->id)}} |
 		{{link_to_route('albums.showDestroy', 'delete', $album->id)}}
 	</section> 
 	@endif
+@endif
 
 @endforeach
 

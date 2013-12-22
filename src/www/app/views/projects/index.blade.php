@@ -2,11 +2,13 @@
 
 @section('content')
 
-<article class="project_creator"> 
+@if(Auth::check())
 @if(Auth::user()->admin == true)
+	<article class="project_creator">
 	@include('projects.create')
+	</article> 
 @endif
-</article> 
+@endif
 
 <article>
 	
@@ -36,11 +38,13 @@
 
 	<p>{{$project->description}}</p> 
 
-	@if(Auth::user()->admin == true)
-	<section class="admin_controls"> 
-		{{link_to_route('projects.edit', 'edit', $project->id)}} |
-		{{link_to_route('projects.showDestroy', 'delete', $project->id)}}
-	</section> 
+	@if(Auth::check())
+		@if(Auth::user()->admin == true)
+		<section class="admin_controls"> 
+			{{link_to_route('projects.edit', 'edit', $project->id)}} |
+			{{link_to_route('projects.showDestroy', 'delete', $project->id)}}
+		</section> 
+		@endif
 	@endif
 
 </section>

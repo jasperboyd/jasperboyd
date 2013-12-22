@@ -2,10 +2,12 @@
 
 @section('content')
 
-@if(Auth::user()->admin == true)
-	<article class="thought_creator">
-		@include('thoughts.create')
-	</article>
+@if(Auth::check())
+	@if(Auth::user()->admin == true)
+		<article class="thought_creator">
+			@include('thoughts.create')
+		</article>
+	@endif
 @endif
 
 <article class="thoughts"> 
@@ -22,12 +24,14 @@
 
 </section> 
 
-@if(Auth::user()->admin == true)
+@if(Auth::check())
+	@if(Auth::user()->admin == true)
 	<section class="admin_controls"> 
 		{{link_to_route('thoughts.edit', 'edit', $thought->id)}} |
 		{{link_to_route('thoughts.showDestroy', 'delete', $thought->id)}}
 	</section> 
 	@endif
+@endif
 
 @endforeach
 
