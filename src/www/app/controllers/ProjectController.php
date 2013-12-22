@@ -30,7 +30,17 @@ class ProjectController extends BaseController {
 	 */
 	public function store()
 	{
-		//
+		$project = new Project(Input::all()); 
+
+		$project->save(); 
+
+		if($project->isSaved()){ 
+			return $this->show($project->id); 
+		}
+
+		return Redirect::route('projects.create')
+			->withInput()
+			->withErrors($project->errors()); 
 	}
 
 	/**
@@ -41,7 +51,8 @@ class ProjectController extends BaseController {
 	 */
 	public function show($id)
 	{
-        return View::make('projects.show');
+		$project = Project::find($id); 
+        return View::make('projects.show', compact('project'));
 	}
 
 	/**
@@ -52,7 +63,8 @@ class ProjectController extends BaseController {
 	 */
 	public function edit($id)
 	{
-        return View::make('projects.edit');
+		$project = Project::find($id); 
+        return View::make('projects.edit', compact('project'));
 	}
 
 	/**
@@ -63,7 +75,23 @@ class ProjectController extends BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$project = Project::find($id); 
+		$project->save(Input::all());
+
+		if($project->isSaved())
+   		{
+      		return Redirect::route('projects.show', $id)
+        	->with('flash', 'The project was updated');
+   		}
+
+   		return Redirect::route('projects.edit', $id)
+     		->withInput()
+      		->withErrors($project->errors());
+	}
+
+	public function showDestroy($id){
+		$project = Project::find($id); 
+		return View::make('projects.destroy', compact('project'));
 	}
 
 	/**
@@ -74,7 +102,8 @@ class ProjectController extends BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		Project::destroy($id); 
+		return $this->index();
 	}
 
 }

@@ -122,6 +122,7 @@ nav {
 	a:hover { 
 		border: solid $orange 1px;
 		background-color: shade($blue, 75);
+		@include box-shadow(shade($orange, 50) 1px 1px 1px 1px, shade($orange, 75) 1px 1px 1px 1px);
 	}
 }
 
@@ -211,7 +212,7 @@ section {
 }
 
 .register, .login, .album_creator, .project_creator, 
-.thought_creator, .service_creator {
+.thought_creator, .service_creator, .user_editor, .project_editor {
 	p {
 		margin: $small auto;
 		font-size: $normal;
@@ -223,7 +224,7 @@ section {
 	}
 }
 
-.album_destroyer {
+.album_destroyer, .project_destroyer {
 	text-align: center;
 
 	p { 

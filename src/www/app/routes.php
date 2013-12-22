@@ -38,7 +38,14 @@ Route::get('logout', array(
 ));
 
 Route::resource('users', 'UserController');
+
+Route::get('projects/{id}/destroy', array(
+	'uses' => 'ProjectController@showDestroy',
+	'as' => 'projects.showDestroy'
+));
+
 Route::resource('projects', 'ProjectController'); 
+
 Route::resource('thoughts', 'ThoughtController');  
 
 

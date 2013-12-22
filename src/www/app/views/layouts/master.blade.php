@@ -20,7 +20,7 @@
 		@if(!Auth::check())
 		{{link_to_route('session.create', 'Login')}}
 		@else 
-		{{link_to_route('users.edit', 'Settings')}}
+		{{link_to_route('users.edit', 'Settings', Auth::user()->id)}}
 		{{link_to_route('session.destroy', 'Logout')}}
 		@endif 
 	</nav>
