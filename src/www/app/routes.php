@@ -17,14 +17,24 @@ Route::get('/', array(
 
 ));
 
-Route::get('/music', array(
-	'uses' => 'HomeController@music',
-	'as' => 'home.music'
-));
-
 Route::get('/webdev', array(
 	'uses' => 'HomeController@webdev',
 	'as' => 'home.webdev'
+));
+
+Route::get('/login', array(
+	'uses' => 'SessionController@create',
+	'as' => 'session.create'
+));
+
+Route::post('login', array(
+  'uses' => 'SessionController@store',
+  'as' => 'session.store'
+));
+
+Route::get('logout', array(
+  'uses' => 'SessionController@destroy',
+  'as' => 'session.destroy'
 ));
 
 Route::resource('users', 'UserController');

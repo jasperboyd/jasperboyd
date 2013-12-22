@@ -6,15 +6,27 @@
 
 <h1>Web Development</h1>
 
-<h2>Services</h2> 
+<section class="services"> 
 
-@foreach($services as $service)
+@include('services.index')
 
-@endforeach
+</section> 
 
-<h2>Create an Account</h2> 
+<section class="register"> 
+
+<h2>Register</h2> 
+
+@include('users.create')
+
+</section> 
+
+<section class="login"> 
 
 <h2>Login</h2> 
+
+@include('auth.login')
+
+</section>
 
 </article>
 

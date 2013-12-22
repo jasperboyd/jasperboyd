@@ -97,23 +97,35 @@ a:hover {
 }
 
 /* line 51, ../sass/screen.scss */
+input {
+  font-size: 27px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  background-color: #fdf5f4;
+  width: 100%;
+  margin: 0 auto;
+  border: none;
+}
+
+/* line 61, ../sass/screen.scss */
 header {
   text-align: center;
   width: 33%;
   height: 100%;
   background-color: #f4f7fd;
-  float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
-/* line 62, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 header h1 {
   font-size: 40.5px;
   text-transform: lowercase;
   font-weight: 18px;
   letter-spacing: -2.25px;
-  text-shadow: #081c3a 1px 1px 2px;
   margin: 9px auto;
 }
-/* line 72, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 header h2 {
   font-size: 18px;
   font-family: "Sorts Mill Goudy", serif;
@@ -122,11 +134,11 @@ header h2 {
   color: #e84923;
 }
 
-/* line 81, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 nav {
   text-align: center;
 }
-/* line 85, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 nav a {
   width: 50%;
   display: inline-block;
@@ -143,20 +155,20 @@ nav a {
   letter-spacing: 2.25px;
   background-color: #1a55ae;
 }
-/* line 100, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 nav a:hover {
   border: solid #e84923 1px;
   background-color: #081c3a;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 footer {
   position: fixed;
   bottom: 0;
   background-color: #081c3a;
   width: 100%;
 }
-/* line 112, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 footer h6 {
   text-transform: uppercase;
   letter-spacing: 9px;
@@ -166,39 +178,45 @@ footer h6 {
   color: white;
 }
 
-/* line 122, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 article {
   float: right;
   width: 66%;
+  margin-bottom: 60.75px;
+  text-align: left;
+}
+/* line 140, ../sass/screen.scss */
+article h1, article h2, article h3, article h4, article h5, article h6 {
   text-align: center;
 }
-/* line 128, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 article h1 {
   font-size: 60.75px;
   text-align: center;
   margin: 18px auto;
   font-weight: 900;
 }
-/* line 135, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 article h2 {
   font-size: 40.5px;
   text-transform: uppercase;
   letter-spacing: 9px;
   margin: 9px auto;
+  font-weight: 18px;
 }
-/* line 142, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 article h3 {
   font-size: 27px;
   font-family: "Sorts Mill Goudy", serif;
   margin: 6px auto;
 }
 
-/* line 149, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .normal {
   font-size: 18px;
 }
 
-/* line 153, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .highlight {
   background-color: #e84923;
   color: white;
@@ -209,7 +227,34 @@ article h3 {
   border-radius: 9px / 9px;
 }
 
-/* line 161, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 .black {
   color: black;
+}
+
+/* line 182, ../sass/screen.scss */
+.services li {
+  margin: 9px auto;
+}
+/* line 186, ../sass/screen.scss */
+.services .name {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 27px;
+}
+/* line 192, ../sass/screen.scss */
+.services .description {
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 18px;
+}
+
+/* line 199, ../sass/screen.scss */
+.register p, .login p {
+  margin: 9px auto;
+  font-size: 18px;
+}
+/* line 204, ../sass/screen.scss */
+.register h3, .login h3 {
+  text-align: left;
+  font-family: "Lato", sans-serif;
 }

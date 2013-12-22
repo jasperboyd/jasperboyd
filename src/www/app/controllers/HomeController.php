@@ -20,15 +20,15 @@ class HomeController extends BaseController {
 		return View::make('home.welcome');
 	}
 
-	public function music()
-	{ 
-		return View::make('home.music'); 
-	}
-
 	public function webdev()
 	{
 		$services = Service::all(); 
 		return View::make('home.webdev', compact('services')); 
+	}
+
+	public function login()
+	{
+		return View::make('auth.login');
 	}
 
 }

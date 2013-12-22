@@ -16,7 +16,13 @@
 		{{link_to_route('albums.index', 'Music')}}
 		{{link_to_route('projects.index', 'Projects')}}
 		{{link_to_route('thoughts.index', 'Thoughts')}}
-		{{link_to_route('home.webdev', 'Build Me A Website!')}}
+		{{link_to_route('home.webdev', 'Order A Website')}}
+		@if(!Auth::check())
+		{{link_to_route('session.create', 'Login')}}
+		@else 
+		{{link_to_route('users.edit', 'Settings')}}
+		{{link_to_route('session.destroy', 'Logout')}}
+		@endif 
 	</nav>
 
 	</header> 

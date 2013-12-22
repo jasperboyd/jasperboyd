@@ -29,7 +29,17 @@ class UserController extends BaseController {
 	 */
 	public function store()
 	{
-		//
+		$user = new User(Input::all()); 
+
+		$user->save(); 
+
+		if($user->isSaved()){ 
+			return $this->show($user->id); 
+		}
+
+		return Redirect::route('users.create')
+			->withInput()
+			->withErrors($user->errors()); 
 	}
 
 	/**

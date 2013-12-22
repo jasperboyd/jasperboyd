@@ -48,6 +48,16 @@ a:hover {
 	@include text-shadow($orange 1px 1px 2px);
 }
 
+input { 
+	font-size: $medium;
+	font-family: $sans_serif;
+	font-weight: $bold;
+	background-color: tint($orange, 95);
+	width: 100%;
+	margin: 0 auto;
+	border: none;
+}
+
 header { 
 	
 	text-align: center;
@@ -57,14 +67,15 @@ header {
 
 	background-color: tint($blue, 95);
 
-	float: left;
+	position: fixed; 
+	top: 0; 
+	left: 0;
 
 	h1 { 
 		font-size: $large; 
 		text-transform: lowercase; 
 		font-weight: $normal; 
 		letter-spacing: -$small/4; 
-		@include text-shadow(shade($blue, 75) 1px 1px 2px);
 		margin: $small auto;
 
 	}
@@ -122,8 +133,11 @@ footer {
 article { 
 	float: right;
 	width: 66%;
+	margin-bottom: $huge;
 
-	text-align: center; 
+	text-align: left;
+
+	h1, h2, h3, h4, h5, h6 {text-align: center;} 
 
 	h1 { 
 		font-size: $huge; 
@@ -137,6 +151,7 @@ article {
 		text-transform: uppercase; 
 		letter-spacing: $small;
 		margin: $small auto;
+		font-weight: $normal;
 	}
 
 	h3 { 
@@ -160,4 +175,34 @@ article {
 
 .black { 
 	color: black;
+}
+
+.services { 
+
+	li { 
+		margin: $small auto;
+	}
+
+	.name { 
+		font-family: $sans_serif; 
+		font-weight: $bold; 
+		font-size: $medium;
+	}
+
+	.description { 
+		font-family: $serif; 
+		font-size: $normal;
+	}
+}
+
+.register, .login {
+	p {
+		margin: $small auto;
+		font-size: $normal;
+	}
+
+	h3 { 
+		text-align: left; 
+		font-family: $sans_serif; 
+	}
 }
