@@ -46,6 +46,11 @@ Route::get('projects/{id}/destroy', array(
 
 Route::resource('projects', 'ProjectController'); 
 
+Route::get('thoughts/{id}/destroy', array(
+	'uses' => 'ThoughtController@showDestroy',
+	'as' => 'thoughts.showDestroy'
+));
+
 Route::resource('thoughts', 'ThoughtController');  
 
 

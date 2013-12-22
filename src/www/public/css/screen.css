@@ -282,15 +282,15 @@ section {
 }
 
 /* line 227, ../sass/screen.scss */
-.album_destroyer, .project_destroyer {
+.album_destroyer, .project_destroyer, .thought_destroyer {
   text-align: center;
 }
 /* line 230, ../sass/screen.scss */
-.album_destroyer p, .project_destroyer p {
+.album_destroyer p, .project_destroyer p, .thought_destroyer p {
   margin: 40.5px auto;
 }
 /* line 234, ../sass/screen.scss */
-.album_destroyer input, .project_destroyer input {
+.album_destroyer input, .project_destroyer input, .thought_destroyer input {
   margin: 40.5px auto;
 }
 

@@ -18,6 +18,7 @@ class CreateThoughtsTable extends Migration {
 			$table->string('subtitle')->nullable(); 
 			$table->text('summary')->nullable(); 
 			$table->string('image_url')->nullable(); 
+			$table->string('thought_url')->nullable(); 
 			$table->longtext('body'); 
 			$table->timestamps();
 		});

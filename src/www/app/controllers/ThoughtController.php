@@ -30,7 +30,17 @@ class ThoughtController extends BaseController {
 	 */
 	public function store()
 	{
-		//
+		$thought = new Thought(Input::all()); 
+
+		$thought->save(); 
+
+		if($thought->isSaved()){ 
+			return $this->show($thought->id); 
+		}
+
+		return Redirect::route('thoughts.create')
+			->withInput()
+			->withErrors($thought->errors()); 
 	}
 
 	/**
@@ -41,7 +51,8 @@ class ThoughtController extends BaseController {
 	 */
 	public function show($id)
 	{
-        return View::make('thoughts.show');
+		$thought = Thought::find($id);
+        return View::make('thoughts.show', compact('thought'));
 	}
 
 	/**
@@ -63,7 +74,24 @@ class ThoughtController extends BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$thought = Thought::find($id); 
+		$thought->save(Input::all());
+
+		if($thought->isSaved())
+   		{
+      		return Redirect::route('thoughts.show', $id)
+        	->with('flash', 'The thought was updated');
+   		}
+
+   		return Redirect::route('thoughts.edit', $id)
+     		->withInput()
+      		->withErrors($thought->errors());
+	}
+
+	public function showDestroy($id)
+	{
+		$thought = Thought::find($id); 
+		return View::make('thoughts.destroy', compact('thought'));
 	}
 
 	/**
@@ -74,7 +102,8 @@ class ThoughtController extends BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		Thought::destroy($id); 
+		return $this->index();
 	}
 
 }
