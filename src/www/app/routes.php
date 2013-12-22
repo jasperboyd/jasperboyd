@@ -31,3 +31,4 @@ Route::resource('users', 'UserController');
 Route::resource('projects', 'ProjectController'); 
 Route::resource('thoughts', 'ThoughtController');  
 Route::resource('albums', 'AlbumController');  
+Route::resource('services', 'ServiceController');

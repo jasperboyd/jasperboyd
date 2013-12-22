@@ -27,7 +27,8 @@ class HomeController extends BaseController {
 
 	public function webdev()
 	{
-		return View::make('home.webdev'); 
+		$services = Service::all(); 
+		return View::make('home.webdev', compact('services')); 
 	}
 
 }
