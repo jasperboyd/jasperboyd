@@ -48,12 +48,21 @@ a:hover {
 	@include text-shadow($orange 1px 1px 2px);
 }
 
+label { 
+	display: block;
+	text-align: center;
+}
+
 input { 
 	font-size: $medium;
 	font-family: $sans_serif;
 	font-weight: $bold;
+	text-align: center;
+
 	background-color: tint($orange, 95);
-	width: 100%;
+	width: 90%;
+	display: block;
+	padding: $small;
 	margin: 0 auto;
 	border: none;
 }
@@ -98,14 +107,16 @@ nav {
 		display: inline-block; 
 		padding: $small; 
 		@include border-radius($small, $small);
-		color: white;
+		@include box-shadow(shade($blue, 50) 1px 1px 1px 1px, shade($blue, 75) 1px 1px 1px 1px);
 		margin: $small auto;
+		border: solid $blue 1px;
+		background-color: shade($blue, 25);
+		
+		color: white;
 		font-weight: $bold;
 		@include text-shadow(shade($blue, 75) 1px 1px 2px);
-		border: solid $blue 1px;
 		text-transform: uppercase; 
 		letter-spacing: $small / 4;
-		background-color: shade($blue, 25);
 	}
 
 	a:hover { 
@@ -161,6 +172,10 @@ article {
 	}
 }
 
+section { 
+	margin: $huge auto;
+}
+
 .normal { 
 	font-size: $normal;
 }
@@ -195,14 +210,31 @@ article {
 	}
 }
 
-.register, .login {
+.register, .login, .album_creator, .project_creator, 
+.thought_creator, .service_creator {
 	p {
 		margin: $small auto;
 		font-size: $normal;
 	}
 
 	h3 { 
-		text-align: left; 
 		font-family: $sans_serif; 
+		font-weight: $bold;
 	}
+}
+
+.album_destroyer {
+	text-align: center;
+
+	p { 
+		margin: $large auto;
+	}
+
+	input { 
+		margin: $large auto;
+	}
+}
+
+.admin_controls { 
+	text-align: center;
 }

@@ -40,5 +40,14 @@ Route::get('logout', array(
 Route::resource('users', 'UserController');
 Route::resource('projects', 'ProjectController'); 
 Route::resource('thoughts', 'ThoughtController');  
+
+
+Route::get('albums/{id}/destroy', array(
+	'uses' => 'AlbumController@showDestroy',
+	'as' => 'albums.showDestroy'
+
+));
+
 Route::resource('albums', 'AlbumController');  
+
 Route::resource('services', 'ServiceController');

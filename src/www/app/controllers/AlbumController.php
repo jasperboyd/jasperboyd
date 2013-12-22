@@ -30,7 +30,17 @@ class AlbumController extends BaseController {
 	 */
 	public function store()
 	{
-		//
+		$album = new Album(Input::all()); 
+
+		$album->save(); 
+
+		if($album->isSaved()){ 
+			return $this->show($album->id); 
+		}
+
+		return Redirect::route('albums.create')
+			->withInput()
+			->withErrors($album->errors()); 
 	}
 
 	/**
@@ -41,7 +51,8 @@ class AlbumController extends BaseController {
 	 */
 	public function show($id)
 	{
-        return View::make('albums.show');
+		$album = Album::find($id);
+        return View::make('albums.show', compact('album'));
 	}
 
 	/**
@@ -52,7 +63,8 @@ class AlbumController extends BaseController {
 	 */
 	public function edit($id)
 	{
-        return View::make('albums.edit');
+		$album = Album::find($id);
+        return View::make('albums.edit', compact('album'));
 	}
 
 	/**
@@ -63,7 +75,23 @@ class AlbumController extends BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$album = Album::find($id); 
+		$album->save(Input::all());
+
+		if($album->isSaved())
+   		{
+      		return Redirect::route('albums.show', $id)
+        	->with('flash', 'The album was updated');
+   		}
+
+   		return Redirect::route('albums.edit', $id)
+     		->withInput()
+      		->withErrors($album->errors());
+	}
+
+	public function showDestroy($id){
+		$album = Album::find($id); 
+		return View::make('albums.destroy', compact('album'));
 	}
 
 	/**
@@ -74,7 +102,9 @@ class AlbumController extends BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		$album = Album::destroy($id);
+
+		return $this->index(); 
 	}
 
 }
