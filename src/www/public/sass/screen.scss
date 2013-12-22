@@ -185,6 +185,8 @@ section {
 	background-color: $orange; 
 	color: white;
 	padding: $small/2; 
+	margin: $small/2;
+	margin-left: 0;
 	display: inline-block;
 	@include border-radius($small, $small);
 }
@@ -218,7 +220,8 @@ section {
 }
 
 .register, .login, .album_creator, .project_creator, 
-.thought_creator, .service_creator, .project_editor {
+.thought_creator, .service_creator, .project_editor,
+.service_editor {
 	p {
 		margin: $small auto;
 		font-size: $normal;
@@ -230,7 +233,8 @@ section {
 	}
 }
 
-.album_destroyer, .project_destroyer, .thought_destroyer {
+.album_destroyer, .project_destroyer, .thought_destroyer,
+.service_destroyer {
 	text-align: center;
 
 	p { 

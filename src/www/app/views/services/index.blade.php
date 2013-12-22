@@ -2,10 +2,18 @@
 
 <ul> 
 @foreach($services as $service)
-	
+<section class="service"> 	
 	<li class="name">{{$service->name}}</li>
 	<ul>
 		<li class="description"><span class="highlight">Description:</span>{{$service->description}}</li>
 	</ul>	
+
+	@if(Auth::user()->admin == true)
+	<section class="admin_controls"> 
+		{{link_to_route('services.edit', 'edit', $service->id)}} |
+		{{link_to_route('services.showDestroy', 'delete', $service->id)}}
+	</section> 
+	@endif
+</section>
 @endforeach
 </ul>

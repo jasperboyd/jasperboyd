@@ -9,7 +9,8 @@ class ServiceController extends BaseController {
 	 */
 	public function index()
 	{
-        return View::make('services.index');
+		$services = Service::all(); 
+        return View::make('services.index', compact('services'));
 	}
 
 	/**
@@ -29,7 +30,17 @@ class ServiceController extends BaseController {
 	 */
 	public function store()
 	{
-		//
+		$service = new Service(Input::all()); 
+
+		$service->save(); 
+
+		if($service->isSaved()){ 
+			return $this->show($service->id); 
+		}
+
+		return Redirect::route('services.create')
+			->withInput()
+			->withErrors($service->errors()); 
 	}
 
 	/**
@@ -40,7 +51,8 @@ class ServiceController extends BaseController {
 	 */
 	public function show($id)
 	{
-        return View::make('services.show');
+		$service = Service::find($id); 
+        return View::make('services.show', compact('service'));
 	}
 
 	/**
@@ -51,7 +63,8 @@ class ServiceController extends BaseController {
 	 */
 	public function edit($id)
 	{
-        return View::make('services.edit');
+		$service = Service::find($id); 
+        return View::make('services.edit', compact('service'));
 	}
 
 	/**
@@ -62,7 +75,23 @@ class ServiceController extends BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$service = Service::find($id); 
+		$service->save(Input::all());
+
+		if($service->isSaved())
+   		{
+      		return Redirect::route('services.show', $id)
+        	->with('flash', 'The service was updated');
+   		}
+
+   		return Redirect::route('services.edit', $id)
+     		->withInput()
+      		->withErrors($service->errors());
+	}
+
+	public function showDestroy($id){
+		$service = Service::find($id); 
+		return View::make('services.destroy', compact('service'));
 	}
 
 	/**
@@ -73,7 +102,8 @@ class ServiceController extends BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		Service::destroy($id); 
+		return Redirect::route('home.webdev');
 	}
 
 }

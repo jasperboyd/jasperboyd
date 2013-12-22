@@ -62,4 +62,10 @@ Route::get('albums/{id}/destroy', array(
 
 Route::resource('albums', 'AlbumController');  
 
+Route::get('services/{id}/destroy', array(
+	'uses' => 'ServiceController@showDestroy',
+	'as' => 'services.showDestroy'
+
+));
+
 Route::resource('services', 'ServiceController');
