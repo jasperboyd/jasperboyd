@@ -37,5 +37,5 @@
 		{{Form::label('body', 'Body:')}}
 	</p>
 	<p>
-		{{Form::text('body')}}
+		{{Form::textarea('body')}}
 	</p>

@@ -16,7 +16,7 @@
 		{{Form::label('description', 'Description:')}}
 	</p>
 	<p>
-		{{Form::text('description')}}
+		{{Form::textarea('description')}}
 	</p>
 
 	<p>

@@ -9,6 +9,8 @@
 {{Form::open(array('route' => 'thoughts.store'))}}
 	@include('thoughts.partials.form')
 
+<p>
 {{Form::submit('think')}}
+</p> 
 
 {{Form::close()}}

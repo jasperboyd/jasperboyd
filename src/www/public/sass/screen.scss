@@ -55,7 +55,7 @@ label {
 	text-align: center;
 }
 
-input { 
+input, textarea { 
 	font-size: $medium;
 	font-family: $sans_serif;
 	font-weight: $bold;
@@ -71,7 +71,7 @@ input {
 	@include border-radius($small, $small); 
 
 	@include transition-property(all);
-  	@include transition-duration(1s);
+  	@include transition-duration(.5s);
 }
 
 input[type=submit]{
@@ -80,12 +80,20 @@ input[type=submit]{
 }
 
 input[type=submit]:hover {
-	background-color: shade($blue, 90);
+	background-color: shade($blue, 99);
+	color: $blue;
 	width: 50%;
 }
 
-input:hover, input:active, input:focus {
-	background-color: tint($orange, 75);
+input:hover, input:active, input:focus,
+textarea:hover, textarea:active, textarea:focus {
+	background-color: $orange; 
+	color: white;
+}
+
+img { 
+	margin: $medium auto;
+	display: block;
 }
 
 header { 
@@ -144,15 +152,16 @@ nav {
 
 	a:hover { 
 		border: solid $orange 1px;
-		background-color: shade($blue, 90);
-		@include box-shadow(shade($orange, 50) 1px 1px 1px 1px, shade($orange, 75) 1px 1px 1px 1px);
+		background-color: $orange;
+		color:white;
+		@include box-shadow($orange 1px 1px 5px 1px);
 	}
 }
 
 footer { 
 	position: fixed; 
 	bottom: 0;
-	background-color: shade($blue, 75);
+	background-color: $blue;
 	width: 100%;
 
 	h6 { 
@@ -285,4 +294,14 @@ section {
 
 .admin_controls { 
 	text-align: center;
+}
+
+.album { 
+	h3 { 
+		font-family: $sans_serif;
+		font-weight: $bold;
+		text-transform: uppercase;
+		font-size: $normal;
+		letter-spacing: $small;
+	}
 }

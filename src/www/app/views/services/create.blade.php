@@ -10,6 +10,8 @@
 
 	@include('services.partials.form')
 
+<p>
 	{{Form::submit('create')}}
+</p>
 
 {{Form::close()}}

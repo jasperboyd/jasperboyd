@@ -16,10 +16,11 @@ class CreateAlbumsTable extends Migration {
 			$table->increments('id');
 			$table->string('title'); 
 			$table->string('artist'); 
+			$table->string('release_date');
 			$table->string('bandcamp_url')->nullable(); 
 			$table->string('image_url')->nullable(); 
 			$table->text('description')->nullable(); 
-			$table->longtext('more_info')->nullable();
+			$table->string('personnel');
 			$table->timestamps();
 		});
 	}

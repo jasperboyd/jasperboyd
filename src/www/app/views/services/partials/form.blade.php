@@ -23,7 +23,7 @@
 		{{Form::label('more_info', 'More Info:')}}
 	</p>
 	<p>
-		{{Form::text('more_info')}}
+		{{Form::textarea('more_info')}}
 	</p>
 
 	<p>

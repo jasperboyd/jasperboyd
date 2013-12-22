@@ -18,7 +18,9 @@
 
 	<h2><a href="{{route('albums.show', $album->id)}}">{{$album->title}}</a></h2> 
 
-	<h3>{{$album->artist}}</h2> 
+	<h3>{{$album->artist}}</h3> 
+
+	<img src="{{$album->image_url}}" />
 
 @if(Auth::check())
 	@if(Auth::user()->admin == true)

@@ -26,19 +26,13 @@
 	{{Form::text('last_name')}}
 	</p> 
 
+	<p>
 	{{Form::submit('update')}}
+	</p>
 
 {{Form::close()}}
 
-<h1>Delete</h1>
-
-<p>You will lose all your saved information by doing this.</p>
-
-{{Form::open(array('route'=>'users.destroy', 'method' => 'DELETE'))}}
-
-{{Form::submit('Destroy it!')}}
-
-{{Form::close()}}
+@include('users.destroy')
 
 </article>
 
