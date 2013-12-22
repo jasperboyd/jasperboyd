@@ -211,8 +211,14 @@ section {
 	}
 }
 
+.user_editor { 
+	p {
+		text-align: center;
+	}
+}
+
 .register, .login, .album_creator, .project_creator, 
-.thought_creator, .service_creator, .user_editor, .project_editor {
+.thought_creator, .service_creator, .project_editor {
 	p {
 		margin: $small auto;
 		font-size: $normal;

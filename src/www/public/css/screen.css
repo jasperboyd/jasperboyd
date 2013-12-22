@@ -268,33 +268,38 @@ section {
   font-size: 18px;
 }
 
-/* line 216, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
+.user_editor p {
+  text-align: center;
+}
+
+/* line 222, ../sass/screen.scss */
 .register p, .login p, .album_creator p, .project_creator p,
-.thought_creator p, .service_creator p, .user_editor p, .project_editor p {
+.thought_creator p, .service_creator p, .project_editor p {
   margin: 9px auto;
   font-size: 18px;
 }
-/* line 221, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 .register h3, .login h3, .album_creator h3, .project_creator h3,
-.thought_creator h3, .service_creator h3, .user_editor h3, .project_editor h3 {
+.thought_creator h3, .service_creator h3, .project_editor h3 {
   font-family: "Lato", sans-serif;
   font-weight: 900;
 }
 
-/* line 227, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 .album_destroyer, .project_destroyer, .thought_destroyer {
   text-align: center;
 }
-/* line 230, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 .album_destroyer p, .project_destroyer p, .thought_destroyer p {
   margin: 40.5px auto;
 }
-/* line 234, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 .album_destroyer input, .project_destroyer input, .thought_destroyer input {
   margin: 40.5px auto;
 }
 
-/* line 239, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .admin_controls {
   text-align: center;
 }
