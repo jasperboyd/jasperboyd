@@ -13,15 +13,26 @@
 		<h2><span class="highlight">Web Developer</span> <span class="normal">|</span> <span class="highlight">Musician</span></h2> 
 
 	<nav> 
+		@if(Auth::check())
+			@if(Auth::user()->admin == true)
+				{{link_to_route('orders.index', 'Orders')}}
+			@endif 
+		@endif
+
+		@if(Auth::check())
+			{{link_to_route('home.dash', 'dashboard')}}
+		@endif
+
 		{{link_to_route('albums.index', 'Music')}}
 		{{link_to_route('projects.index', 'Projects')}}
 		{{link_to_route('thoughts.index', 'Thoughts')}}
 		{{link_to_route('home.webdev', 'Order A Website')}}
+		
 		@if(!Auth::check())
-		{{link_to_route('session.create', 'Login')}}
+			{{link_to_route('session.create', 'Login')}}
 		@else 
-		{{link_to_route('users.edit', 'Settings', Auth::user()->id)}}
-		{{link_to_route('session.destroy', 'Logout')}}
+			{{link_to_route('users.edit', 'Settings', Auth::user()->id)}}
+			{{link_to_route('session.destroy', 'Logout')}}
 		@endif 
 	</nav>
 

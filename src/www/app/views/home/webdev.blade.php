@@ -33,7 +33,7 @@
 
 <h2>Login</h2> 
 
-@include('auth.login')
+@include('auth.partials.login')
 
 </section>
 @endif

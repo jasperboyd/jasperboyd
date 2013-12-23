@@ -1,21 +1,14 @@
-@if (Session::has('login_errors'))
-  <span class="error">Email or password incorrect.</span>
-@endif
+@extends('layouts.master')
 
-{{Form::open(['route' => 'session.store'])}}
+@section('content')
 
-	<p> 
-	{{Form::label('email', 'Email:')}}
-	{{Form::text('email')}}
-	</p> 
+<article class="login">
 
-	<p>
-	{{Form::label('password', 'Password:')}}
-	{{Form::password('password')}}
-	</p>
+<h1>Login</h1>
 
-	<p>
-	{{Form::submit('Login')}}
-	</p>
+@include('auth.partials.login')
 
-{{Form::close()}}
+</article>
+
+
+@stop

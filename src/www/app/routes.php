@@ -22,6 +22,11 @@ Route::get('/webdev', array(
 	'as' => 'home.webdev'
 ));
 
+Route::get('/dash', array(
+	'uses' => 'HomeController@dash',
+	'as' => 'home.dash'
+));
+
 Route::get('/login', array(
 	'uses' => 'SessionController@create',
 	'as' => 'session.create'
@@ -69,3 +74,15 @@ Route::get('services/{id}/destroy', array(
 ));
 
 Route::resource('services', 'ServiceController');
+
+Route::get('/service/{serviceid}/orders/create', array(
+	'uses' => 'OrderController@create', 
+	'as' => 'orders.create'
+));
+
+Route::get('/orders/{id}/destroy', array(
+	'uses' => 'OrderController@showDestroy', 
+	'as' => 'orders.showDestroy'
+));
+
+Route::resource('orders', 'OrderController', array('except' => array('create')));

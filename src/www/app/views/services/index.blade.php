@@ -7,6 +7,9 @@
 	<ul>
 		<li class="description"><span class="highlight">Description:</span>{{$service->description}}</li>
 		<li class="cost"><span class="highlight">Cost:</span>{{$service->cost}}$</li>
+		@if(Auth::check())
+			<li>{{link_to_route('orders.create', 'Order', $service->id)}}</li> 
+		@endif
 	</ul>	
 
 	@if(Auth::check())

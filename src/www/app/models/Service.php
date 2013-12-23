@@ -18,4 +18,8 @@ class Service extends Magniloquent {
   		"update" => array(
   		)
 	);
+
+  public static $relationships = array (
+    'orders' => array('hasMany', 'Order')
+  ); 
 }

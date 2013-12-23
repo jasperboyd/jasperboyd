@@ -37,9 +37,9 @@ class User extends Magniloquent implements UserInterface, RemindableInterface {
 	
 	);
 
-	protected static $relationships = array(
-
-    );
+	public static $relationships = array (
+		'orders' => array('hasMany', 'Order')
+	); 
 
 	/**
     * Factory

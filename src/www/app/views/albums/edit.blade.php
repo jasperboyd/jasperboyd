@@ -8,7 +8,9 @@
 
 @include('albums.partials.form');
 
-{{Form::submit('Update')}}
+<p>
+	{{Form::submit('Update')}}
+</p>
 
 {{Form::close()}}
 

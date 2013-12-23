@@ -26,6 +26,13 @@ class HomeController extends BaseController {
 		return View::make('home.webdev', compact('services')); 
 	}
 
+	public function dash()
+	{ 
+		$user = Auth::user(); 
+		$orders = $user->orders; 
+		return View::make('home.dash', compact('user', 'orders'));
+	}
+
 	public function login()
 	{
 		return View::make('auth.login');

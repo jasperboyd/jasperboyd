@@ -42,7 +42,7 @@ a {
 	text-decoration: none; 
 	color: $blue;
 	@include transition-property(all);
-  	@include transition-duration(1s);
+  	@include transition-duration(.5s);
 }
 
 a:hover { 
@@ -80,7 +80,7 @@ input[type=submit]{
 }
 
 input[type=submit]:hover {
-	background-color: shade($blue, 99);
+	background-color: $orange;
 	color: $blue;
 	width: 50%;
 }
@@ -138,14 +138,15 @@ nav {
 		display: inline-block; 
 		padding: $small; 
 		@include border-radius($small, $small);
-		@include box-shadow(shade($blue, 50) 1px 1px 1px 1px, shade($blue, 75) 1px 1px 1px 1px);
 		margin: $small auto;
 		border: solid $blue 1px;
 		background-color: $blue;
 		
 		color: white;
 		font-weight: $bold;
+
 		@include text-shadow(shade($blue, 75) 1px 1px 2px);
+		
 		text-transform: uppercase; 
 		letter-spacing: $small / 4;
 	}
@@ -154,7 +155,7 @@ nav {
 		border: solid $orange 1px;
 		background-color: $orange;
 		color:white;
-		@include box-shadow($orange 1px 1px 5px 1px);
+		
 	}
 }
 
@@ -267,7 +268,8 @@ section {
 
 .register, .login, .album_creator, .project_creator, 
 .thought_creator, .service_creator, .project_editor,
-.service_editor, .user_editor {
+.service_editor, .user_editor, .order_creator, 
+.order_editor {
 	p {
 		margin: $normal auto;
 		font-size: $normal;
@@ -280,7 +282,7 @@ section {
 }
 
 .album_destroyer, .project_destroyer, .thought_destroyer,
-.service_destroyer {
+.service_destroyer, .order_destroyer {
 	text-align: center;
 
 	p { 
@@ -292,7 +294,7 @@ section {
 	}
 }
 
-.admin_controls { 
+.admin_controls, .controls { 
 	text-align: center;
 }
 
