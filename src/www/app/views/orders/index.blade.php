@@ -10,10 +10,13 @@
 
 <section class="order">
 	<h2>{{$order->title}}</h2>
-	<h3>Summary</h3>
-	<p>{{$order->summary}}</p>
-	<h3>More Info</h3> 
-	<p>{{$order->more_info}}</p>
+	<h3>Created at: <span class="highlight">{{$order->created_at}}</span></h3>
+	<h3>Updated at: <span class="highlight">{{$order->updated_at}}</span></h3>
+	<p><span class="highlight">Summary: </span>{{$order->summary}}</p>
+	<p><span class="highlight">More Info: </span>{{$order->more_info}}</p>
+	@if($order->design_elements != NULL)
+		<p><span class="highlight">Design Elements: </span><a href="{{$order->design_elements}}" target="_blank">{{$order->design_elements}}</a></p>
+	@endif
 </section>
 
 @endforeach

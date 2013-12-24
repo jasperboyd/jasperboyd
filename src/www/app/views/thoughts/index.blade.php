@@ -22,8 +22,6 @@
 
 	<p>{{$thought->body}}</p> 
 
-</section> 
-
 @if(Auth::check())
 	@if(Auth::user()->admin == true)
 	<section class="admin_controls"> 
@@ -32,6 +30,8 @@
 	</section> 
 	@endif
 @endif
+
+</section> 
 
 @endforeach
 

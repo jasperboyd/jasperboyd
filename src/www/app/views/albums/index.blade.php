@@ -16,6 +16,8 @@
 
 @foreach($albums as $album)
 
+<section class="album">
+
 	<h2><a href="{{route('albums.show', $album->id)}}">{{$album->title}}</a></h2> 
 
 	<h3>{{$album->artist}}</h3> 
@@ -30,6 +32,8 @@
 	</section> 
 	@endif
 @endif
+
+</section>
 
 @endforeach
 

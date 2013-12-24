@@ -21,7 +21,8 @@ $large: $medium * 1.5;
 $huge: $large * 1.5; 
 
 $blue: #2372e8; 
-$orange: #e84923;
+$orange: #063535;
+$purple: #3A23E8;
 
 h1, 
 h2,
@@ -30,12 +31,14 @@ h4,
 h5,
 h6 { 
 	font-family: $sans_serif;
+	color: $orange;
 }
 
 p { 
 	font-family: $serif;
 	font-size: $normal;
 	line-height: 1.5;
+	color: $orange;
 }
 
 a { 
@@ -85,10 +88,11 @@ input[type=submit]:hover {
 	width: 50%;
 }
 
-input:hover, input:active, input:focus,
-textarea:hover, textarea:active, textarea:focus {
+input:active, input:focus,
+textarea:active, textarea:focus {
 	background-color: $orange; 
 	color: white;
+	@include box-shadow($orange 0 0 50px 0)
 }
 
 img { 
@@ -102,7 +106,7 @@ header {
 	
 	text-align: center;
 
-	width: 33%;
+	width: 25%;
 	height: 100%;
 
 	background-color: tint($blue, 95);
@@ -110,6 +114,8 @@ header {
 	position: fixed; 
 	top: 0; 
 	left: 0;
+
+	@include box-shadow(tint(black, 75) 0px 0px 2px 0px);
 
 	h1 { 
 		font-size: $large; 
@@ -133,27 +139,44 @@ nav {
 
 	text-align: center; 
 
+	h1 { 
+		font-size: $small*1.5; 
+		text-transform: uppercase; 
+		letter-spacing: $tiny;
+		font-weight: $bold;
+		color: $blue;
+	}
+
+	section { 
+		margin: $small/2 auto;
+		width: 75%; 
+		@include border-radius($small, $small);
+	}
+
 	a { 
-		width: 50%;
+		font-size: $small*1.5;
+		font-family: $serif;
+
+		width: 90%;
 		display: inline-block; 
 		padding: $small; 
 		@include border-radius($small, $small);
-		margin: $small auto;
+		margin: $small/2 auto;
 		border: solid $blue 1px;
 		background-color: $blue;
 		
 		color: white;
-		font-weight: $bold;
 
 		@include text-shadow(shade($blue, 75) 1px 1px 2px);
 		
-		text-transform: uppercase; 
+		text-transform: lowercase; 
 		letter-spacing: $small / 4;
 	}
 
 	a:hover { 
 		border: solid $orange 1px;
 		background-color: $orange;
+		@include text-shadow(white 1px 1px 3px, $blue 2px 2px 4px);
 		color:white;
 		
 	}
@@ -164,6 +187,8 @@ footer {
 	bottom: 0;
 	background-color: $blue;
 	width: 100%;
+
+	@include box-shadow(black 2px 2px 3px 1px);
 
 	h6 { 
 		text-transform: uppercase; 
@@ -177,7 +202,7 @@ footer {
 
 article { 
 	float: right;
-	width: 66%;
+	width: 75%;
 	margin-bottom: $huge;
 
 	text-align: left;
@@ -192,10 +217,10 @@ article {
 	}
 
 	h2 { 
-		font-size: $large; 
+		font-size: $large/1.5; 
 		text-transform: uppercase; 
 		letter-spacing: $small;
-		margin: $small auto;
+		margin: $normal auto;
 		font-weight: $normal;
 	}
 
@@ -308,4 +333,12 @@ section {
 		font-size: $normal;
 		letter-spacing: $small;
 	}
+}
+
+.order, .album, .project, .thought {
+	background-color: tint($blue, 90);
+	width: 80%; 
+	@include border-radius($huge, $huge);
+	padding: $normal;
+	margin: $normal auto 0; 
 }

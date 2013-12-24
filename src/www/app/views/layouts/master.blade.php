@@ -10,31 +10,42 @@
 
 	<header> 
 		<h1>{{link_to_route('home.welcome', 'Jasper Boyd')}}</h1> 
-		<h2><span class="highlight">Web Developer</span> <span class="normal">|</span> <span class="highlight">Musician</span></h2> 
+		<h2><span class="highlight">Web Developer / Musician</span></h2> 
 
 	<nav> 
 		@if(Auth::check())
 			@if(Auth::user()->admin == true)
-				{{link_to_route('orders.index', 'Orders')}}
+				<section class="admin_tasks">
+					<h1>Admin</h1>
+					{{link_to_route('orders.index', 'Orders')}}
+				</section>
 			@endif 
 		@endif
 
 		@if(Auth::check())
-			{{link_to_route('home.dash', 'dashboard')}}
+			<section class="user_tasks">
+				<h1>User</h1>
+				
+				{{link_to_route('home.dash', 'dashboard')}}
+				{{link_to_route('home.webdev', 'Order A Website')}}
+				{{link_to_route('users.edit', 'Settings', Auth::user()->id)}}
+				{{link_to_route('session.destroy', 'Logout')}}
+			</section>
 		@endif
 
-		{{link_to_route('albums.index', 'Music')}}
-		{{link_to_route('projects.index', 'Projects')}}
-		{{link_to_route('thoughts.index', 'Thoughts')}}
-		{{link_to_route('home.resume', 'Resume')}}
-		{{link_to_route('home.webdev', 'Order A Website')}}
-		
-		@if(!Auth::check())
-			{{link_to_route('session.create', 'Login')}}
-		@else 
-			{{link_to_route('users.edit', 'Settings', Auth::user()->id)}}
-			{{link_to_route('session.destroy', 'Logout')}}
-		@endif 
+		<section class="site_navigation">
+			<h1>Site Index</h1>
+
+			{{link_to_route('albums.index', 'Music')}}
+			{{link_to_route('projects.index', 'Projects')}}
+			{{link_to_route('thoughts.index', 'Thoughts')}}
+			{{link_to_route('home.resume', 'Resume')}}
+	
+			@if(!Auth::check())
+				{{link_to_route('home.webdev', 'Order A Website')}}
+				{{link_to_route('session.create', 'Login')}}
+			@endif 
+		</section>
 	</nav>
 
 	</header> 
@@ -42,7 +53,11 @@
 	@yield('content') 
 
 	<footer>
-		<h6>Jasper Boyd, 2014</h6> 
+		@if(!Auth::check())
+		<h6>Jasper Boyd, 2014</h6>
+		@else
+		<h6>Hello {{Auth::user()->first_name}}</h6>
+		@endif
 	</footer>
 
 </body>

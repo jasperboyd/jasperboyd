@@ -12,7 +12,7 @@
 	and we can setup a phone call to discuss it.
 	</p>
 
-	{{Form::open(array('route' => 'orders.store'))}}
+	{{Form::open(array('route' => 'orders.store', 'files' => true))}}
 	
 	@include('orders.partials.form')
 

@@ -9,6 +9,8 @@
 <p>{{$order->summary}}</p>
 <h2>More Info</h2>
 <p>{{$order->more_info}}</p>
+<h2>Design Elements</h2>
+
 
 <section class="controls">
 	{{link_to_route('orders.edit', 'edit', $order->id)}} | 
