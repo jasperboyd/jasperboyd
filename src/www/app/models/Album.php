@@ -3,7 +3,7 @@
 use \Magniloquent\Magniloquent\Magniloquent;
 
 class Album extends Magniloquent {
-	protected $guarded = array();
+	protected $guarded = array('id');
 	protected $fillable = array('title', 'artist', 'release_date', 'description', 'personnel', 'bandcamp_url', 'image_url'); 
 	public static $rules = array(
 		"save" => array(

@@ -269,7 +269,8 @@ section {
 .register, .login, .album_creator, .project_creator, 
 .thought_creator, .service_creator, .project_editor,
 .service_editor, .user_editor, .order_creator, 
-.order_editor {
+.order_editor, .job_creator, .job_editor, .skill_creator, 
+.skill_editor {
 	p {
 		margin: $normal auto;
 		font-size: $normal;
@@ -282,7 +283,8 @@ section {
 }
 
 .album_destroyer, .project_destroyer, .thought_destroyer,
-.service_destroyer, .order_destroyer {
+.service_destroyer, .order_destroyer, .skill_destroyer, 
+.job_destroyer {
 	text-align: center;
 
 	p { 

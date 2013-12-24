@@ -27,6 +27,11 @@ Route::get('/dash', array(
 	'as' => 'home.dash'
 ));
 
+Route::get('/resume', array(
+	'uses' => 'HomeController@resume', 
+	'as' => 'home.resume'
+));
+
 Route::get('/login', array(
 	'uses' => 'SessionController@create',
 	'as' => 'session.create'
@@ -86,3 +91,17 @@ Route::get('/orders/{id}/destroy', array(
 ));
 
 Route::resource('orders', 'OrderController', array('except' => array('create')));
+
+Route::get('/jobs/{id}/destroy', array(
+	'uses' => 'JobsController@showDestroy', 
+	'as' => 'jobs.showDestroy'
+));
+
+Route::resource('jobs', 'JobsController'); 
+
+Route::get('/skills/{id}/destroy', array(
+	'uses' => 'SkillsController@showDestroy', 
+	'as' => 'skills.showDestroy'
+));
+
+Route::resource('skills', 'SkillsController');

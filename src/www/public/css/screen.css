@@ -331,45 +331,50 @@ section {
   text-align: center;
 }
 
-/* line 273, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 .register p, .login p, .album_creator p, .project_creator p,
 .thought_creator p, .service_creator p, .project_editor p,
 .service_editor p, .user_editor p, .order_creator p,
-.order_editor p {
+.order_editor p, .job_creator p, .job_editor p, .skill_creator p,
+.skill_editor p {
   margin: 18px auto;
   font-size: 18px;
 }
-/* line 278, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 .register h3, .login h3, .album_creator h3, .project_creator h3,
 .thought_creator h3, .service_creator h3, .project_editor h3,
 .service_editor h3, .user_editor h3, .order_creator h3,
-.order_editor h3 {
+.order_editor h3, .job_creator h3, .job_editor h3, .skill_creator h3,
+.skill_editor h3 {
   font-family: "Lato", sans-serif;
   font-weight: 900;
 }
 
-/* line 285, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 .album_destroyer, .project_destroyer, .thought_destroyer,
-.service_destroyer, .order_destroyer {
+.service_destroyer, .order_destroyer, .skill_destroyer,
+.job_destroyer {
   text-align: center;
 }
-/* line 288, ../sass/screen.scss */
+/* line 290, ../sass/screen.scss */
 .album_destroyer p, .project_destroyer p, .thought_destroyer p,
-.service_destroyer p, .order_destroyer p {
+.service_destroyer p, .order_destroyer p, .skill_destroyer p,
+.job_destroyer p {
   margin: 40.5px auto;
 }
-/* line 292, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 .album_destroyer input, .project_destroyer input, .thought_destroyer input,
-.service_destroyer input, .order_destroyer input {
+.service_destroyer input, .order_destroyer input, .skill_destroyer input,
+.job_destroyer input {
   margin: 40.5px auto;
 }
 
-/* line 297, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 .admin_controls, .controls {
   text-align: center;
 }
 
-/* line 302, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 .album h3 {
   font-family: "Lato", sans-serif;
   font-weight: 900;

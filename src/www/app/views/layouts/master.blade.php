@@ -26,6 +26,7 @@
 		{{link_to_route('albums.index', 'Music')}}
 		{{link_to_route('projects.index', 'Projects')}}
 		{{link_to_route('thoughts.index', 'Thoughts')}}
+		{{link_to_route('home.resume', 'Resume')}}
 		{{link_to_route('home.webdev', 'Order A Website')}}
 		
 		@if(!Auth::check())

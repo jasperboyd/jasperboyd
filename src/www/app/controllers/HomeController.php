@@ -23,6 +23,7 @@ class HomeController extends BaseController {
 	public function webdev()
 	{
 		$services = Service::all(); 
+		
 		return View::make('home.webdev', compact('services')); 
 	}
 
@@ -30,12 +31,21 @@ class HomeController extends BaseController {
 	{ 
 		$user = Auth::user(); 
 		$orders = $user->orders; 
+		
 		return View::make('home.dash', compact('user', 'orders'));
 	}
 
 	public function login()
 	{
 		return View::make('auth.login');
+	}
+
+	public function resume()
+	{
+		$skills = Skill::all(); 
+		$jobs = Job::all(); 
+
+		return View::make('home.resume', compact('skills', 'jobs'));
 	}
 
 }

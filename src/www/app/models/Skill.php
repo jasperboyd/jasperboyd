@@ -1,7 +1,18 @@
 <?php
 
-class Skill extends Eloquent {
-	protected $guarded = array();
+use \Magniloquent\Magniloquent\Magniloquent;
 
-	public static $rules = array();
+class Skill extends Magniloquent{
+	protected $guarded = array('id');
+
+	public static $rules = array(
+		"save" => array(
+  		),
+  	
+  		"create" => array(
+  		),
+  	
+  		"update" => array(
+  		)
+	);
 }

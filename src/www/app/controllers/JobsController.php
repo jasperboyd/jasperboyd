@@ -29,7 +29,17 @@ class JobsController extends BaseController {
 	 */
 	public function store()
 	{
-		//
+		$job = new Job(Input::all()); 
+
+		$job->save(); 
+
+		if($job->isSaved()){ 
+			return $this->show($job->id); 
+		}
+
+		return Redirect::route('jobs.create')
+			->withInput()
+			->withErrors($job->errors()); 
 	}
 
 	/**
@@ -62,7 +72,25 @@ class JobsController extends BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$job = Job::find($id); 
+		$job->save(Input::all());
+
+		if($job->isSaved())
+   		{
+   			$jobs = Job::all(); 
+   			$skills = SKill::all(); 
+      		return Redirect::route('home.resume', $jobs, $skills)
+        	->with('flash', 'The job was updated');
+   		}
+
+   		return Redirect::route('jobs.edit', $id)
+     		->withInput()
+      		->withErrors($job->errors());
+	}
+
+	public function showDestroy($id){ 
+		$job = Job::find($id); 
+		return View::make('jobs.destroy', compact('job'));
 	}
 
 	/**
@@ -73,7 +101,10 @@ class JobsController extends BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		Job::destroy($id); 
+		$jobs = Job::all(); 
+		$skills = Skill::all(); 
+		return 	View::make('home.resume', compact('jobs', 'skills'));
 	}
 
 }
