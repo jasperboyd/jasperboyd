@@ -2,7 +2,7 @@
 
 @section('content')
 
-<article class="album">
+<article>
 
 <h1>{{$album->title}}</h1> 
 <h2>{{$album->artist}}</h2>

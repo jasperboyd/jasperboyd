@@ -1,16 +1,15 @@
 <h2>Services</h2> 
 
-<ul> 
+
 @foreach($services as $service)
 <section class="service"> 	
-	<li class="name"><a href="{{route('services.show', $service->id)}}">{{$service->name}}</a></li>
-	<ul>
-		<li class="description"><span class="highlight">Description:</span>{{$service->description}}</li>
-		<li class="cost"><span class="highlight">Cost:</span>{{$service->cost}}$</li>
+	<h3 class="name"><a href="{{route('services.show', $service->id)}}">{{$service->name}}</a></h3>
+		<p class="description"><span class="highlight">Description:</span>{{$service->description}}</p>
+		<p class="cost"><span class="highlight">Cost:</span>{{$service->cost}}$</p>
 		@if(Auth::check())
-			<li>{{link_to_route('orders.create', 'Order', $service->id)}}</li> 
+			<p>{{link_to_route('orders.create', 'Order', $service->id)}}</p> 
 		@endif
-	</ul>	
+		
 
 	@if(Auth::check())
 		@if(Auth::user()->admin == true)
@@ -22,4 +21,3 @@
 	@endif
 </section>
 @endforeach
-</ul>

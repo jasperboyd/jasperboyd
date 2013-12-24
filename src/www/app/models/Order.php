@@ -20,6 +20,7 @@ class Order extends Magniloquent {
 
 	public static $relationships = array (
 		'user' => array('belongsTo', 'User'), 
-		'service' => array('belongsTo', 'Service')
+		'service' => array('belongsTo', 'Service'),
+		'comments' => array('hasMany', 'Comment')
 	); 
 }

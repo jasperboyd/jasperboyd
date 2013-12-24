@@ -89,10 +89,31 @@ input[type=submit]:hover {
 }
 
 input:active, input:focus,
-textarea:active, textarea:focus {
+textarea:active, textarea:focus,
+{
 	background-color: $orange; 
 	color: white;
-	@include box-shadow($orange 0 0 50px 0)
+	@include box-shadow(black 0 0 10px 0)
+}
+
+.button { 
+	display: block; 
+	margin: 0 auto; 
+	width: 30%; 
+	background: tint($orange, 95);
+	text-align: center; 
+	padding: $small;
+
+}
+
+.button:hover {
+    background: #333;
+    cursor: pointer;
+}
+
+hr {
+	width: 30%;
+	margin: $large auto;
 }
 
 img { 
@@ -295,7 +316,7 @@ section {
 .thought_creator, .service_creator, .project_editor,
 .service_editor, .user_editor, .order_creator, 
 .order_editor, .job_creator, .job_editor, .skill_creator, 
-.skill_editor {
+.skill_editor, .comment_creator {
 	p {
 		margin: $normal auto;
 		font-size: $normal;
@@ -304,6 +325,31 @@ section {
 	h3 { 
 		font-family: $sans_serif; 
 		font-weight: $bold;
+	}
+}
+
+.comment_creator{
+	
+	padding: $normal;
+
+	input {
+		background-color: $orange;
+
+		font-size: $normal;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+
+	input[type=text]{
+		width: 70%;
+		float:left;
+		margin-right: 5%;
+		text-transform: none;
+	}
+
+	input[type=submit]{
+		width: 25%;
+		float:right;	
 	}
 }
 
@@ -335,10 +381,20 @@ section {
 	}
 }
 
-.order, .album, .project, .thought {
+.order, .album, .project, .thought, .service {
 	background-color: tint($blue, 90);
 	width: 80%; 
 	@include border-radius($huge, $huge);
 	padding: $normal;
 	margin: $normal auto 0; 
+}
+
+.order { 
+	h4 { 
+		margin: $small auto $large;
+	}
+}
+
+.comment {
+	margin: $large auto;
 }

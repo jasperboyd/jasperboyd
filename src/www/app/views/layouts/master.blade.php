@@ -34,7 +34,7 @@
 		@endif
 
 		<section class="site_navigation">
-			<h1>Site Index</h1>
+			<h1>Index</h1>
 
 			{{link_to_route('albums.index', 'Music')}}
 			{{link_to_route('projects.index', 'Projects')}}

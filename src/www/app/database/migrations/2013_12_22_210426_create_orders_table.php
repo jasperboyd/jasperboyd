@@ -21,6 +21,7 @@ class CreateOrdersTable extends Migration {
 			$table->integer('user_id'); 
 			$table->integer('status')->default(0); 
 			$table->binary('design_elements')->nullable(); 
+			$table->string('design_elements_link')->nullable(); 
 			$table->timestamps();
 		});
 	}

@@ -105,3 +105,15 @@ Route::get('/skills/{id}/destroy', array(
 ));
 
 Route::resource('skills', 'SkillsController');
+
+Route::post('/orders/{orderid}/comments', array(
+	'uses' => 'CommentsController@store', 
+	'as' => 'comments.store'
+));
+
+Route::get('/comments/{id}', array(
+	'uses' => 'CommentsController@showDestroy',
+	'as' => 'comments.showDestroy'
+));
+
+Route::resource('comments', 'CommentsController', array('except' => array('create', 'store')));

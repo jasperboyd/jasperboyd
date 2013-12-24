@@ -9,8 +9,11 @@
 <p>{{$order->summary}}</p>
 <h2>More Info</h2>
 <p>{{$order->more_info}}</p>
-<h2>Design Elements</h2>
 
+@if($order->design_elements != NULL)
+<h2>Design Elements</h2>
+<h3><a href="{{$order->design_elements}}">Download</a></h3>
+@endif
 
 <section class="controls">
 	{{link_to_route('orders.edit', 'edit', $order->id)}} | 

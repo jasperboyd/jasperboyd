@@ -24,8 +24,21 @@
 <p><span class="highlight">More Info</span>{{$order->more_info}}</p>
 
 @if($order->design_elements != NULL)
-		<p><span class="highlight">Design Elements: </span><a href="{{$order->design_elements}}" target="_blank">Download</a></p>
+	<p><span class="highlight">Design Elements: </span><a href="{{$order->design_elements}}" target="_blank">Download</a></p>
 @endif
+
+<hr>
+
+<h4>Comments</h4>
+
+@foreach($order->comments as $comment)
+<section class="comment">
+	<p><span class="highlight">{{$comment->user->first_name}}: </span>{{$comment->comment}}</p>
+	<h6>Posted At: {{$comment->created_at}} | {{link_to_route('comments.edit', 'edit', $comment->id)}} | {{link_to_route('comments.showDestroy', 'delete', $comment->id)}}</h6>
+</section>
+@endforeach
+
+@include('comments.create')
 
 <section class="controls">
 	{{link_to_route('orders.edit', 'edit', $order->id)}} | 

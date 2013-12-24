@@ -33,14 +33,20 @@ class OrderController extends BaseController {
 	{
 		$order = new Order(Input::all()); 
 
+
+
 		$file = Input::file('design_elements');
 
-		$destinationPath = 'uploads/'.str_random(8);
-		$filename = $file->getClientOriginalName();
+		if($file != NULL){
 
-		$uploadSuccess = Input::file('design_elements')->move($destinationPath, $filename);
+			$destinationPath = 'uploads/'.str_random(8);
+			$filename = $file->getClientOriginalName();
 
-		$order->design_elements = $destinationPath . '/' . $filename;
+			$uploadSuccess = Input::file('design_elements')->move($destinationPath, $filename);
+
+			$order->design_elements = $destinationPath . '/' . $filename;
+
+		} 
 
 		$order->save(); 
 
