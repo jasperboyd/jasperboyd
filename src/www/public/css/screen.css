@@ -387,7 +387,7 @@ section {
 .thought_creator p, .service_creator p, .project_editor p,
 .service_editor p, .user_editor p, .order_creator p,
 .order_editor p, .job_creator p, .job_editor p, .skill_creator p,
-.skill_editor p, .comment_creator p {
+.skill_editor p, .comment_creator p, .comment_editor p {
   margin: 18px auto;
   font-size: 18px;
 }
@@ -396,7 +396,7 @@ section {
 .thought_creator h3, .service_creator h3, .project_editor h3,
 .service_editor h3, .user_editor h3, .order_creator h3,
 .order_editor h3, .job_creator h3, .job_editor h3, .skill_creator h3,
-.skill_editor h3, .comment_creator h3 {
+.skill_editor h3, .comment_creator h3, .comment_editor h3 {
   font-family: "Lato", sans-serif;
   font-weight: 900;
 }
@@ -428,19 +428,19 @@ section {
 /* line 358, ../sass/screen.scss */
 .album_destroyer, .project_destroyer, .thought_destroyer,
 .service_destroyer, .order_destroyer, .skill_destroyer,
-.job_destroyer {
+.job_destroyer, .comment_destroyer {
   text-align: center;
 }
 /* line 361, ../sass/screen.scss */
 .album_destroyer p, .project_destroyer p, .thought_destroyer p,
 .service_destroyer p, .order_destroyer p, .skill_destroyer p,
-.job_destroyer p {
+.job_destroyer p, .comment_destroyer p {
   margin: 40.5px auto;
 }
 /* line 365, ../sass/screen.scss */
 .album_destroyer input, .project_destroyer input, .thought_destroyer input,
 .service_destroyer input, .order_destroyer input, .skill_destroyer input,
-.job_destroyer input {
+.job_destroyer input, .comment_destroyer input {
   margin: 40.5px auto;
 }
 
@@ -460,7 +460,11 @@ section {
 
 /* line 384, ../sass/screen.scss */
 .order, .album, .project, .thought, .service {
-  background-color: #e9f0fc;
+  background-color: #fafcfe;
+  border: solid #e9f0fc 1px;
+  -webkit-box-shadow: #e9f0fc 1px 1px 5px 1px inset;
+  -moz-box-shadow: #e9f0fc 1px 1px 5px 1px inset;
+  box-shadow: #e9f0fc 1px 1px 5px 1px inset;
   width: 80%;
   -webkit-border-radius: 60.75px 60.75px;
   -moz-border-radius: 60.75px / 60.75px;
@@ -469,12 +473,12 @@ section {
   margin: 18px auto 0;
 }
 
-/* line 393, ../sass/screen.scss */
+/* line 395, ../sass/screen.scss */
 .order h4 {
   margin: 9px auto 40.5px;
 }
 
-/* line 398, ../sass/screen.scss */
+/* line 400, ../sass/screen.scss */
 .comment {
   margin: 40.5px auto;
 }

@@ -10,7 +10,7 @@ class User extends Magniloquent implements UserInterface, RemindableInterface {
 	protected $table = 'users';
 	protected $hidden = array('password');
 	protected $guarded = array('id');
-	protected $fillable = array('first_name', 'last_name', 'company_name', 'email', 'password'); 
+	protected $fillable = array('first_name', 'last_name', 'company_name', 'email', 'password', 'notifications'); 
 
 	//TODO Validation Factory & Testing
 
@@ -49,6 +49,10 @@ class User extends Magniloquent implements UserInterface, RemindableInterface {
 
 	);
 
+  	public function scopeAdmin($query)
+    {
+        return $query->where('admin', '=', true)->first();
+    }
 
 	/**
 	 * Get the unique identifier for the user.

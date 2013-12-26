@@ -23,8 +23,10 @@ class CommentsController extends BaseController {
 		$user = Auth::user(); 
 		$order = Order::find($orderid);
 
-		$user->comments()->save($comment); 
-		$order->comments()->save($comment); 
+		$comment->user()->associate($user); 
+		$comment->order()->associate($order); 
+
+		$comment->save();
 
 		$orders = $user->orders; 
 
@@ -56,7 +58,8 @@ class CommentsController extends BaseController {
 	 */
 	public function edit($id)
 	{
-        return View::make('comments.edit');
+		$comment = Comment::find($id); 
+        return View::make('comments.edit', compact('comment'));
 	}
 
 	/**
@@ -67,7 +70,20 @@ class CommentsController extends BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$comment = Comment::find($id); 
+		$comment->save(Input::all());
+
+		if($comment->isSaved())
+   		{
+   			$user = Auth::user(); 
+   			$orders = $user->orders; 
+      		return Redirect::route('home.dash', compact('user', 'orders'))
+        	->with('flash', 'The comment was updated');
+   		}
+
+   		return Redirect::route('comments.edit', $id)
+     		->withInput()
+      		->withErrors($comment->errors());
 	}
 
 	public function showDestroy($id){
@@ -83,7 +99,11 @@ class CommentsController extends BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		Comment::destroy($id); 
+		$user = Auth::user(); 
+		$orders = $user->orders; 
+		return Redirect::route('home.dash', compact('user', 'orders'));
+
 	}
 
 }

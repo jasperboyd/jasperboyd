@@ -14,8 +14,7 @@
 <section class="order">
 
 <h3>{{$order->title}}</h3>
-<h4>Created at: <span class="highlight">{{$order->created_at}}</span></h4>
-<h4>Updated at: <span class="highlight">{{$order->updated_at}}</span></h4>
+<h4>Created at: <span class="highlight">{{$order->created_at}}</span> Updated at: <span class="highlight">{{$order->updated_at}}</span></h4>
 
 @if($order->summary != NULL)
 	<p><span class="highlight">Summary</span>{{$order->summary}}</p>

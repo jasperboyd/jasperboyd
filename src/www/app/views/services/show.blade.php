@@ -11,6 +11,10 @@
 <p>{{$service->more_info}}</p>
 @endif
 
+@if(Auth::check())
+	<p>{{link_to_route('orders.create', 'Order', $service->id)}}</p> 
+@endif
+
 </article>
 
 @stop

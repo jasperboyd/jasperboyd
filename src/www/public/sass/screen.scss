@@ -316,7 +316,7 @@ section {
 .thought_creator, .service_creator, .project_editor,
 .service_editor, .user_editor, .order_creator, 
 .order_editor, .job_creator, .job_editor, .skill_creator, 
-.skill_editor, .comment_creator {
+.skill_editor, .comment_creator, .comment_editor {
 	p {
 		margin: $normal auto;
 		font-size: $normal;
@@ -355,7 +355,7 @@ section {
 
 .album_destroyer, .project_destroyer, .thought_destroyer,
 .service_destroyer, .order_destroyer, .skill_destroyer, 
-.job_destroyer {
+.job_destroyer, .comment_destroyer {
 	text-align: center;
 
 	p { 
@@ -382,7 +382,9 @@ section {
 }
 
 .order, .album, .project, .thought, .service {
-	background-color: tint($blue, 90);
+	background-color: tint($blue, 98);
+	border: solid tint($blue, 90) 1px;
+	@include box-shadow(tint($blue, 90) 1px 1px 5px 1px inset);
 	width: 80%; 
 	@include border-radius($huge, $huge);
 	padding: $normal;

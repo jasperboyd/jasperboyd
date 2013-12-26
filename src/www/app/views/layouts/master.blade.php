@@ -17,7 +17,11 @@
 			@if(Auth::user()->admin == true)
 				<section class="admin_tasks">
 					<h1>Admin</h1>
-					{{link_to_route('orders.index', 'Orders')}}
+					<a href="{{route('orders.index')}}"> Orders 
+					@if(Auth::user()->notifications != 0)
+					<span class="highlight notification">{{Auth::user()->notifications}}</span>
+					@endif
+					</a>
 				</section>
 			@endif 
 		@endif
@@ -26,7 +30,11 @@
 			<section class="user_tasks">
 				<h1>User</h1>
 				
-				{{link_to_route('home.dash', 'dashboard')}}
+				<a href="{{route('home.dash')}}">Dashboard 
+				@if(Auth::user()->notifications)
+				<span class="highlight notification">{{Auth::user()->notifications}}</span>
+				@endif
+				</a>
 				{{link_to_route('home.webdev', 'Order A Website')}}
 				{{link_to_route('users.edit', 'Settings', Auth::user()->id)}}
 				{{link_to_route('session.destroy', 'Logout')}}

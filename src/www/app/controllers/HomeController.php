@@ -31,6 +31,8 @@ class HomeController extends BaseController {
 	{ 
 		$user = Auth::user(); 
 		$orders = $user->orders; 
+		$user->notifications = 0; 
+		$user->save(); 
 		
 		return View::make('home.dash', compact('user', 'orders'));
 	}

@@ -33,7 +33,7 @@ class Comment extends Magniloquent {
 
 	protected static $relationships = array(
 		'user' => array('belongsTo', 'User'),
-		'order' => array('belongsTo', 'Order'), 
+		'order' => array('belongsTo', 'Order')
     );
 
 	/**

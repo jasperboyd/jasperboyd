@@ -23,4 +23,5 @@ class Order extends Magniloquent {
 		'service' => array('belongsTo', 'Service'),
 		'comments' => array('hasMany', 'Comment')
 	); 
+
 }
