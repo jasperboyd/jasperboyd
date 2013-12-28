@@ -42,7 +42,10 @@
 		@endif
 
 		<section class="site_navigation">
-			<h1>Index</h1>
+			
+			@if(Auth::check())
+				<h1>Index</h1>
+			@endif
 
 			{{link_to_route('albums.index', 'Music')}}
 			{{link_to_route('projects.index', 'Projects')}}

@@ -75,7 +75,7 @@ h4,
 h5,
 h6 {
   font-family: "Lato", sans-serif;
-  color: #063535;
+  color: #446767;
 }
 
 /* line 37, ../sass/screen.scss */
@@ -83,7 +83,7 @@ p {
   font-family: "Sorts Mill Goudy", serif;
   font-size: 18px;
   line-height: 1.5;
-  color: #063535;
+  color: #446767;
 }
 
 /* line 44, ../sass/screen.scss */
@@ -102,8 +102,8 @@ a {
 
 /* line 51, ../sass/screen.scss */
 a:hover {
-  color: #063535;
-  text-shadow: #063535 1px 1px 2px;
+  color: #446767;
+  text-shadow: #446767 1px 1px 2px;
 }
 
 /* line 56, ../sass/screen.scss */
@@ -118,7 +118,7 @@ input, textarea {
   font-family: "Lato", sans-serif;
   font-weight: 900;
   text-align: center;
-  background-color: #f2f4f4;
+  background-color: #f5f7f7;
   width: 90%;
   display: block;
   padding: 9px;
@@ -145,50 +145,56 @@ input[type=submit] {
 
 /* line 85, ../sass/screen.scss */
 input[type=submit]:hover {
-  background-color: #063535;
-  color: #2372e8;
+  background-color: #446767;
+  -webkit-box-shadow: black 0 2px 3px 0, #113974 0 -2px 10px 5px inset;
+  -moz-box-shadow: black 0 2px 3px 0, #113974 0 -2px 10px 5px inset;
+  box-shadow: black 0 2px 3px 0, #113974 0 -2px 10px 5px inset;
+  color: white;
   width: 50%;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 input:active, input:focus,
 textarea:active, textarea:focus {
-  background-color: #063535;
+  background-color: #446767;
   color: white;
-  -webkit-box-shadow: black 0 0 10px 0;
-  -moz-box-shadow: black 0 0 10px 0;
-  box-shadow: black 0 0 10px 0;
+  -webkit-box-shadow: black 0 2px 3px 0, #113974 0 -2px 10px 5px inset;
+  -moz-box-shadow: black 0 2px 3px 0, #113974 0 -2px 10px 5px inset;
+  box-shadow: black 0 2px 3px 0, #113974 0 -2px 10px 5px inset;
 }
 
-/* line 99, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .button {
   display: block;
   margin: 0 auto;
   width: 30%;
-  background: #f2f4f4;
+  background: #f5f7f7;
   text-align: center;
   padding: 9px;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 .button:hover {
   background: #333;
   cursor: pointer;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 hr {
-  width: 30%;
-  margin: 40.5px auto;
+  width: 80%;
+  margin: 27px auto;
+  border: solid #e9f0fc 1px;
+  color: #e9f0fc;
+  background-color: #e9f0fc;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 img {
   margin: 27px auto;
   display: block;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 header {
   background: url('/img/bluepattern.png?1387710795');
   text-align: center;
@@ -202,7 +208,7 @@ header {
   -moz-box-shadow: #bfbfbf 0px 0px 2px 0px;
   box-shadow: #bfbfbf 0px 0px 2px 0px;
 }
-/* line 141, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 header h1 {
   font-size: 40.5px;
   text-transform: lowercase;
@@ -210,20 +216,20 @@ header h1 {
   letter-spacing: -2.25px;
   margin: 9px auto;
 }
-/* line 150, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 header h2 {
   font-size: 18px;
   font-family: "Sorts Mill Goudy", serif;
   text-transform: lowercase;
   font-style: italic;
-  color: #063535;
+  color: #446767;
 }
 
-/* line 159, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 nav {
   text-align: center;
 }
-/* line 163, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 nav h1 {
   font-size: 13.5px;
   text-transform: uppercase;
@@ -231,7 +237,7 @@ nav h1 {
   font-weight: 900;
   color: #2372e8;
 }
-/* line 171, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 nav section {
   margin: 4.5px auto;
   width: 75%;
@@ -239,7 +245,7 @@ nav section {
   -moz-border-radius: 9px / 9px;
   border-radius: 9px / 9px;
 }
-/* line 177, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 nav a {
   font-size: 13.5px;
   font-family: "Sorts Mill Goudy", serif;
@@ -257,25 +263,28 @@ nav a {
   text-transform: lowercase;
   letter-spacing: 2.25px;
 }
-/* line 197, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 nav a:hover {
-  border: solid #063535 1px;
-  background-color: #063535;
+  border: solid #446767 1px;
+  background-color: #446767;
   text-shadow: white 1px 1px 3px, #2372e8 2px 2px 4px;
+  -webkit-box-shadow: black 0 1px 1px 0, #113974 0 -2px 10px 5px inset;
+  -moz-box-shadow: black 0 1px 1px 0, #113974 0 -2px 10px 5px inset;
+  box-shadow: black 0 1px 1px 0, #113974 0 -2px 10px 5px inset;
   color: white;
 }
 
-/* line 206, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 footer {
   position: fixed;
   bottom: 0;
-  background-color: #2372e8;
+  background-color: #446767;
   width: 100%;
   -webkit-box-shadow: black 2px 2px 3px 1px;
   -moz-box-shadow: black 2px 2px 3px 1px;
   box-shadow: black 2px 2px 3px 1px;
 }
-/* line 214, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 footer h6 {
   text-transform: uppercase;
   letter-spacing: 9px;
@@ -285,25 +294,26 @@ footer h6 {
   color: white;
 }
 
-/* line 224, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 article {
   float: right;
   width: 75%;
   margin-bottom: 60.75px;
   text-align: left;
 }
-/* line 231, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 article h1, article h2, article h3, article h4, article h5, article h6 {
   text-align: center;
 }
-/* line 233, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 article h1 {
   font-size: 60.75px;
   text-align: center;
+  letter-spacing: -3px;
   margin: 18px auto;
   font-weight: 900;
 }
-/* line 240, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 article h2 {
   font-size: 27px;
   text-transform: uppercase;
@@ -311,40 +321,46 @@ article h2 {
   margin: 18px auto;
   font-weight: 18px;
 }
-/* line 248, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 article h3 {
-  font-size: 27px;
+  font-size: 60.75px;
   font-family: "Sorts Mill Goudy", serif;
+  letter-spacing: -1.5px;
   margin: 6px auto;
 }
-/* line 254, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
+article h4 {
+  letter-spacing: 1.5px;
+  font-size: 18px;
+}
+/* line 267, ../sass/screen.scss */
 article ul {
   width: 75%;
   margin: 0 auto;
 }
-/* line 257, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 article ul ul {
   width: 100%;
 }
-/* line 262, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 article p {
   width: 75%;
   margin: 0 auto;
 }
 
-/* line 268, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 section {
   margin: 60.75px auto;
 }
 
-/* line 272, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 .normal {
   font-size: 18px;
 }
 
-/* line 276, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 .highlight {
-  background-color: #063535;
+  background-color: #446767;
   font-style: italic;
   color: white;
   padding: 4.5px;
@@ -356,33 +372,33 @@ section {
   border-radius: 9px / 9px;
 }
 
-/* line 287, ../sass/screen.scss */
+/* line 300, ../sass/screen.scss */
 .black {
   color: black;
 }
 
-/* line 293, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 .services li {
   margin: 9px auto;
 }
-/* line 297, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 .services .name {
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 27px;
 }
-/* line 303, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 .services .description, .services .cost {
   font-family: "Sorts Mill Goudy", serif;
   font-size: 18px;
 }
 
-/* line 310, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 .user_editor p {
   text-align: center;
 }
 
-/* line 320, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 .register p, .login p, .album_creator p, .project_creator p,
 .thought_creator p, .service_creator p, .project_editor p,
 .service_editor p, .user_editor p, .order_creator p,
@@ -391,7 +407,7 @@ section {
   margin: 18px auto;
   font-size: 18px;
 }
-/* line 325, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 .register h3, .login h3, .album_creator h3, .project_creator h3,
 .thought_creator h3, .service_creator h3, .project_editor h3,
 .service_editor h3, .user_editor h3, .order_creator h3,
@@ -401,55 +417,85 @@ section {
   font-weight: 900;
 }
 
-/* line 331, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 .comment_creator {
   padding: 18px;
 }
-/* line 335, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 .comment_creator input {
-  background-color: #063535;
+  background-color: #446767;
   font-size: 18px;
   font-weight: 300;
   text-transform: uppercase;
 }
-/* line 343, ../sass/screen.scss */
+/* line 356, ../sass/screen.scss */
 .comment_creator input[type=text] {
   width: 70%;
   float: left;
   margin-right: 5%;
   text-transform: none;
 }
-/* line 350, ../sass/screen.scss */
+/* line 363, ../sass/screen.scss */
 .comment_creator input[type=submit] {
   width: 25%;
   float: right;
 }
 
-/* line 358, ../sass/screen.scss */
+/* line 371, ../sass/screen.scss */
 .album_destroyer, .project_destroyer, .thought_destroyer,
 .service_destroyer, .order_destroyer, .skill_destroyer,
 .job_destroyer, .comment_destroyer {
   text-align: center;
 }
-/* line 361, ../sass/screen.scss */
+/* line 374, ../sass/screen.scss */
 .album_destroyer p, .project_destroyer p, .thought_destroyer p,
 .service_destroyer p, .order_destroyer p, .skill_destroyer p,
 .job_destroyer p, .comment_destroyer p {
   margin: 40.5px auto;
 }
-/* line 365, ../sass/screen.scss */
+/* line 378, ../sass/screen.scss */
 .album_destroyer input, .project_destroyer input, .thought_destroyer input,
 .service_destroyer input, .order_destroyer input, .skill_destroyer input,
 .job_destroyer input, .comment_destroyer input {
   margin: 40.5px auto;
 }
 
-/* line 370, ../sass/screen.scss */
+/* line 383, ../sass/screen.scss */
 .admin_controls, .controls {
   text-align: center;
+  background: #446767;
+  -webkit-border-radius: 9px 9px;
+  -moz-border-radius: 9px / 9px;
+  border-radius: 9px / 9px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  width: 15%;
+  padding: 18px;
+}
+/* line 390, ../sass/screen.scss */
+.admin_controls a, .controls a {
+  color: white;
+  padding: 6px;
+}
+/* line 395, ../sass/screen.scss */
+.admin_controls a:hover, .controls a:hover {
+  color: #111919;
 }
 
-/* line 375, ../sass/screen.scss */
+/* line 403, ../sass/screen.scss */
+.admin_controls:hover, .controls:hover {
+  -webkit-box-shadow: black 0 2px 3px 0, #113974 0 -2px 10px 5px inset;
+  -moz-box-shadow: black 0 2px 3px 0, #113974 0 -2px 10px 5px inset;
+  box-shadow: black 0 2px 3px 0, #113974 0 -2px 10px 5px inset;
+}
+
+/* line 408, ../sass/screen.scss */
 .album h3 {
   font-family: "Lato", sans-serif;
   font-weight: 900;
@@ -458,7 +504,7 @@ section {
   letter-spacing: 9px;
 }
 
-/* line 384, ../sass/screen.scss */
+/* line 417, ../sass/screen.scss */
 .order, .album, .project, .thought, .service {
   background-color: #fafcfe;
   border: solid #e9f0fc 1px;
@@ -473,12 +519,12 @@ section {
   margin: 18px auto 0;
 }
 
-/* line 395, ../sass/screen.scss */
+/* line 428, ../sass/screen.scss */
 .order h4 {
   margin: 9px auto 40.5px;
 }
 
-/* line 400, ../sass/screen.scss */
+/* line 433, ../sass/screen.scss */
 .comment {
   margin: 40.5px auto;
 }
