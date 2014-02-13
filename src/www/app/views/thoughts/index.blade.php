@@ -25,6 +25,7 @@
 @if(Auth::check())
 	@if(Auth::user()->admin == true)
 	<section class="admin_controls"> 
+		<h4>Admin Controls</h4>
 		{{link_to_route('thoughts.edit', 'edit', $thought->id)}} |
 		{{link_to_route('thoughts.showDestroy', 'delete', $thought->id)}}
 	</section> 

@@ -20,9 +20,14 @@ $medium: $normal * 1.5;
 $large: $medium * 1.5; 
 $huge: $large * 1.5; 
 
-$blue: #2372e8; 
-$green: tint(#063535, 25);
+$blue: #199B71;/*#2372e8;*/ 
+$green: #19589C;
+$orange:#E8B923;
 $purple: #3A23E8;
+
+body { 
+	min-width: 840px;
+}
 
 h1, 
 h2,
@@ -56,12 +61,18 @@ a:hover {
 label { 
 	display: block;
 	text-align: center;
+	font-family: $serif; 
+	text-transform: uppercase;
+	letter-spacing: $tiny; 
+	font-style: italic;
+	font-size: $small;
+	margin: $medium auto;
 }
 
 input, textarea { 
 	font-size: $medium;
 	font-family: $sans_serif;
-	font-weight: $bold;
+	font-weight: $normal;
 	text-align: center;
 
 	background-color: tint($green, 95);
@@ -77,6 +88,14 @@ input, textarea {
   	@include transition-duration(.5s);
 }
 
+textarea {
+	font-family: $serif;
+	font-weight: normal;
+	font-size: $normal;
+	text-align: justify;
+	padding: $medium;
+}
+
 input[type=submit]{
 	background-color: $blue;
 	color:white; 
@@ -84,7 +103,7 @@ input[type=submit]{
 
 input[type=submit]:hover {
 	background-color: $green;
-	@include box-shadow(black 0 2px 3px 0, shade($blue, 50) 0 -2px 10px 5px inset);
+	@include box-shadow(black 0 2px 5px 0);
 	color: white;
 	width: 50%;
 }
@@ -94,7 +113,8 @@ textarea:active, textarea:focus,
 {
 	background-color: $green; 
 	color: white;
-	@include box-shadow(black 0 2px 3px 0, shade($blue, 50) 0 -2px 10px 5px inset);
+	border: none;
+	@include box-shadow(black 0 2px 5px 0);
 }
 
 .button { 
@@ -136,9 +156,7 @@ header {
 
 	background-color: tint($blue, 95);
 
-	position: fixed; 
-	top: 0; 
-	left: 0;
+	float: left;
 
 	@include box-shadow(tint(black, 75) 0px 0px 2px 0px);
 
@@ -179,12 +197,13 @@ nav {
 	}
 
 	a { 
-		font-size: $small*1.5;
+		font-size: $normal;
 		font-family: $serif;
+		font-style: italic;
 
 		width: 90%;
 		display: inline-block; 
-		padding: $small; 
+		padding: $small/2; 
 		@include border-radius($small, $small);
 		margin: $small/2 auto;
 		border: solid $blue 1px;
@@ -201,9 +220,8 @@ nav {
 	a:hover { 
 		border: solid $green 1px;
 		background-color: $green;
-		@include text-shadow(white 1px 1px 3px, $blue 2px 2px 4px);
-		@include box-shadow(black 0 1px 1px 0, shade($blue, 50) 0 -2px 10px 5px inset);
-		color:white;
+		@include text-shadow(white 1px 1px 3px);
+		color: $orange;
 		
 	}
 }
@@ -289,7 +307,7 @@ section {
 .highlight {
 	background-color: $green; 
 	font-style: italic;
-	color: white;
+	color: $orange;
 	padding: $small/2; 
 	margin: $small/2;
 	margin-left: 0;
@@ -303,20 +321,19 @@ section {
 
 .services { 
 
-	li { 
-		margin: $small auto;
-	}
-
 	.name { 
-		font-family: $sans_serif; 
-		font-weight: $bold; 
-		font-size: $medium;
+		font-family: $serif; 
+		font-size: $large;
+		font-style: italic;
 	}
 
 	.description, .cost { 
 		font-family: $serif; 
 		font-size: $normal;
+		margin: $medium auto;
 	}
+
+	.service a { text-align: center; }
 }
 
 .user_editor { 
@@ -386,22 +403,35 @@ section {
 	@include border-radius($small, $small);
 	@include transition-property(all);
   	@include transition-duration(.5s);
+  	color: $blue;
+
+  	h4 { 
+  		color: $blue;
+  	}
 	
 	a{
 		color: white;
 		padding: $tiny;
+		text-transform: uppercase;
+		font-weight: $normal;
+		letter-spacing: $tiny;
+		font-size: $small;
 	}
 	
 	a:hover {
-		color: shade($green, 75);
+		color: tint($green, 50);
 	}
 	
-	width: 15%;
+	width: 30%;
 	padding: $normal;
 }
 
 .admin_controls:hover, .controls:hover {
-	@include box-shadow(black 0 2px 3px 0, shade($blue, 50) 0 -2px 10px 5px inset);
+	@include box-shadow(black 0 2px 5px 0, shade($green, 50) 0 -2px 10px 5px inset);
+	color: white;
+	a:hover {
+		color: $orange;
+	}
 }
 
 .album { 

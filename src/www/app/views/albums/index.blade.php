@@ -6,6 +6,8 @@
 	@if(Auth::user()->admin == true)
 	<article class="album_creator"> 
 		@include('albums.create')
+
+		<hr>
 	</article> 
 	@endif
 @endif
@@ -27,6 +29,7 @@
 @if(Auth::check())
 	@if(Auth::user()->admin == true)
 	<section class="admin_controls"> 
+		<h4>Admin Controls</h4>
 		{{link_to_route('albums.edit', 'edit', $album->id)}} |
 		{{link_to_route('albums.showDestroy', 'delete', $album->id)}}
 	</section> 

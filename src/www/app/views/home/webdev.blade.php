@@ -6,6 +6,7 @@
 @if(Auth::user()->admin == true)
 	<article class="service_creator"> 
 		@include('services.create')
+		<hr>
 	</article> 
 @endif
 @endif

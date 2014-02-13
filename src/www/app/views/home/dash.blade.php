@@ -18,6 +18,23 @@
 
 <hr>
 
+<h4>Status</h4>
+
+<h5><span class="highlight">
+@if($order->status == 0)
+Submitted, pending review
+@elseif($order->status == 1)
+Reviewed, quote {{$order->days_left}} days left. 
+@else
+Finished, <a href="{{$order->deliverable}}">download here</a>, please let
+me know if you'd like any changes (in the comments).
+@endif
+</span></h5>
+
+<hr>
+
+<h4>Info</h4>
+
 @if($order->summary != NULL)
 	<p><span class="highlight">Summary</span>{{$order->summary}}</p>
 @endif
@@ -47,6 +64,12 @@
 <hr>
 
 @include('comments.create')
+
+<hr>
+
+<h4>Price</h4>
+
+<h5><span class="highlight">${{$order->service->cost}}</span></h5>
 
 </section>
 
